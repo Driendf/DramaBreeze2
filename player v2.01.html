@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<meta content='never' name='referrer'/>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+  <link rel="stylesheet" type="text/css" href="https://driendf.github.io/DramaBreeze2/player v2.01 css.css">
+</head>
+<body>
+
+
+<!-- Preloader con fondo gris y aviso -->
+<div id="preloader">
+    <div class="content">
+        <p>Los reproductores contienen publicidad y ventanas emergentes ajenas a www.dramabreeze.site</p>
+        <button onclick="hidePreloader()">Aceptar y Continuar</button>
+    </div>
+</div>
+<!-- Social Bar Script -->
+<script type='text/javascript' src='//paddlefidget.com/fe/c7/5a/fec75ac610ea3cac1e7ee3a6a1611293.js'></script>
+
+<!-- Contenido de la página -->
+
+<!-- Popunder Script, generalmente antes de </body> -->
+<script type='text/javascript' src='//paddlefidget.com/98/d8/da/98d8daace110c2e7e503c27f0b395fd9.js'></script>
+
+<!-- Contenedor del reproductor de video -->
+<div class="video-player-container" style="display: none;">
+    <!-- Selector de Idioma con banderas -->
+    <div id="language-selector" class="language-selector">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6m0Trz7RQ9lnNjWGPJCFv2OMGMfey8kySSBX1_roYkicWmq_zKVothwxnDcZ_MCytM9f0wbdAXkfrDZVFXPUJYksM-L3yD6P0BJaBTS9KoFolInZHK-1iLyxIcj-d6QORrgSYjUrs-vK9HuaW9wk8YE9KJCeflfUFVZVfVkcn7ehXEs0NHYBdpIX8nXk/s320/cc.png" alt="JP" onclick="showServers('JP')" class="flag-icon">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi73DP7ktG8EF345swSCg4THyjvnUPvtqu7eyEvtOIDvswF4mjKMyGBQwlKkUW9gZdrYS_jcGaxwFN05_sBW6W7FYhU0DiRfV4vwj9YrSDrjtQvhpitKf5-B7S8CU4XZeDa62WgyW83N7JvMTAK05DrZCd7jGB8kFLlYGUtr2uXiOWDSsGy0E9yPm658t4/s1600/LAT.png" alt="Latino" onclick="showServers('latino')" class="flag-icon">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXLEWzye9-gyFuXWAG36SPJ8xtQA6c_EzJcVRRAVpUGjUO42mkfqTAvhwpWDVkdSLj93vnEvkxvMiop_jKCqTC5HPTPEgUSsldBavsEPc4mbEiLMvt-MCsLF8gmm6gJVbNH1RZHCOesMyIYW6-f4PWuh20wVdMsDVrI3euUCXX6V96B6t9fpZy6mFFzdY/s200/ES.png" alt="Castellano" onclick="showServers('castellano')" class="flag-icon">
+    </div>
+
+    <!-- Contenedor de Lista de Servidores -->
+    <div id="server-lists" class="server-lists">
+        <script src="https://driendf.github.io/001.js"></script>
+
+        <!-- Lista de Servidores para Latino -->
+        <div id="latino-servers" class="server-list" style="display: flex;">
+            <div class="server-item" onclick="loadVideo('https://geo.dailymotion.com/player.html?video=k2awM54QowfVmSC1VLo')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWBcWx4RJ38yH5_WKJ3yXenIYfEmobFKBXklCzAC5OZOD_6z7rTCqLdoAU4YPI2nITHz1jGBE8QtTPHLyrhEpcSJ4k3L1SNWuQag3YDlmoVQ9kmIBMURirWxE3pDzbfXWN6-O3HkPh-bPgWtqS4wIc9UdzaLS9ICy9Y7xUD5_DAMetyqgyjpKpH6dxMJrJ/s1600/x256%20DALY.png" alt="DAILYMOTION">
+                <div>
+                    <strong>DAILYMOTION | Latino</strong>
+                    <p>Max. 1 ventanas emergentes</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('//ok.ru/videoembed/9179405552366?nochat=1')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLV51SXWyGFW2hGJffHkak5vwdDhR7Jau_oRwALerxhifYOO6Vwk52-XnfiVj5qrDc-pUrtS2oMCoEiv6FVxef8JtpgdXH6L_WXOqBl_IUOJPdLNEaljHfeJR0XvAL1TPJAA8xhw0LMR8ScqP6p49eonDudpXoQpGjV-QjGLl2Q7L9udUQDE8pxSis0I/s200/ok.png" alt="OK">
+                <div>
+                    <strong>OK</strong>
+                    <p>Max. 0 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjRqMs_V2qoYIQ_TfofWlqWlN_-11VRECIz4WWVlYDnt4bPQXqZiGGJ5jtbAqm5ZTZBL6jqkzNNwEw9XnFPHlEHYVI9vtMPxMgEettLX_IWU_g3odo7Jku0H6t7RciTkgGeMalOwZxgKHfbLtsKkGqby-FXG7eQ0bM5qiRBjTsGqEU1EyMFPUVSIW3uHz/s1600/x256.png" alt="ABYSS">
+                <div>
+                    <strong>ABYSS</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKPcioM_75A3j4FpNmo5xTrjvKjwTlF7bWUuwtnHMplBVyZXFOnBtH7DtTOuMnfMGTkhuJ2CNIqsC4KuHTQvpu-HMI0KjREN2yLIMj9ubAAw5cE4XmwurYs-Z7RNHgNNoV9VAqd2GOu2ZIEA-1B5ccScgmELoa8o8wDJMPWpY1L-TefEKwHND3Gdw_C0s/s1600/filemoon.png" alt="FILEMOON">
+                <div>
+                    <strong>FILEMOON</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7mQTHZ6lKlu0ISZO4lt0IZ2MvKhuFyEdl-Nk9tuUvMA0We2I02gL2KxZXjzI-Yct2keQt9x9W2Q93LBQ8KZvHnookFwZhkICZ6Lc_MdEMEyeP8ZMIA8LGtpE7Uicv6KW1ypSvWykiE31FtpV7mflcyjWKLEjWSBAJWm6gAywbFiAOSgokDu9BghH6WrEK/s1600/SSSSSS.png" alt="STREAMWIS">
+                <div>
+                    <strong>STREAMWIS</strong>
+                    <p>Max. 4 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM3aphNboW5jj_WTneh3OQe12zOcU2BUshyfXxKxzG42Pc5StmSZMDo7boGG8OFUpQDbId7vA-DAZz2kgWnzuYRDsHFd5xw-eIBuax0shIYoMNpCpfxf64W9TZQQVRq0F9-Vd74SCHB0SUdpg_vBy9IE4e4IUWUCvEy5bCmEIm-L-uoOxfskDw59YwKVM/s1600/faviconV2.png" alt="VIDHIDE">
+                <div>
+                    <strong>VIDHIDE</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzEW77ZsShPAsHVVsCPPK-L7WwmCGNLEpvWLPOJFdYQkMYpwJYcNgcu8YYIMo_05DQzs4_-S_yP4hSrS2CGvm7_kyi3o5cW9HEkdpsnEryLaTqoH1rXtfOYdbxGrvBIgTeXPxwJ7vX_0LAbhTwPAYXy2CW7_M-yXeSlkrLFH4Rfw2rYYVXlkU9euGfJMA/s200/streamtape.png" alt="STREAMTAPE">
+                <div>
+                    <strong>STREAMTAPE</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de Servidores para Castellano -->
+        <div id="castellano-servers" class="server-list" style="display: none;">
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWBcWx4RJ38yH5_WKJ3yXenIYfEmobFKBXklCzAC5OZOD_6z7rTCqLdoAU4YPI2nITHz1jGBE8QtTPHLyrhEpcSJ4k3L1SNWuQag3YDlmoVQ9kmIBMURirWxE3pDzbfXWN6-O3HkPh-bPgWtqS4wIc9UdzaLS9ICy9Y7xUD5_DAMetyqgyjpKpH6dxMJrJ/s1600/x256%20DALY.png" alt="DAILYMOTION">
+                <div>
+                    <strong>DAILYMOTION | Castellano</strong>
+                    <p>Max. 1 ventanas emergentes</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLV51SXWyGFW2hGJffHkak5vwdDhR7Jau_oRwALerxhifYOO6Vwk52-XnfiVj5qrDc-pUrtS2oMCoEiv6FVxef8JtpgdXH6L_WXOqBl_IUOJPdLNEaljHfeJR0XvAL1TPJAA8xhw0LMR8ScqP6p49eonDudpXoQpGjV-QjGLl2Q7L9udUQDE8pxSis0I/s200/ok.png" alt="OK">
+                <div>
+                    <strong>OK</strong>
+                    <p>Max. 0 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjRqMs_V2qoYIQ_TfofWlqWlN_-11VRECIz4WWVlYDnt4bPQXqZiGGJ5jtbAqm5ZTZBL6jqkzNNwEw9XnFPHlEHYVI9vtMPxMgEettLX_IWU_g3odo7Jku0H6t7RciTkgGeMalOwZxgKHfbLtsKkGqby-FXG7eQ0bM5qiRBjTsGqEU1EyMFPUVSIW3uHz/s1600/x256.png" alt="ABYSS">
+                <div>
+                    <strong>ABYSS</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKPcioM_75A3j4FpNmo5xTrjvKjwTlF7bWUuwtnHMplBVyZXFOnBtH7DtTOuMnfMGTkhuJ2CNIqsC4KuHTQvpu-HMI0KjREN2yLIMj9ubAAw5cE4XmwurYs-Z7RNHgNNoV9VAqd2GOu2ZIEA-1B5ccScgmELoa8o8wDJMPWpY1L-TefEKwHND3Gdw_C0s/s1600/filemoon.png" alt="FILEMOON">
+                <div>
+                    <strong>FILEMOON</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7mQTHZ6lKlu0ISZO4lt0IZ2MvKhuFyEdl-Nk9tuUvMA0We2I02gL2KxZXjzI-Yct2keQt9x9W2Q93LBQ8KZvHnookFwZhkICZ6Lc_MdEMEyeP8ZMIA8LGtpE7Uicv6KW1ypSvWykiE31FtpV7mflcyjWKLEjWSBAJWm6gAywbFiAOSgokDu9BghH6WrEK/s1600/SSSSSS.png" alt="STREAMWIS">
+                <div>
+                    <strong>STREAMWIS</strong>
+                    <p>Max. 4 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM3aphNboW5jj_WTneh3OQe12zOcU2BUshyfXxKxzG42Pc5StmSZMDo7boGG8OFUpQDbId7vA-DAZz2kgWnzuYRDsHFd5xw-eIBuax0shIYoMNpCpfxf64W9TZQQVRq0F9-Vd74SCHB0SUdpg_vBy9IE4e4IUWUCvEy5bCmEIm-L-uoOxfskDw59YwKVM/s1600/faviconV2.png" alt="VIDHIDE">
+                <div>
+                    <strong>VIDHIDE</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzEW77ZsShPAsHVVsCPPK-L7WwmCGNLEpvWLPOJFdYQkMYpwJYcNgcu8YYIMo_05DQzs4_-S_yP4hSrS2CGvm7_kyi3o5cW9HEkdpsnEryLaTqoH1rXtfOYdbxGrvBIgTeXPxwJ7vX_0LAbhTwPAYXy2CW7_M-yXeSlkrLFH4Rfw2rYYVXlkU9euGfJMA/s200/streamtape.png" alt="STREAMTAPE">
+                <div>
+                    <strong>STREAMTAPE</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de Servidores para Japonés -->
+        <div id="JP-servers" class="server-list" style="display: none;">
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWBcWx4RJ38yH5_WKJ3yXenIYfEmobFKBXklCzAC5OZOD_6z7rTCqLdoAU4YPI2nITHz1jGBE8QtTPHLyrhEpcSJ4k3L1SNWuQag3YDlmoVQ9kmIBMURirWxE3pDzbfXWN6-O3HkPh-bPgWtqS4wIc9UdzaLS9ICy9Y7xUD5_DAMetyqgyjpKpH6dxMJrJ/s1600/x256%20DALY.png" alt="DAILYMOTION">
+                <div>
+                    <strong>DAILYMOTION | Sub Esp</strong>
+                    <p>Max. 1 ventanas emergentes</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLLV51SXWyGFW2hGJffHkak5vwdDhR7Jau_oRwALerxhifYOO6Vwk52-XnfiVj5qrDc-pUrtS2oMCoEiv6FVxef8JtpgdXH6L_WXOqBl_IUOJPdLNEaljHfeJR0XvAL1TPJAA8xhw0LMR8ScqP6p49eonDudpXoQpGjV-QjGLl2Q7L9udUQDE8pxSis0I/s200/ok.png" alt="OK">
+                <div>
+                    <strong>OK</strong>
+                    <p>Max. 0 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjRqMs_V2qoYIQ_TfofWlqWlN_-11VRECIz4WWVlYDnt4bPQXqZiGGJ5jtbAqm5ZTZBL6jqkzNNwEw9XnFPHlEHYVI9vtMPxMgEettLX_IWU_g3odo7Jku0H6t7RciTkgGeMalOwZxgKHfbLtsKkGqby-FXG7eQ0bM5qiRBjTsGqEU1EyMFPUVSIW3uHz/s1600/x256.png" alt="ABYSS">
+                <div>
+                    <strong>ABYSS</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKPcioM_75A3j4FpNmo5xTrjvKjwTlF7bWUuwtnHMplBVyZXFOnBtH7DtTOuMnfMGTkhuJ2CNIqsC4KuHTQvpu-HMI0KjREN2yLIMj9ubAAw5cE4XmwurYs-Z7RNHgNNoV9VAqd2GOu2ZIEA-1B5ccScgmELoa8o8wDJMPWpY1L-TefEKwHND3Gdw_C0s/s1600/filemoon.png" alt="FILEMOON">
+                <div>
+                    <strong>FILEMOON</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7mQTHZ6lKlu0ISZO4lt0IZ2MvKhuFyEdl-Nk9tuUvMA0We2I02gL2KxZXjzI-Yct2keQt9x9W2Q93LBQ8KZvHnookFwZhkICZ6Lc_MdEMEyeP8ZMIA8LGtpE7Uicv6KW1ypSvWykiE31FtpV7mflcyjWKLEjWSBAJWm6gAywbFiAOSgokDu9BghH6WrEK/s1600/SSSSSS.png" alt="STREAMWIS">
+                <div>
+                    <strong>STREAMWIS</strong>
+                    <p>Max. 4 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM3aphNboW5jj_WTneh3OQe12zOcU2BUshyfXxKxzG42Pc5StmSZMDo7boGG8OFUpQDbId7vA-DAZz2kgWnzuYRDsHFd5xw-eIBuax0shIYoMNpCpfxf64W9TZQQVRq0F9-Vd74SCHB0SUdpg_vBy9IE4e4IUWUCvEy5bCmEIm-L-uoOxfskDw59YwKVM/s1600/faviconV2.png" alt="VIDHIDE">
+                <div>
+                    <strong>VIDHIDE</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+            <div class="server-item" onclick="loadVideo('#')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzEW77ZsShPAsHVVsCPPK-L7WwmCGNLEpvWLPOJFdYQkMYpwJYcNgcu8YYIMo_05DQzs4_-S_yP4hSrS2CGvm7_kyi3o5cW9HEkdpsnEryLaTqoH1rXtfOYdbxGrvBIgTeXPxwJ7vX_0LAbhTwPAYXy2CW7_M-yXeSlkrLFH4Rfw2rYYVXlkU9euGfJMA/s200/streamtape.png" alt="STREAMTAPE">
+                <div>
+                    <strong>STREAMTAPE</strong>
+                    <p>Max. 2 ventanas de publicidad | HD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reproductor de Video -->
+    <div id="video-player" class="video-player" style="display: none;">
+        <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+        <button id="back-button" onclick="goBack()" class="back-button">&#8592; Volver</button>
+    </div>
+</div>
+
+<script src="https://driendf.github.io/DramaBreeze2/player v2.01 script.js"></script>
+
+</body>
+</html>
+
+
