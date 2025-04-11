@@ -1,17 +1,12 @@
 <script>
 (function() {
-    let adUrl = "https://paddlefidget.com/f4tjqapy6?key=e137dada6feb540b3b05ddb545e055da";
+    const adUrl = "https://paddlefidget.com/f4tjqapy6?key=e137dada6feb540b3b05ddb545e055da";
     let adCount = 0;
-    let maxAds = 5;
-    let interval = 2 * 60 * 1000; // 2 minutos en milisegundos
-
-    // Reiniciar el contador cada 2 minutos
-    setInterval(() => {
-        adCount = 0;
-    }, interval);
+    const maxAds = 10;
+    const adInterval = 10 * 60 * 1000; // 10 minutos
 
     // Crear el modal de anuncio
-    let adModal = document.createElement("div");
+    const adModal = document.createElement("div");
     adModal.id = "adModal";
     adModal.style.display = "none";
     adModal.style.position = "fixed";
@@ -24,7 +19,7 @@
     adModal.style.alignItems = "center";
     adModal.style.zIndex = "1000";
 
-    let adContent = document.createElement("div");
+    const adContent = document.createElement("div");
     adContent.id = "adContent";
     adContent.style.background = "white";
     adContent.style.padding = "20px";
@@ -34,7 +29,7 @@
     adContent.style.position = "relative";
     adContent.style.borderRadius = "10px";
 
-    let skipBtn = document.createElement("button");
+    const skipBtn = document.createElement("button");
     skipBtn.id = "skipAd";
     skipBtn.textContent = "Omitir en 5s";
     skipBtn.disabled = true;
@@ -50,7 +45,7 @@
     skipBtn.style.cursor = "not-allowed";
     skipBtn.style.opacity = "0.5";
 
-    let adFrame = document.createElement("iframe");
+    const adFrame = document.createElement("iframe");
     adFrame.id = "adFrame";
     adFrame.width = "100%";
     adFrame.height = "250px";
@@ -94,14 +89,18 @@
     // Cerrar anuncio al hacer clic en "Omitir"
     skipBtn.addEventListener("click", function() {
         adModal.style.display = "none";
-
-        // Mostrar otro anuncio si no se ha llegado al límite
-        if (adCount < maxAds) {
-            setTimeout(showAd, 10000); // 10 segundos después
-        }
     });
 
-    // Mostrar el primer anuncio al cargar la página
+    // Mostrar primer anuncio al cargar la página
     showAd();
+
+    // Programar anuncios cada 10 minutos
+    const intervalID = setInterval(() => {
+        if (adCount < maxAds) {
+            showAd();
+        } else {
+            clearInterval(intervalID); // detener si llegó al límite
+        }
+    }, adInterval);
 })();
 </script>
