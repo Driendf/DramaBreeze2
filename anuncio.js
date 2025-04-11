@@ -18,6 +18,7 @@
     adModal.style.justifyContent = "center";
     adModal.style.alignItems = "center";
     adModal.style.zIndex = "1000";
+    adModal.style.display = "flex"; // Mostrar flex desde el inicio (solo se ocultará si es necesario)
 
     const adContent = document.createElement("div");
     adContent.id = "adContent";
@@ -50,9 +51,8 @@
     adFrame.width = "100%";
     adFrame.height = "250px";
     adFrame.frameBorder = "0";
-    adFrame.src = "about:blank";
 
-    // Añadir elementos al modal
+    // Añadir elementos al DOM
     adContent.appendChild(skipBtn);
     adContent.appendChild(adFrame);
     adModal.appendChild(adContent);
@@ -61,8 +61,8 @@
     function showAd() {
         if (adCount >= maxAds) return;
 
-        adFrame.src = adUrl;
         adModal.style.display = "flex";
+        adFrame.src = adUrl;
         skipBtn.disabled = true;
         skipBtn.style.cursor = "not-allowed";
         skipBtn.style.opacity = "0.5";
@@ -86,21 +86,23 @@
         adCount++;
     }
 
-    // Cerrar anuncio al hacer clic en "Omitir"
     skipBtn.addEventListener("click", function() {
         adModal.style.display = "none";
+        adFrame.src = "about:blank";
     });
 
-    // Mostrar primer anuncio al cargar la página
-    showAd();
+    // Mostrar el primer anuncio al cargar
+    window.addEventListener("load", function () {
+        showAd();
 
-    // Programar anuncios cada 10 minutos
-    const intervalID = setInterval(() => {
-        if (adCount < maxAds) {
-            showAd();
-        } else {
-            clearInterval(intervalID); // detener si llegó al límite
-        }
-    }, adInterval);
+        // Programar anuncios cada 10 minutos
+        const intervalID = setInterval(() => {
+            if (adCount < maxAds) {
+                showAd();
+            } else {
+                clearInterval(intervalID);
+            }
+        }, adInterval);
+    });
 })();
 </script>
