@@ -1,5 +1,14 @@
+<script>
 (function() {
     let adUrl = "https://paddlefidget.com/f4tjqapy6?key=e137dada6feb540b3b05ddb545e055da";
+    let adCount = 0;
+    let maxAds = 5;
+    let interval = 2 * 60 * 1000; // 2 minutos en milisegundos
+
+    // Reiniciar el contador cada 2 minutos
+    setInterval(() => {
+        adCount = 0;
+    }, interval);
 
     // Crear el modal de anuncio
     let adModal = document.createElement("div");
@@ -55,12 +64,14 @@
     document.body.appendChild(adModal);
 
     function showAd() {
+        if (adCount >= maxAds) return;
+
         adFrame.src = adUrl;
         adModal.style.display = "flex";
         skipBtn.disabled = true;
         skipBtn.style.cursor = "not-allowed";
         skipBtn.style.opacity = "0.5";
-        
+
         let timeLeft = 5;
         skipBtn.textContent = `Omitir en ${timeLeft}s`;
 
@@ -76,16 +87,21 @@
                 skipBtn.style.opacity = "1";
             }
         }, 1000);
+
+        adCount++;
     }
 
     // Cerrar anuncio al hacer clic en "Omitir"
     skipBtn.addEventListener("click", function() {
         adModal.style.display = "none";
 
-        // Volver a mostrar el anuncio en 10 segundos
-        setTimeout(showAd, 10000);
+        // Mostrar otro anuncio si no se ha llegado al límite
+        if (adCount < maxAds) {
+            setTimeout(showAd, 10000); // 10 segundos después
+        }
     });
 
     // Mostrar el primer anuncio al cargar la página
     showAd();
 })();
+</script>
