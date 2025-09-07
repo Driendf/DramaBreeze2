@@ -6,80 +6,94 @@
   <title>Reproductor MultiIdioma</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    body, html {
+      margin: 0; padding: 0;
+      height: 100%; width: 100%;
+      overflow: hidden;
+    }
     body {
-      background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjejrlUECKjzB3spcADqSBA06KOFXpdnfZfvxjUGnboBwKhu2N6oMWGPBqm6xdftQYpzcTT7_Gtv002i5Vsby36g2KsGZQ_greEYUjvPdHOBNqwe0abkfBrcyDaGTTzBYuA9PBIHYPOTg_FviiW8etGdVhbhnjM8XWsJFz-guTqbRi0QtVa9pV0BCvUufM/w600/T1%20EP.000%20%20%28SubEsp%29%20Venganza%20Despu%C3%A9s%20del%20Renacimiento.jpg") no-repeat center center fixed;
+      background: url("https://wallpapers.com/images/high/4k-starcraft-93wkz56g20rw8b5p.webp") no-repeat center center fixed;
       background-size: cover;
     }
     .overlay {
       background: rgba(0,0,0,0.7);
-      backdrop-filter: blur(4px);
+      backdrop-filter: blur(6px);
     }
     .flag {
-      width: 50px; height: 35px;
+      width: 46px; height: 32px;
       cursor: pointer; border: 2px solid transparent;
-      border-radius: 50%; transition: transform 0.2s, border 0.2s;
+      border-radius: 6px; transition: transform 0.2s, border 0.2s;
     }
-    .flag:hover { transform: scale(1.1); }
+    .flag:hover { transform: scale(1.05); }
     .flag.active { border-color: #3b82f6; }
     .server-card {
-      background: rgba(20,20,30,0.9);
-      padding: 16px;
+      background: rgba(30,30,40,0.9);
+      padding: 14px;
       border-radius: 12px;
       cursor: pointer;
       transition: transform 0.2s, background 0.2s;
     }
     .server-card:hover {
-      transform: translateY(-4px);
-      background: rgba(40,40,60,0.95);
+      transform: translateY(-3px);
+      background: rgba(45,45,60,0.95);
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center overlay text-white">
+<body class="flex items-center justify-center overlay text-white">
 
-  <!-- Selector de idioma -->
-  <div class="mb-6 text-center">
-    <p class="mb-2 text-lg font-semibold">Selecciona Idioma</p>
-    <div class="flex gap-4 justify-center">
-      <img src="https://flagcdn.com/w40/jp.png" alt="Japón" class="flag" onclick="selectLanguage('jp', this)">
-      <img src="https://flagcdn.com/w40/mx.png" alt="Latino" class="flag" onclick="selectLanguage('latino', this)">
-      <img src="https://flagcdn.com/w40/es.png" alt="Castellano" class="flag" onclick="selectLanguage('castellano', this)">
+  <!-- Menú principal -->
+  <div id="mainScreen" class="flex flex-col items-center justify-center w-full h-full max-w-6xl p-6">
+
+    <!-- Idiomas -->
+    <div class="mb-6 text-center">
+      <p class="mb-3 text-lg font-semibold">Selecciona Idioma</p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <img src="https://flagcdn.com/w40/jp.png" alt="Japón" class="flag" onclick="selectLanguage('jp', this)">
+        <img src="https://flagcdn.com/w40/mx.png" alt="Latino" class="flag" onclick="selectLanguage('latino', this)">
+        <img src="https://flagcdn.com/w40/es.png" alt="Castellano" class="flag" onclick="selectLanguage('castellano', this)">
+      </div>
+    </div>
+
+    <!-- Lista de servidores -->
+    <div id="servers" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+      <!-- Se llena dinámicamente -->
     </div>
   </div>
 
-  <!-- Lista de servidores -->
-  <div id="servers" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl px-4">
-    <!-- Servidores se llenan dinámicamente -->
-  </div>
-
-  <!-- Reproductor modal -->
-  <div id="playerModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
-    <div class="relative w-full max-w-4xl">
-      <iframe id="videoFrame" class="w-full aspect-video rounded-lg shadow-lg" frameborder="0" allowfullscreen></iframe>
-      <button onclick="closePlayer()" class="absolute top-2 right-2 bg-red-600 px-3 py-1 rounded hover:bg-red-700">✖</button>
+  <!-- Pantalla del video -->
+  <div id="playerScreen" class="hidden fixed inset-0 bg-black flex items-center justify-center z-50">
+    <div class="relative w-full h-full flex items-center justify-center">
+      <iframe id="videoFrame" class="w-full h-full" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <button onclick="backToMenu()" class="absolute top-4 left-4 bg-white/20 hover:bg-white/40 px-4 py-2 rounded-xl backdrop-blur-sm text-white font-bold shadow-md">
+        ⬅ Atrás
+      </button>
     </div>
   </div>
 
   <script>
+    // Servidores por idioma
     const serversByLang = {
       jp: [
         { name: "Vidhide", desc: "Streaming MultiCalidad", url: "https://filelions.to/embed/95seffllsygs", logo: "https://img.icons8.com/color/48/play--v1.png" },
-        { name: "Streamwish", desc: "Streaming MultiCalidad", url: "https://iplayerhls.com/e/haikux6o9g34", logo: "https://img.icons8.com/color/48/video.png" },
-        { name: "Filemoon", desc: "Streaming HD", url: "https://filemoon.to/e/v114fg51zmtr", logo: "https://img.icons8.com/color/48/infinity.png" },
-        { name: "Voe", desc: "Streaming HD", url: "https://voe.sx/e/example", logo: "https://img.icons8.com/color/48/cloud.png" },
-        { name: "Download", desc: "Descargas Directas", url: "https://mega.nz/embed/example", logo: "https://img.icons8.com/color/48/download.png" }
+        { name: "Streamwish", desc: "Streaming MultiCalidad", url: "https://iplayerhls.com/e/haikux6o9g34", logo: "https://img.icons8.com/color/48/video.png" }
       ],
       latino: [
-        { name: "Dailymotion", desc: "Streaming HD", url: "https://geo.dailymotion.com/player.html?video=x9bsdxi", logo: "https://img.icons8.com/color/48/dailymotion.png" },
-        { name: "Filemoon", desc: "Streaming HD", url: "https://filemoon.to/e/v114fg51zmtr", logo: "https://img.icons8.com/color/48/infinity.png" }
+        { name: "Dailymotion", desc: "Streaming HD", url: "https://geo.dailymotion.com/player.html?video=x9bsdxi", logo: "https://img.icons8.com/color/48/dailymotion.png" }
       ],
       castellano: [
-        { name: "OK", desc: "Streaming HD", url: "https://ok.ru/videoembed/9317475617518", logo: "https://img.icons8.com/color/48/ok.png" },
-        { name: "Abyss", desc: "Streaming HD", url: "https://short.icu/I3ucH7Lc8", logo: "https://img.icons8.com/color/48/link.png" }
+        { name: "OK", desc: "Streaming HD", url: "https://ok.ru/videoembed/9317475617518", logo: "https://img.icons8.com/color/48/ok.png" }
       ]
     };
 
-    let currentLang = null;
+    let currentLang = "jp"; // por defecto el primero
 
+    // Mostrar idioma por defecto
+    window.onload = () => {
+      const firstFlag = document.querySelector('.flag');
+      selectLanguage(currentLang, firstFlag);
+    };
+
+    // Selección de idioma
     function selectLanguage(lang, el) {
       currentLang = lang;
       document.querySelectorAll(".flag").forEach(f => f.classList.remove("active"));
@@ -102,15 +116,18 @@
       });
     }
 
+    // Abrir video
     function openPlayer(url) {
+      document.getElementById("mainScreen").classList.add("hidden");
+      document.getElementById("playerScreen").classList.remove("hidden");
       document.getElementById("videoFrame").src = url;
-      document.getElementById("playerModal").classList.remove("hidden");
-      document.getElementById("playerModal").classList.add("flex");
     }
 
-    function closePlayer() {
+    // Volver al menú
+    function backToMenu() {
       document.getElementById("videoFrame").src = "";
-      document.getElementById("playerModal").classList.add("hidden");
+      document.getElementById("playerScreen").classList.add("hidden");
+      document.getElementById("mainScreen").classList.remove("hidden");
     }
   </script>
 </body>
