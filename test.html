@@ -1,134 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Reproductor MultiIdioma</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body, html {
-      margin: 0; padding: 0;
-      height: 100%; width: 100%;
-      overflow: hidden;
-    }
-    body {
-      background: url("https://wallpapers.com/images/high/4k-starcraft-93wkz56g20rw8b5p.webp") no-repeat center center fixed;
-      background-size: cover;
-    }
-    .overlay {
-      background: rgba(0,0,0,0.7);
-      backdrop-filter: blur(6px);
-    }
-    .flag {
-      width: 46px; height: 32px;
-      cursor: pointer; border: 2px solid transparent;
-      border-radius: 6px; transition: transform 0.2s, border 0.2s;
-    }
-    .flag:hover { transform: scale(1.05); }
-    .flag.active { border-color: #3b82f6; }
-    .server-card {
-      background: rgba(30,30,40,0.9);
-      padding: 14px;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.2s, background 0.2s;
-    }
-    .server-card:hover {
-      transform: translateY(-3px);
-      background: rgba(45,45,60,0.95);
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reproductor Anime Profesional</title>
+<style>
+:root{
+  --bg:#0f1720; --panel:#0b1220; --muted:#98a1ad; --accent:#00d084;
+  --glass: rgba(255,255,255,0.03); --shadow: 0 6px 18px rgba(2,6,23,0.6);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:#e6eef6}
+.container{display:flex;flex-direction:column;min-height:100vh;width:100%;padding:10px}
+.player-wrap{display:flex;flex-direction:row;gap:16px;max-width:1400px;margin:0 auto;width:100%}
+.main{flex:1;background:var(--panel);padding:16px;border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px}
+.screen{position:relative;border-radius:12px;overflow:hidden;background:#000;padding-top:56.25%}
+.screen iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.btn{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:8px 14px;border-radius:10px;cursor:pointer;color:var(--muted);transition:.2s}
+.btn:hover{background:rgba(0,208,132,0.1)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#32c6a1);color:#062528;border:none}
+.meta{margin-left:auto;font-size:14px;color:#fff;font-weight:500}
+#serverPanel{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.server-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.server-row strong{width:60px;color:#fff;min-width:60px}
+.server-row button{padding:4px 8px;border-radius:6px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.03);color:#e6eef6;cursor:pointer;transition:.2s}
+.server-row button.active{background:var(--accent);color:#062528;border:none}
+.server-row button:hover{background:rgba(0,208,132,0.2)}
+.sidebar{width:300px;background:var(--panel);padding:12px;border-radius:14px;overflow:auto;display:flex;flex-direction:column;gap:8px}
+.sidebar-header{font-size:16px;font-weight:600;color:#fff;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.1)}
+.group-btn{background:var(--glass);border:none;padding:6px 10px;border-radius:8px;color:var(--muted);cursor:pointer;transition:.2s;margin-top:6px}
+.group-btn:hover{background:rgba(255,255,255,0.08)}
+.group-menu{display:none;flex-direction:column;max-height:180px;overflow-y:auto;margin-bottom:10px;border:1px solid rgba(255,255,255,0.1);border-radius:8px}
+.group-menu button{padding:6px 10px;margin:2px;background:var(--glass);border:none;border-radius:6px;color:var(--muted);cursor:pointer;transition:.2s}
+.group-menu button.active{background:var(--accent);color:#062528}
+.ep-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(50px,1fr));gap:6px;padding-top:10px;max-height:400px;overflow-y:auto}
+.ep{background:var(--glass);padding:10px 0;border-radius:6px;text-align:center;cursor:pointer;color:var(--muted);transition:.2s;font-size:13px}
+.ep:hover{background:rgba(0,208,132,0.1)}
+.ep.active{outline:2px solid rgba(0,208,132,0.5);color:#fff;background:#112622}
+@media(max-width:960px){
+  .player-wrap{flex-direction:column}
+  .sidebar{width:100%;order:-1;max-height:250px}
+  #serverPanel{flex-direction:column}
+}
+</style>
 </head>
-<body class="flex items-center justify-center overlay text-white">
-
-  <!-- Menú principal -->
-  <div id="mainScreen" class="flex flex-col items-center justify-center w-full h-full max-w-6xl p-6">
-
-    <!-- Idiomas -->
-    <div class="mb-6 text-center">
-      <p class="mb-3 text-lg font-semibold">Selecciona Idioma</p>
-      <div class="flex gap-4 justify-center flex-wrap">
-        <img src="https://flagcdn.com/w40/jp.png" alt="Japón" class="flag" onclick="selectLanguage('jp', this)">
-        <img src="https://flagcdn.com/w40/mx.png" alt="Latino" class="flag" onclick="selectLanguage('latino', this)">
-        <img src="https://flagcdn.com/w40/es.png" alt="Castellano" class="flag" onclick="selectLanguage('castellano', this)">
-      </div>
+<body>
+<div class="container">
+<div class="player-wrap">
+  <div class="main">
+    <div class="screen" id="playerScreen">
+      <iframe id="iframePlayer" src="" allowfullscreen></iframe>
     </div>
-
-    <!-- Lista de servidores -->
-    <div id="servers" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
-      <!-- Se llena dinámicamente -->
+    <div class="controls">
+      <button class="btn" id="prevBtn">◀ Anterior</button>
+      <button class="btn primary" id="playBtn">Recargar</button>
+      <button class="btn" id="nextBtn">Siguiente ▶</button>
+      <div class="meta">Episodio <strong id="epNumber">1</strong></div>
     </div>
+    <div id="serverPanel"></div>
   </div>
+  <aside class="sidebar">
+    <div class="sidebar-header">Lista de Episodios</div>
+    <button class="group-btn active" id="groupBtn">1-20 ▼</button>
+    <div class="group-menu" id="groupMenu"></div>
+    <div class="ep-list" id="epList"></div>
+  </aside>
+</div>
+</div>
 
-  <!-- Pantalla del video -->
-  <div id="playerScreen" class="hidden fixed inset-0 bg-black flex items-center justify-center z-50">
-    <div class="relative w-full h-full flex items-center justify-center">
-      <iframe id="videoFrame" class="w-full h-full" frameborder="0" allowfullscreen loading="lazy"></iframe>
-      <button onclick="backToMenu()" class="absolute top-4 left-4 bg-white/20 hover:bg-white/40 px-4 py-2 rounded-xl backdrop-blur-sm text-white font-bold shadow-md">
-        ⬅ Atrás
-      </button>
-    </div>
-  </div>
+<script>
+const iframe = document.getElementById('iframePlayer');
+const epList = document.getElementById('epList');
+const groupBtn = document.getElementById('groupBtn');
+const groupMenu = document.getElementById('groupMenu');
+const epNumber = document.getElementById('epNumber');
+const serverPanel = document.getElementById('serverPanel');
 
-  <script>
-    // Servidores por idioma
-    const serversByLang = {
-      jp: [
-        { name: "Vidhide", desc: "Streaming MultiCalidad", url: "https://filelions.to/embed/95seffllsygs", logo: "https://img.icons8.com/color/48/play--v1.png" },
-        { name: "Streamwish", desc: "Streaming MultiCalidad", url: "https://iplayerhls.com/e/haikux6o9g34", logo: "https://img.icons8.com/color/48/video.png" }
-      ],
-      latino: [
-        { name: "Dailymotion", desc: "Streaming HD", url: "https://geo.dailymotion.com/player.html?video=x9bsdxi", logo: "https://img.icons8.com/color/48/dailymotion.png" }
-      ],
-      castellano: [
-        { name: "OK", desc: "Streaming HD", url: "https://ok.ru/videoembed/9317475617518", logo: "https://img.icons8.com/color/48/ok.png" }
-      ]
-    };
+const episodes = [];
+for(let i=1;i<=22;i++){
+  episodes.push({
+    id:i,
+    title:"Episodio "+i,
+    servers:{
+      latino:{Mega:"https://mega.nz/embed/D3hnjLDb", YouTube:"https://youtube.com/embed/D3hnjLDb"},
+      castellano:{Mega:"https://mega.nz/embed/D3hnjLDb"},
+      sub:{Mega:"https://mega.nz/embed/D3hnjLDb"}
+    }
+  });
+}
 
-    let currentLang = "jp"; // por defecto el primero
+// Episodio 3 con servidores propios
+episodes[2] = {
+  id:3,
+  title:"Episodio 3",
+  servers:{
+    latino:{Mega:"https://mega.nz/embed/TU_SERVER_LAT1", YouTube:"https://youtube.com/embed/TU_SERVER_LAT2"},
+    castellano:{Mega:"https://mega.nz/embed/TU_SERVER_CAS1"},
+    sub:{Mega:"https://www.mp4upload.com/embed-78kptpyotrle.html"}
+  }
+};
 
-    // Mostrar idioma por defecto
-    window.onload = () => {
-      const firstFlag = document.querySelector('.flag');
-      selectLanguage(currentLang, firstFlag);
-    };
+let current = 0;
+let currentGroup = 0;
 
-    // Selección de idioma
-    function selectLanguage(lang, el) {
-      currentLang = lang;
-      document.querySelectorAll(".flag").forEach(f => f.classList.remove("active"));
-      el.classList.add("active");
+// Carga de episodio
+function loadEpisode(index){
+  current = index;
+  epNumber.textContent = episodes[current].id;
+  renderEpisodes(currentGroup);
+  renderServerPanel();
+  // Reproduce automáticamente el primer servidor disponible del primer idioma
+  const firstLang = Object.keys(episodes[current].servers)[0];
+  const firstServer = Object.values(episodes[current].servers[firstLang])[0];
+  iframe.src = firstServer;
+}
 
-      const serversDiv = document.getElementById("servers");
-      serversDiv.innerHTML = "";
-      serversByLang[lang].forEach(s => {
-        const div = document.createElement("div");
-        div.className = "server-card flex items-center gap-3";
-        div.innerHTML = `
-          <img src="${s.logo}" alt="${s.name}" class="w-10 h-10"/>
-          <div>
-            <h3 class="font-bold">${s.name}</h3>
-            <p class="text-sm text-gray-300">${s.desc}</p>
-          </div>
-        `;
-        div.onclick = () => openPlayer(s.url);
-        serversDiv.appendChild(div);
+// Render lista de episodios
+function renderEpisodes(groupIndex){
+  epList.innerHTML = '';
+  const start = groupIndex*20;
+  const end = Math.min(start+20, episodes.length);
+  for(let i=start;i<end;i++){
+    const ep = episodes[i];
+    const div = document.createElement('div');
+    div.className = 'ep'+(i===current?' active':'');
+    div.textContent = ep.id;
+    div.addEventListener('click',()=>{ loadEpisode(i); });
+    epList.appendChild(div);
+  }
+}
+
+// Menu de grupos de 20 episodios
+function renderGroupMenu(){
+  groupMenu.innerHTML = '';
+  const totalGroups = Math.ceil(episodes.length/20);
+  for(let i=1;i<totalGroups;i++){
+    const btn = document.createElement('button');
+    btn.textContent = (i*20+1)+'-'+Math.min((i+1)*20, episodes.length);
+    btn.addEventListener('click', ()=>{
+      currentGroup = i;
+      renderEpisodes(i);
+      groupBtn.textContent = btn.textContent+' ▼';
+      Array.from(groupMenu.querySelectorAll('button')).forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      groupMenu.style.display='none';
+    });
+    groupMenu.appendChild(btn);
+  }
+}
+
+groupBtn.addEventListener('click',()=>{ groupMenu.style.display = groupMenu.style.display==='flex'?'none':'flex'; });
+
+// Render panel de servidores tipo SUB/LAT/CAST
+function renderServerPanel(){
+  serverPanel.innerHTML = '';
+  const langOrder = ['sub','latino','castellano'];
+  langOrder.forEach(lang=>{
+    const servers = episodes[current].servers[lang];
+    if(!servers) return;
+    const row = document.createElement('div');
+    row.className='server-row';
+    const label = document.createElement('strong');
+    label.textContent = lang.toUpperCase()+' :';
+    row.appendChild(label);
+    Object.entries(servers).forEach(([name,link])=>{
+      const btn = document.createElement('button');
+      btn.textContent = name;
+      btn.addEventListener('click', ()=>{
+        iframe.src = link;
+        Array.from(row.querySelectorAll('button')).forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
       });
-    }
+      row.appendChild(btn);
+    });
+    serverPanel.appendChild(row);
+  });
+}
 
-    // Abrir video
-    function openPlayer(url) {
-      document.getElementById("mainScreen").classList.add("hidden");
-      document.getElementById("playerScreen").classList.remove("hidden");
-      document.getElementById("videoFrame").src = url;
-    }
+// Botones de control
+document.getElementById('prevBtn').addEventListener('click',()=>{if(current>0) loadEpisode(current-1)});
+document.getElementById('nextBtn').addEventListener('click',()=>{if(current<episodes.length-1) loadEpisode(current+1)});
+document.getElementById('playBtn').addEventListener('click',()=>{iframe.src=iframe.src});
 
-    // Volver al menú
-    function backToMenu() {
-      document.getElementById("videoFrame").src = "";
-      document.getElementById("playerScreen").classList.add("hidden");
-      document.getElementById("mainScreen").classList.remove("hidden");
-    }
-  </script>
+renderEpisodes(currentGroup);
+renderGroupMenu();
+loadEpisode(current);
+</script>
 </body>
 </html>
