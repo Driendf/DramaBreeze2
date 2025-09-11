@@ -1,41 +1,20 @@
 const dataCatalogo = [
   {
-    title: "Romance en Seúl",
-    tags: ["Romance","Finalizado","Serie TV","Subtítulos","Coreano","HD"],
-    sinopsis: "Una historia de amor entre dos jóvenes que luchan por su destino.",
-    episodes: Array.from({length:26}, (_, i) => ({
-      title: "Episodio " + (i + 1),
-      link: `https://driendf.github.io/Seul_Ep${i + 1}.html`
-    })),
-    img: "https://blogger.googleusercontent.com/img/b/otra_imagen.jpg"
-  },
-  {
-    title: "Acción Extrema",
+    title: "Enmascarado: El Yerno Dominante",
     tags: ["Acción","Emisión","Serie TV","Doblaje","Chino","HD"],
     sinopsis: "Un agente secreto se enfrenta a peligros extremos en cada misión.",
     episodes: [
-      {title: "Episodio 1", link: "https://driendf.github.io/Accion_Ep1.html"},
-      {title: "Episodio 2", link: "https://driendf.github.io/Accion_Ep2.html"},
-      {title: "Episodio 3", link: "https://driendf.github.io/Accion_Ep3.html"},
-      {title: "Episodio 4", link: "https://driendf.github.io/Accion_Ep4.html"},
-      {title: "Episodio 5", link: "https://driendf.github.io/Accion_Ep5.html"},
-      {title: "Episodio 6", link: "https://driendf.github.io/Accion_Ep6.html"},
-      {title: "Episodio 7", link: "https://driendf.github.io/Accion_Ep7.html"},
-      {title: "Episodio 8", link: "https://driendf.github.io/Accion_Ep8.html"},
-      {title: "Episodio 9", link: "https://driendf.github.io/Accion_Ep9.html"},
-      {title: "Episodio 10", link: "https://driendf.github.io/Accion_Ep10.html"}
+      {title: "Episodio 1", link: "https://driendf.github.io/DramaBreeze2/T1 [120.120] (Latino) Enmascarado El Yerno Dominante (Doblado).html"}
     ],
-    img: "https://blogger.googleusercontent.com/img/b/otra_imagen2.jpg"
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXinD6aiCjaL4_GYXlzco0lD72xa9ENG2YrmluGgmBKXu4OOWRDTk6XM5TqwFdEqQjWW63jy9bi2_iDipi1Skibktw937VipIrVUDsvmj7q-uYXyouPXw-y_4hQj46y92fQzqH6oPtQ_Xe86pnHgyPFlSPiWlVY2HfChOJxFpNVMAjsVQJ0eD5fHhzLos/s200/0000.jpg"
   },
   {
-    title: "Misterio Nocturno",
+    title: "El Despertar del Comandante (Doblado)",
     tags: ["Suspenso","Pausado","Serie TV","Subtítulos","EEUU","HD"],
     sinopsis: "Detectives luchan por resolver crímenes que parecen imposibles.",
     episodes: [
-      {title: "Episodio 1", link: "https://driendf.github.io/Misterio_Ep1.html"},
-      {title: "Episodio 2", link: "https://driendf.github.io/Misterio_Ep2.html"},
-      {title: "Episodio 3", link: "https://driendf.github.io/Misterio_Ep3.html"}
+      {title: "Episodio 1", link: "https://driendf.github.io/DramaBreeze2/T1 [090.090] (SubEsp)(Latino) El Despertar del Comandante.html"}
     ],
-    img: "https://blogger.googleusercontent.com/img/b/otra_imagen3.jpg"
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf7hUnRdI1Rnn4bPwM0ewyMMG1c3JX80tT7RaOaVTsMkHJMG2ttPfakckN7szUt3sAqHzbMtZhJDSqypHu6-QnN7BJDtMppPfP3pNHSV8Klx2mdn3upNGHUyoEf_hfqKUMW10Yuh5sQePbpLEWu4kLGDR1XDUhKIkkkE-3YtfJjO5BbNC1ez9MzCmzoEg/s200/T1%20EP.000%20%28SubEsp%29%20El%20Despertar%20del%20Comandante.jpg"
   }
 ];
