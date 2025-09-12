@@ -1,183 +1,228 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reproductor Anime Profesional</title>
-<style>
-:root{
-  --bg:#0f1720; --panel:#0b1220; --muted:#98a1ad; --accent:#00d084;
-  --glass: rgba(255,255,255,0.03); --shadow: 0 6px 18px rgba(2,6,23,0.6);
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:#e6eef6}
-.container{display:flex;flex-direction:column;min-height:100vh;width:100%;padding:10px}
-.player-wrap{display:flex;flex-direction:row;gap:16px;max-width:1400px;margin:0 auto;width:100%}
-.main{flex:1;background:var(--panel);padding:16px;border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px}
-.screen{position:relative;border-radius:12px;overflow:hidden;background:#000;width:100%;aspect-ratio:16/9}
-.screen iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.btn{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:8px 14px;border-radius:10px;cursor:pointer;color:var(--muted);transition:.2s}
-.btn:hover{background:rgba(0,208,132,0.1)}
-.btn.primary{background:linear-gradient(90deg,var(--accent),#32c6a1);color:#062528;border:none}
-.meta{margin-left:auto;font-size:14px;color:#fff;font-weight:500}
-#serverPanel{display:flex;flex-direction:column;gap:8px;margin-top:10px}
-.server-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.server-row strong{width:60px;color:#fff;min-width:60px}
-.server-row button{padding:4px 8px;border-radius:6px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.03);color:#e6eef6;cursor:pointer;transition:.2s}
-.server-row button.active{background:var(--accent);color:#062528;border:none}
-.server-row button:hover{background:rgba(0,208,132,0.2)}
-.sidebar{width:300px;background:var(--panel);padding:12px;border-radius:14px;overflow:auto;display:flex;flex-direction:column;gap:8px}
-.sidebar-header{font-size:16px;font-weight:600;color:#fff;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.1)}
-.group-btn{background:var(--glass);border:none;padding:6px 10px;border-radius:8px;color:var(--muted);cursor:pointer;transition:.2s;margin-top:6px}
-.group-btn:hover{background:rgba(255,255,255,0.08)}
-.group-menu{display:none;flex-direction:column;max-height:180px;overflow-y:auto;margin-bottom:10px;border:1px solid rgba(255,255,255,0.1);border-radius:8px}
-.group-menu button{padding:6px 10px;margin:2px;background:var(--glass);border:none;border-radius:6px;color:var(--muted);cursor:pointer;transition:.2s}
-.group-menu button.active{background:var(--accent);color:#062528}
-.ep-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(50px,1fr));gap:6px;padding-top:10px;max-height:400px;overflow-y:auto}
-.ep{background:var(--glass);padding:10px 0;border-radius:6px;text-align:center;cursor:pointer;color:var(--muted);transition:.2s;font-size:13px}
-.ep:hover{background:rgba(0,208,132,0.1)}
-.ep.active{outline:2px solid rgba(0,208,132,0.5);color:#fff;background:#112622}
-@media(max-width:960px){
-  .player-wrap{flex-direction:column}
-  .sidebar{width:100%;order:-1;max-height:250px}
-  #serverPanel{flex-direction:column}
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reproductor estilo — Multi-Servidor (estética parecida a tus capturas)</title>
+  <meta name="description" content="Reproductor responsive con lista de servidores estilo tarjetas, scroll móvil y cuadrícula de miniaturas con play central." />
+  <style>
+    :root{
+      --bg:#081226; /* fondo principal */
+      --panel:#0b1724; /* paneles */
+      --card:#0e1a28; /* tarjetas */
+      --muted:rgba(255,255,255,0.18);
+      --accent:#2b9bff; /* azul scroll y acentos */
+      --accent-2:#23d28a; /* verde play */
+      --glass:rgba(255,255,255,0.02);
+      --border:rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:linear-gradient(180deg,#071426 0%,#061523 100%);color:#eaf3ff;display:flex;justify-content:center;padding:28px 18px;
+    }
+
+    .container{width:100%;max-width:1180px;background:var(--panel);border-radius:12px;padding:26px 26px 36px;border:1px solid rgba(255,255,255,0.02);box-shadow:0 10px 60px rgba(5,8,15,0.6);position:relative}
+
+    /* bandera centrada superior */
+    .flag-wrap{position:absolute;left:50%;transform:translateX(-50%);top:-26px;display:flex;flex-direction:column;align-items:center}
+    .flag-circle{width:74px;height:74px;border-radius:999px;background:linear-gradient(90deg,#16a34a,#ffffff,#ef4444);display:flex;align-items:center;justify-content:center;border:4px solid rgba(255,255,255,0.06);box-shadow:0 6px 24px rgba(11,37,66,0.6)}
+    .flag-dot{width:10px;height:10px;border-radius:999px;background:var(--accent);margin-top:6px;box-shadow:0 0 0 6px rgba(43,155,255,0.08)}
+
+    /* servidores: tarjetas grandes */
+    .servers{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:24px}
+    .server{display:flex;align-items:center;gap:16px;padding:18px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid var(--border);cursor:pointer;transition:transform .18s,box-shadow .18s}
+    .server:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(3,6,12,0.55)}
+    .server.active{border:1px solid rgba(43,155,255,0.9);box-shadow:0 8px 28px rgba(43,155,255,0.08)}
+
+    .sv-icon{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#071429 0%,#0f2336 100%);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);flex-shrink:0}
+    .sv-text{display:flex;flex-direction:column}
+    .sv-title{font-weight:800;letter-spacing:.4px;font-size:16px}
+    .sv-sub{font-size:13px;color:var(--muted);margin-top:6px}
+
+    /* columna izquierda en móvil (scroll) */
+    .mobile-scroll{display:none}
+
+    /* area del reproductor / miniaturas */
+    .player-area{margin-top:24px;border-radius:12px;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid var(--border);position:relative}
+    .back-btn{position:absolute;left:16px;top:16px;background:linear-gradient(90deg,var(--accent),#4aa6ff);padding:10px 14px;border-radius:26px;color:#041428;font-weight:700;border:none;box-shadow:0 8px 30px rgba(10,40,80,0.45);z-index:30}
+
+    .thumb-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;padding:32px}
+    .thumb{background-image:linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.5));height:68px;border-radius:6px;background-size:cover;background-position:center;filter:brightness(.8)}
+    .center-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+    .center-play .btn{width:100px;height:100px;border-radius:999px;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 40px rgba(3,10,20,0.6);pointer-events:auto;cursor:pointer}
+    .triangle{width:0;height:0;border-left:22px solid var(--accent-2);border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px}
+
+    /* indicador de seleccion debajo de las tarjetas (solo estetico) */
+    .selected-ind{display:flex;gap:10px;align-items:center;margin-top:14px}
+    .pill{padding:8px 12px;border-radius:999px;background:var(--glass);border:1px solid rgba(255,255,255,0.02);font-size:13px;color:var(--muted)}
+
+    /* responsive */
+    @media(max-width:780px){
+      .container{padding:20px 18px 26px}
+      .servers{display:block}
+      .server{margin-bottom:12px}
+      .thumb-grid{grid-template-columns:repeat(4,1fr)}
+      .flag-circle{width:64px;height:64px}
+    }
+    @media(max-width:420px){
+      body{padding:10px}
+      .container{padding:12px}
+      .servers{display:none}
+      .mobile-scroll{display:block;max-height:56vh;overflow:auto;padding-right:8px}
+      .mobile-scroll .server{margin-bottom:12px}
+      .thumb-grid{grid-template-columns:repeat(3,1fr);gap:5px;padding:12px}
+      .thumb{height:54px}
+
+      /* custom scrollbar */
+      .mobile-scroll::-webkit-scrollbar{width:10px}
+      .mobile-scroll::-webkit-scrollbar-thumb{background:var(--accent);border-radius:999px}
+      .mobile-scroll::-webkit-scrollbar-track{background:transparent}
+    }
+
+    /* utilidades */
+    .muted{color:var(--muted)}
+  </style>
 </head>
 <body>
-<div class="container">
-<div class="player-wrap">
-  <div class="main">
-    <div class="screen" id="playerScreen">
-      <iframe id="iframePlayer" src="" allowfullscreen allow="autoplay"></iframe>
+  <main class="container" role="main">
+    <div class="flag-wrap" aria-hidden>
+      <div class="flag-circle" title="Bandera"></div>
+      <div class="flag-dot"></div>
     </div>
-    <div class="controls">
-      <button class="btn" id="prevBtn">◀ Anterior</button>
-      <button class="btn primary" id="playBtn">Recargar</button>
-      <button class="btn" id="nextBtn">Siguiente ▶</button>
-      <div class="meta">Episodio <strong id="epNumber">1</strong></div>
+
+    <!-- Desktop server grid -->
+    <section class="servers" id="serversDesktop" aria-label="Servidores disponibles">
+      <!-- tarjetas inyectadas por JS -->
+    </section>
+
+    <!-- Mobile scroll list (aparece en pantallas pequeñas) -->
+    <section class="mobile-scroll" id="serversMobile" aria-label="Servidores móviles">
+      <!-- mismas tarjetas para mobile -->
+    </section>
+
+    <div class="selected-ind" id="selectedInfo">
+      <div class="pill" id="nowPlaying">No seleccionado</div>
+      <div class="pill muted" id="nowDesc">Selecciona una fuente para reproducir</div>
     </div>
-    <div id="serverPanel"></div>
-  </div>
-  <aside class="sidebar">
-    <div class="sidebar-header">Lista de Episodios</div>
-    <button class="group-btn active" id="groupBtn">1-20 ▼</button>
-    <div class="group-menu" id="groupMenu"></div>
-    <div class="ep-list" id="epList"></div>
-  </aside>
-</div>
-</div>
 
-<script>
-const iframe = document.getElementById('iframePlayer');
-const epList = document.getElementById('epList');
-const groupBtn = document.getElementById('groupBtn');
-const groupMenu = document.getElementById('groupMenu');
-const epNumber = document.getElementById('epNumber');
-const serverPanel = document.getElementById('serverPanel');
+    <section class="player-area" aria-label="Área de reproducción">
+      <button class="back-btn" id="backBtn">← Volver</button>
 
-const episodes = [];
-for(let i=1;i<=22;i++){
-  episodes.push({
-    id:i,
-    title:"Episodio "+i,
-    servers:{
-      latino:{Mega:"https://mega.nz/embed/D3hnjLDb", YouTube:"https://youtube.com/embed/D3hnjLDb"},
-      castellano:{Mega:"https://mega.nz/embed/D3hnjLDb"},
-      sub:{Mega:"https://mega.nz/embed/D3hnjLDb"}
+      <!-- cuadrícula de miniaturas estilo mosaico (estética de la captura) -->
+      <div class="thumb-grid" id="thumbGrid" aria-hidden>
+        <!-- thumbs generadas por JS (placeholders) -->
+      </div>
+
+      <!-- overlay play central -->
+      <div class="center-play">
+        <div class="btn" id="playOverlay" title="Reproducir">
+          <div class="triangle" aria-hidden></div>
+        </div>
+      </div>
+
+      <!-- Reproductor oculto (se puede mostrar en otra versión) -->
+      <video id="player" style="width:100%;height:0;display:block;opacity:0;" controls playsinline crossorigin="anonymous"></video>
+    </section>
+  </main>
+
+  <script>
+    // Fuentes de ejemplo — reemplaza estos URL por las tuyas (ideal alojar MP4/VTT en el mismo repo o en host con CORS permitido)
+    const SOURCES = [
+      { key:'vidhide', title:'VIDHIDE', subtitle:'Streaming MultiCalidad', color:'#11e6b2', poster:'https://picsum.photos/seed/vidhide/480/270', video:'https://storage.googleapis.com/coverr-main/mp4/Footboys.mp4' },
+      { key:'streamwish', title:'STREAMWISH', subtitle:'Streaming MultiCalidad', color:'#ffb86b', poster:'https://picsum.photos/seed/streamwish/480/270', video:'https://storage.googleapis.com/coverr-main/mp4/Tourism.mp4' },
+      { key:'filemoon', title:'FILEMOON', subtitle:'Streaming HD', color:'#8b5cff', poster:'https://picsum.photos/seed/filemoon/480/270', video:'https://storage.googleapis.com/coverr-main/mp4/Sea.mp4' },
+      { key:'voe', title:'VOE', subtitle:'Streaming HD', color:'#18a0ff', poster:'https://picsum.photos/seed/voe/480/270', video:'https://storage.googleapis.com/coverr-main/mp4/Footboys.mp4' },
+      { key:'download', title:'DOWNLOAD', subtitle:'Descargas Directas', color:'#ffd166', poster:'https://picsum.photos/seed/download/480/270', video:'https://storage.googleapis.com/coverr-main/mp4/Tourism.mp4' }
+    ];
+
+    const serversDesktop = document.getElementById('serversDesktop');
+    const serversMobile = document.getElementById('serversMobile');
+    const thumbGrid = document.getElementById('thumbGrid');
+    const nowPlaying = document.getElementById('nowPlaying');
+    const nowDesc = document.getElementById('nowDesc');
+
+    // genera tarjetas
+    function buildCard(src){
+      const el = document.createElement('div'); el.className='server'; el.dataset.key=src.key;
+      const icon = document.createElement('div'); icon.className='sv-icon'; icon.style.background = `linear-gradient(135deg, rgba(0,0,0,0.18), rgba(255,255,255,0.02))`; icon.innerHTML = `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" stroke="rgba(255,255,255,0.06)"/><path d="M8 12l3 2 5-4" stroke="${src.color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      const txt = document.createElement('div'); txt.className='sv-text'; txt.innerHTML = `<div class='sv-title'>${src.title}</div><div class='sv-sub'>${src.subtitle}</div>`;
+      el.appendChild(icon); el.appendChild(txt);
+      el.addEventListener('click', ()=>selectSource(src, el));
+      return el;
     }
-  });
-}
-episodes[2] = { // episodio 3 con servidores propios
-  id:3,
-  title:"Episodio 3",
-  servers:{
-    latino:{Mega:"https://mega.nz/embed/TU_SERVER_LAT1", YouTube:"https://youtube.com/embed/TU_SERVER_LAT2"},
-    castellano:{Mega:"https://mega.nz/embed/TU_SERVER_CAS1"},
-    sub:{Mega:"https://www.mp4upload.com/embed-78kptpyotrle.html"}
-  }
-};
 
-let current=0;
-let currentGroup=0;
+    // popular vista desktop + mobile
+    SOURCES.forEach(s=>{ serversDesktop.appendChild(buildCard(s)); serversMobile.appendChild(buildCard(s).cloneNode(true)); });
 
-function loadEpisode(index){
-  current=index;
-  epNumber.textContent=episodes[current].id;
-  renderEpisodes(currentGroup);
-  renderServerPanel();
-  const firstLang=Object.keys(episodes[current].servers)[0];
-  const firstServer=Object.values(episodes[current].servers[firstLang])[0];
-  iframe.src=firstServer;
-}
+    // generar miniaturas (placeholders o thumbnails reales si las provees)
+    function genThumbs(count=32){
+      for(let i=0;i<count;i++){
+        const t=document.createElement('div'); t.className='thumb';
+        // usa picsum para demo — reemplazar con tus miniaturas locales si quieres
+        t.style.backgroundImage = `url(https://picsum.photos/seed/thumb${i}/320/180)`;
+        thumbGrid.appendChild(t);
+      }
+    }
+    genThumbs(32);
 
-function renderEpisodes(groupIndex){
-  epList.innerHTML='';
-  const start=groupIndex*20;
-  const end=Math.min(start+20,episodes.length);
-  for(let i=start;i<end;i++){
-    const ep=episodes[i];
-    const div=document.createElement('div');
-    div.className='ep'+(i===current?' active':'');
-    div.textContent=ep.id;
-    div.addEventListener('click',()=>{loadEpisode(i);});
-    epList.appendChild(div);
-  }
-}
-
-function renderGroupMenu(){
-  groupMenu.innerHTML='';
-  const totalGroups=Math.ceil(episodes.length/20);
-  for(let i=1;i<totalGroups;i++){
-    const btn=document.createElement('button');
-    btn.textContent=(i*20+1)+'-'+Math.min((i+1)*20,episodes.length);
-    btn.addEventListener('click',()=>{
-      currentGroup=i;
-      renderEpisodes(i);
-      groupBtn.textContent=btn.textContent+' ▼';
-      Array.from(groupMenu.querySelectorAll('button')).forEach(b=>b.classList.remove('active'));
-      btn.classList.add('active');
-      groupMenu.style.display='none';
+    // reproducir al hacer click en el boton central
+    const playOverlay = document.getElementById('playOverlay');
+    const video = document.getElementById('player');
+    playOverlay.addEventListener('click', ()=>{
+      // si ya se seleccionó una fuente, reproducirla. Si no, seleccionar la primera
+      const active = document.querySelector('.server.active');
+      if(!active){ selectSource(SOURCES[0], document.querySelector('.server')); }
+      // mostrar el video (transición): hacemos visible el video y reproducimos
+      video.style.height='480px'; video.style.opacity='1'; video.src = video.dataset.src || video.src;
+      video.play().catch(()=>{});
+      // opcional: scroll hasta el reproductor en mobile
+      video.scrollIntoView({behavior:'smooth',block:'center'});
     });
-    groupMenu.appendChild(btn);
-  }
-}
-groupBtn.addEventListener('click',()=>{groupMenu.style.display = groupMenu.style.display==='flex'?'none':'flex';});
 
-function renderServerPanel(){
-  serverPanel.innerHTML='';
-  const langOrder=['sub','latino','castellano'];
-  langOrder.forEach(lang=>{
-    const servers=episodes[current].servers[lang];
-    if(!servers) return;
-    const row=document.createElement('div');
-    row.className='server-row';
-    const label=document.createElement('strong');
-    label.textContent=lang.toUpperCase()+' :';
-    row.appendChild(label);
-    Object.entries(servers).forEach(([name,link])=>{
-      const btn=document.createElement('button');
-      btn.textContent=name;
-      btn.addEventListener('click',()=>{
-        iframe.src=link;
-        Array.from(row.querySelectorAll('button')).forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-      row.appendChild(btn);
+    function selectSource(source, el){
+      // limpiar active
+      document.querySelectorAll('.server').forEach(s=>s.classList.remove('active'));
+      // si viene clon node (mobile), sincronizar
+      const all = [...document.querySelectorAll(`.server[data-key]`)];
+      all.forEach(n=>{ if(n.dataset.key===source.key){ n.classList.add('active'); } });
+
+      nowPlaying.textContent = source.title;
+      nowDesc.textContent = source.subtitle;
+
+      // cargar video en el elemento oculto (preparado para reproducir cuando muestran video)
+      video.pause();
+      video.src = source.video; // reemplazar si quieres multiple variants
+      video.poster = source.poster;
+      video.setAttribute('playsinline','');
+      video.load();
+
+      // mejorar experiencia: mover overlay play al reproducir
+      // hacemos pequeño efecto
+      document.querySelectorAll('.server').forEach(s=>s.style.opacity=1);
+
+      // por accesibilidad: foco al botón play
+      playOverlay.focus();
+    }
+
+    // botón volver (simula volver a lista anterior)
+    document.getElementById('backBtn').addEventListener('click', ()=>{
+      // idea: reiniciar selección y pausar
+      document.querySelectorAll('.server').forEach(s=>s.classList.remove('active'));
+      nowPlaying.textContent='No seleccionado'; nowDesc.textContent='Selecciona una fuente para reproducir';
+      video.pause(); video.style.opacity=0; video.style.height=0; video.removeAttribute('src');
+      // scroll to top
+      window.scrollTo({top:0,behavior:'smooth'});
     });
-    serverPanel.appendChild(row);
-  });
-}
 
-document.getElementById('prevBtn').addEventListener('click',()=>{if(current>0) loadEpisode(current-1)});
-document.getElementById('nextBtn').addEventListener('click',()=>{if(current<episodes.length-1) loadEpisode(current+1)});
-document.getElementById('playBtn').addEventListener('click',()=>{iframe.src=iframe.src});
+    // accesibilidad: permitir play/pause con espacio cuando el video está visible
+    document.addEventListener('keydown', e=>{
+      if(e.code==='Space' && document.activeElement!==document.body){ return; }
+      if(e.code==='Space'){ e.preventDefault(); if(!video.paused){ video.pause(); } else { video.play().catch(()=>{}); }}
+    });
 
-renderEpisodes(currentGroup);
-renderGroupMenu();
-loadEpisode(current);
-</script>
+    // nota: Picsum se usa solo para demo. Para GitHub Pages, reemplaza las URLs por archivos dentro del repo
+  </script>
 </body>
 </html>
