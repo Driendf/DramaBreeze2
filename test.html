@@ -8,14 +8,14 @@
 :root{--bg:#071426;--panel:#0b1724;--muted:rgba(255,255,255,0.18);--accent:#2b9bff;--accent2:#ff3ca6}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#eaf3ff;background:var(--bg)}
-.wrap{max-width:1180px;margin:18px auto;padding:0;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
+.wrap{max-width:100%;margin:0 auto;padding:0;border-radius:0;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
 .player-wrap{
   position:relative;
   border-radius:12px;
   overflow:hidden;
   background:#060914;
   width:100%;
-  height:56vh;
+  height:100vh;
   min-height:400px;
   display:flex;
   flex-direction:column;
@@ -184,3 +184,4 @@ renderServers();
 
 </body>
 </html>
+
