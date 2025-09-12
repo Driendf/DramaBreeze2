@@ -1,89 +1,94 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Reproductor Multi-Idioma / Multi-Servidor (iframe)</title>
-  <meta name="description" content="Reproductor embebido que muestra idiomas (banderas), servidores por idioma y abre enlaces en iframe. Optimizado para conexiones lentas." />
-  <style>
-    :root{--bg:#071426;--panel:#0b1724;--muted:rgba(255,255,255,0.18);--accent:#2b9bff;--accent2:#ff3ca6}
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,color-scheme:dark;color:#eaf3ff;background:var(--bg)}
-    .wrap{max-width:1180px;margin:18px auto;padding:22px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
-    .langs{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap;padding-top:6px}
-    .lang{width:72px;height:72px;border-radius:999px;display:flex;align-items:center;justify-content:center;flex-direction:column;cursor:pointer;border:3px solid transparent;transition:transform .12s,box-shadow .12s}
-    .lang .label{font-size:12px;margin-top:6px;opacity:.95}
-    .lang.selected{box-shadow:0 10px 40px rgba(12,20,36,0.6);border-color:var(--accent)}
-    .servers{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 6px}
-    .server{display:flex;gap:12px;align-items:center;padding:16px;border-radius:12px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02);cursor:pointer;transition:transform .12s}
-    .server:hover{transform:translateY(-4px)}
-    .server .ico{width:52px;height:52px;border-radius:999px;background:#071426;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;flex-shrink:0}
-    .server .title{font-weight:800}
-    .server .sub{font-size:13px;color:var(--muted);margin-top:6px}
-    .player-wrap{margin-top:18px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.02);background:#060914;position:relative;height:56vh;display:none}
-    .player-top{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
-    .btn{background:var(--panel);border:1px solid rgba(255,255,255,0.03);padding:8px 12px;border-radius:10px;color:var(--muted);cursor:pointer}
-    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#041428;font-weight:700;border:none}
-    iframe{width:100%;height:calc(100% - 54px);border:0;display:block}
-    .skeleton{position:absolute;inset:54px 0 0 0;background:linear-gradient(90deg,#0b1220 0,#091525 50%,#0b1220 100%);display:flex;align-items:center;justify-content:center}
-    .sk-card{width:80%;max-width:520px;height:60%;border-radius:12px;background:linear-gradient(180deg,#0b1229,#071220);display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center}
-    .sk-bar{height:12px;width:70%;background:rgba(255,255,255,0.03);border-radius:6px}
-    .sk-circle{width:84px;height:84px;border-radius:999px;background:rgba(255,255,255,0.03)}
-    @media(max-width:640px){
-      .lang{width:62px;height:62px}
-      .player-wrap{height:60vh}
-      .servers{grid-template-columns:1fr}
-    }
-    .muted{color:var(--muted)}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reproductor Multi-Idioma / Multi-Servidor</title>
+<style>
+:root{--bg:#071426;--panel:#0b1724;--muted:rgba(255,255,255,0.18);--accent:#2b9bff;--accent2:#ff3ca6}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#eaf3ff;background:var(--bg)}
+.wrap{max-width:1180px;margin:18px auto;padding:0;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
+.player-wrap{
+  position:relative;
+  border-radius:12px;
+  overflow:hidden;
+  background:#060914;
+  width:100%;
+  height:56vh;
+  min-height:400px;
+  display:flex;
+  flex-direction:column;
+}
+.player-top{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
+.btn{background:var(--panel);border:1px solid rgba(255,255,255,0.03);padding:8px 12px;border-radius:10px;color:var(--muted);cursor:pointer}
+#listsContainer{
+  flex:1;
+  overflow-y:auto;
+  padding:12px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.langs{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap}
+.lang{width:72px;height:72px;border-radius:999px;display:flex;align-items:center;justify-content:center;flex-direction:column;cursor:pointer;border:3px solid transparent;transition:transform .12s,box-shadow .12s}
+.lang .label{font-size:12px;margin-top:6px;opacity:.95}
+.lang.selected{box-shadow:0 10px 40px rgba(12,20,36,0.6);border-color:var(--accent)}
+.servers{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.server{display:flex;gap:8px;align-items:center;justify-content:center;padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02);cursor:pointer;flex-direction:column;text-align:center;transition:transform .12s}
+.server:hover{transform:translateY(-3px)}
+.server .ico{width:48px;height:48px;border-radius:12px;background:#071426;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;flex-shrink:0;margin-bottom:4px}
+iframe{width:100%;height:100%;border:0;display:none}
+.skeleton{position:absolute;inset:0;background:linear-gradient(90deg,#0b1220 0,#091525 50%,#0b1220 100%);display:flex;align-items:center;justify-content:center;display:none;z-index:2}
+.sk-card{width:80%;max-width:520px;height:60%;border-radius:12px;background:linear-gradient(180deg,#0b1229,#071220);display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center}
+.sk-bar{height:12px;width:70%;background:rgba(255,255,255,0.03);border-radius:6px}
+.sk-circle{width:84px;height:84px;border-radius:999px;background:rgba(255,255,255,0.03)}
+@media(max-width:640px){
+  .lang{width:60px;height:60px}
+  .servers{grid-template-columns:1fr}
+  .player-wrap{height:50vh;min-height:300px}
+}
+</style>
 </head>
 <body>
-  <div class="wrap" role="application">
 
-    <div id="menuWrap">
-      <div class="langs" id="langs" aria-label="Idiomas disponibles"></div>
-      <div id="serversContainer"></div>
+<div class="wrap">
+  <div class="player-wrap" id="playerWrap">
+    <div class="player-top">
+      <button class="btn" id="backBtn">← Atrás</button>
+      <div id="currentInfo" style="margin-left:6px;font-weight:700">Selecciona un servidor</div>
+      <a id="openNew" class="btn" target="_blank" rel="noopener">Abrir en nueva pestaña</a>
     </div>
 
-    <div class="player-wrap" id="playerWrap" aria-hidden="true" style="display:none">
-      <div class="player-top">
-        <div style="display:flex;gap:8px;align-items:center">
-          <button class="btn" id="backBtn">← Volver</button>
-          <div id="currentInfo" style="margin-left:6px;font-weight:700">Selecciona un servidor</div>
-        </div>
-        <div style="display:flex;gap:8px">
-          <a id="openNew" class="btn" target="_blank" rel="noopener">Abrir en nueva pestaña</a>
-          <button id="reloadBtn" class="btn">Recargar</button>
-        </div>
-      </div>
-
-      <div id="skeleton" class="skeleton" aria-hidden="true">
-        <div class="sk-card">
-          <div class="sk-circle"></div>
-          <div class="sk-bar"></div>
-          <div class="sk-bar" style="width:40%"></div>
-        </div>
-      </div>
-
-      <iframe id="playerFrame" src="" loading="lazy" allowfullscreen sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+    <div id="listsContainer">
+      <div class="langs" id="langs"></div>
+      <div id="serversContainer" class="servers"></div>
     </div>
 
-    <div style="margin-top:12px;font-size:13px;color:var(--muted)">Consejo: para usuarios con conexiones lentas (1 Mbps), sube miniaturas pequeñas y usa enlaces directos o servidores que permitan streaming.</div>
+    <div id="skeleton" class="skeleton">
+      <div class="sk-card">
+        <div class="sk-circle"></div>
+        <div class="sk-bar"></div>
+        <div class="sk-bar" style="width:40%"></div>
+      </div>
+    </div>
+    <iframe id="playerFrame" src="" allowfullscreen allow="autoplay"></iframe>
   </div>
+</div>
 
 <script>
 const DATA = [
   { idioma: 'Latino', code: 'LA', color: '#16a34a', servidores: [
-      { nombre: 'Demo 1', badge: 'MP4 directo', tipo:'iframe', link: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4' },
-      { nombre: 'Demo 2', badge: 'MP4 directo', tipo:'iframe', link: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4' }
+      { nombre: 'Ok.ru', link: '//ok.ru/videoembed/9223279020634?nochat=1' },
+      { nombre: 'Luluvdoo', link: 'https://luluvdoo.com/e/8zyhiscikhci' }
     ]
   },
   { idioma: 'Castellano', code: 'ES', color: '#2563eb', servidores: [
-      { nombre: 'Demo 3', badge: 'MP4 directo', tipo:'iframe', link: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4' }
+      { nombre: 'Embed69', link: 'https://embed69.org/f/1543542' }
     ]
   },
   { idioma: 'Japonés', code: 'JP', color: '#ef4444', servidores: [
-      { nombre: 'Demo 4', badge: 'MP4 directo', tipo:'iframe', link: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4' }
+      { nombre: 'Mega', link: 'https://mega.nz/embed/qgpTXb5b#T3PQwUTZQ-IWWWfja3dXYd-ebTDTK32pa6SpGKbbtIY' }
     ]
   }
 ];
@@ -93,74 +98,71 @@ const serversContainer = document.getElementById('serversContainer');
 const playerWrap = document.getElementById('playerWrap');
 const playerFrame = document.getElementById('playerFrame');
 const skeleton = document.getElementById('skeleton');
-const backBtn = document.getElementById('backBtn');
 const currentInfo = document.getElementById('currentInfo');
 const openNew = document.getElementById('openNew');
-const reloadBtn = document.getElementById('reloadBtn');
-const menuWrap = document.getElementById('menuWrap');
+const backBtn = document.getElementById('backBtn');
+const listsContainer = document.getElementById('listsContainer');
 
 let currentLangIndex = 0;
-let currentServer = null;
 
+// Render idiomas
 function renderLangs(){
   langsWrap.innerHTML = '';
   DATA.forEach((d, idx)=>{
     const el = document.createElement('div');
-    el.className = 'lang' + (idx===currentLangIndex? ' selected':'');
+    el.className = 'lang'+(idx===currentLangIndex?' selected':'');
     el.title = d.idioma;
-    el.setAttribute('role','button');
     el.innerHTML = `<div style="width:52px;height:52px;border-radius:999px;background:${d.color};display:flex;align-items:center;justify-content:center;font-weight:800;color:#041428">${d.code}</div><div class="label">${d.idioma}</div>`;
     el.addEventListener('click', ()=>{
-      currentLangIndex = idx; currentServer = null; renderLangs(); renderServers(); hidePlayer();
-      setTimeout(()=>{ serversContainer.scrollIntoView({behavior:'smooth',block:'start'}); }, 80);
+      currentLangIndex = idx;
+      renderLangs();
+      renderServers();
     });
     langsWrap.appendChild(el);
   });
 }
 
+// Render servidores
 function renderServers(){
   serversContainer.innerHTML = '';
   const list = DATA[currentLangIndex].servidores;
-  const wrap = document.createElement('div'); wrap.className = 'servers';
-  const langColor = DATA[currentLangIndex].color || '#071426';
   list.forEach(s => {
-    const card = document.createElement('div'); card.className = 'server';
-    card.innerHTML = `<div class="ico" style="background:${langColor}">${s.nombre.charAt(0)}</div><div style="flex:1"><div class="title">${s.nombre}</div><div class="sub">${s.badge}</div></div>`;
+    const card = document.createElement('div');
+    card.className = 'server';
+    card.innerHTML = `<div class="ico" style="background:${DATA[currentLangIndex].color}">${s.nombre.charAt(0)}</div><div class="title">${s.nombre}</div>`;
     card.addEventListener('click', ()=>{ openServer(s); });
-    wrap.appendChild(card);
+    serversContainer.appendChild(card);
   });
-  serversContainer.appendChild(wrap);
 }
 
+// Abrir servidor
 function openServer(s){
-  currentServer = s;
-  menuWrap.style.display = 'none';
-  playerWrap.setAttribute('aria-hidden','false');
-  playerWrap.style.display = 'block';
-  currentInfo.textContent = DATA[currentLangIndex].idioma + ' — ' + s.nombre;
-  openNew.href = s.link;
+  listsContainer.style.display = 'none';
   skeleton.style.display = 'flex';
   playerFrame.style.display = 'none';
+  currentInfo.textContent = DATA[currentLangIndex].idioma + ' — ' + s.nombre;
+  openNew.href = s.link;
   setTimeout(()=>{
     playerFrame.src = s.link;
-    playerFrame.onload = ()=>{ skeleton.style.display = 'none'; playerFrame.style.display = 'block'; };
-  }, 300);
+    playerFrame.onload = ()=>{
+      skeleton.style.display = 'none';
+      playerFrame.style.display = 'block';
+    };
+  },300);
 }
 
-function hidePlayer(){
-  try{ playerFrame.src = ''; } catch(e){}
-  skeleton.style.display = 'none';
+// Volver a lista
+backBtn.addEventListener('click', ()=>{
+  playerFrame.src = '';
   playerFrame.style.display = 'none';
-  playerWrap.setAttribute('aria-hidden','true');
-  playerWrap.style.display = 'none';
+  skeleton.style.display = 'none';
+  listsContainer.style.display = 'flex';
   currentInfo.textContent = 'Selecciona un servidor';
-  menuWrap.style.display = 'block';
-}
+});
 
-backBtn.addEventListener('click', ()=>{ hidePlayer(); currentServer = null; window.scrollTo({top:0,behavior:'smooth'}); });
-reloadBtn.addEventListener('click', ()=>{ if(currentServer){ skeleton.style.display='flex'; playerFrame.style.display='none'; playerFrame.src = currentServer.link; } });
-
-renderLangs(); renderServers(); hidePlayer();
+renderLangs();
+renderServers();
 </script>
+
 </body>
 </html>
