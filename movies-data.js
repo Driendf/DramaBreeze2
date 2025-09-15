@@ -1,3 +1,4 @@
+const dataCatalogo = [
 
   {
     title: "Tronos en la Sombra",
@@ -808,4 +809,8 @@
       {title: "Episodio 1", link: ""}
     ],
     img: ""
-  },
+  }
+    ],
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf7hUnRdI1Rnn4bPwM0ewyMMG1c3JX80tT7RaOaVTsMkHJMG2ttPfakckN7szUt3sAqHzbMtZhJDSqypHu6-QnN7BJDtMppPfP3pNHSV8Klx2mdn3upNGHUyoEf_hfqKUMW10Yuh5sQePbpLEWu4kLGDR1XDUhKIkkkE-3YtfJjO5BbNC1ez9MzCmzoEg/s200/T1%20EP.000%20%28SubEsp%29%20El%20Despertar%20del%20Comandante.jpg"
+  }
+];
