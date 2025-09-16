@@ -543,7 +543,7 @@ const dataCatalogo = [
     tags: ["Acción","Emisión","Serie TV","Doblaje","Chino","HD"],
     sinopsis: "Un agente secreto se enfrenta a peligros extremos en cada misión.",
     episodes: [
-      {title: "Episodio 1", link: "https://driendf.github.io/DramaBreeze2/T1 [120.120] (Latino) Enmascarado El Yerno Dominante (Doblado).html"}
+      {title: "Episodio 1", link: "https://isekaicoleccion.blogspot.com/p/el-contraataque-de-la-esposa-gorda.html"}
     ],
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhG-J_BMX307cR_wUQ2AEED5PqkTJwKerIVit5LflchY_MUpZ9MI1erlYxTyEfU4MMu7nnWybNmQMNTxO0Xf0cK7hm24ihiPpc5ZArGpE2MsYaTa3ixQWz79HmG15UW1iJNwtV2HWxCxbakMYebM-92L5cr5MDZ5mOKw8IfxBABfBunyS78HtRo-V1h8Kg/w600/T1%20EP.000%20%28SubEsp%29%20El%20Contraataque%20De%20La%20Esposa%20Gorda.jpg"
   },
@@ -818,4 +818,5 @@ const dataCatalogo = [
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-MYrM9ZPtSmpI1dli8Ym-tgyhYMiA-Q2VzjzduZcuvg-jNIv6eACUGfbIE3yk2yQsKtlASf_0qWn94idDakDVcUWhGMq9weSp0Sm9BA8ejYPNqtnU1xqeRhq0smHah1qp5tGaKt7m57PDmxQPwtRBtoxxyZyHlc_lz6UnfHej5PTjUjujNoq3Z7S3jpk/w600/T1%20EP.000%20%28Latino%29%20Tronos%20en%20la%20Sombra%20-%20Shadowed%20Thrones.jpg"
   }
 ];
+
 
