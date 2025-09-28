@@ -1,18 +1,8 @@
-// Crear el array global si no existe todavía
 window.dataCatalogo = window.dataCatalogo || [];
 
-// Agregar el contenido de este archivo
-window.dataCatalogo.push(...[
-  {
-    title: "One Piece",
-    category: "anime",
-    img: "https://i.ibb.co/vHJwc0y/onepiece.jpg",
-    tags: ["Acción", "Aventura"]
-  },
-  {
-    title: "Naruto",
-    category: "anime",
-    img: "https://i.ibb.co/xmFh7j3/naruto.jpg",
-    tags: ["Acción", "Ninja"]
-  }
-]);
+window.dataCatalogo.push(
+
+{"title":"Señor Reina o Mr. Queen","img":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR1WOKKZ5fd6ClPH_WSVlgkuEaQ38riczd6ZohhDYMQjopanfqbeDCwy682NlOFyAkRaBJINK9LN7ii_bv3u3mrjE2sh3-g0ScOlgfpSm5hGVF11IrbZOx5sFzkRF17k0PW0kIb1ll7qYnEqziVMdheqk484GI4i8h5k539n9-2ZzmIOOSbqhdRww-PgI/s900/nzMUCTgifscseMV62JjZE3ilOSx.jpg","category":"doramas","tags":["doramas"],"sinopsis":"Tras despertar en el cuerpo de una reina del siglo XIX, un chef debe lidiar con la corte y encontrar una forma de regresar al presente... y recuperar su propia vida.","seasons":[{"episodes":[{"title":"Señor Reina o Mr. Queen 1","link":"https://geo.dailymotion.com/player.html?video=k3h4Eu2NpJrx1jBPosg"},{"title":"Señor Reina o Mr. Queen 2","link":"https://geo.dailymotion.com/player.html?video=k1FWJEPpigmB9DBPose"},{"title":"Señor Reina o Mr. Queen 3","link":"https://geo.dailymotion.com/player.html?video=k42bzAUqlC63ozBPosc"},{"title":"Señor Reina o Mr. Queen 4","link":"https://geo.dailymotion.com/player.html?video=k6IuFMT4WhCBh5BPosk"},{"title":" Señor Reina o Mr. Queen 5","link":"https://geo.dailymotion.com/player.html?video=k4bqlIv0TMvOADBPosi"},{"title":" Señor Reina o Mr. Queen 6","link":"https://geo.dailymotion.com/player.html?video=k2sOlavxrghjrZBPpzq"},{"title":" Señor Reina o Mr. Queen 7","link":"https://geo.dailymotion.com/player.html?video=kUCxCid48vz5e1BPpzu"},{"title":" Señor Reina o Mr. Queen 8","link":"https://geo.dailymotion.com/player.html?video=k41I4bOOqDqv8sBOIdq"},{"title":" Señor Reina o Mr. Queen 9","link":"https://geo.dailymotion.com/player.html?video=k1kNq2waJO1xypBOIdm"},{"title":" Señor Reina o Mr. Queen 10","link":"https://geo.dailymotion.com/player.html?video=k6v4CYN2LzdIjxBPpzs"},{"title":" Señor Reina o Mr. Queen 11","link":"https://geo.dailymotion.com/player.html?video=kXPC1QabF3LIKsBQ7Ve"},{"title":" Señor Reina o Mr. Queen 12","link":"https://geo.dailymotion.com/player.html?video=k7FSRDR8624L9fBOIdy"},{"title":" Señor Reina o Mr. Queen 13","link":"https://geo.dailymotion.com/player.html?video=knXcGyIGK8hryKBOIdC"},{"title":" Señor Reina o Mr. Queen 14","link":"https://geo.dailymotion.com/player.html?video=k5k2wGL0VKNooYBOIdA"},{"title":" Señor Reina o Mr. Queen 15","link":"https://geo.dailymotion.com/player.html?video=x98whe4"},{"title":" Señor Reina o Mr. Queen 16","link":"https://geo.dailymotion.com/player.html?video=x98whe8"},{"title":" Señor Reina o Mr. Queen 17","link":"https://geo.dailymotion.com/player.html?video=x98whe6"},{"title":" Señor Reina o Mr. Queen 18","link":"https://geo.dailymotion.com/player.html?video=x98whec"},{"title":" Señor Reina o Mr. Queen 19","link":"https://geo.dailymotion.com/player.html?video=x98whea"},{"title":" Señor Reina o Mr. Queen 20","link":"https://geo.dailymotion.com/player.html?video=x98whee"}]}]}
+
+
+);
