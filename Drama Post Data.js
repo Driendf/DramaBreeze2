@@ -1,4 +1,7 @@
-const dataCatalogo = [
+window.dataCatalogo = window.dataCatalogo || [];
+
+window.dataCatalogo.push(
+
 {"title":"La Traicion del Amor","img":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcJMeJK4-SpdgCsWxq3GBP_n_hLcQMGpyhMo-5z8Yh26AXvs4d_wWWJSk3jD3yaa2bSnNNw3Lf-5CUT2Z18UbY-LgvKknhmqW2vHghdib20fzya3zeWvZfpMU3_Zz4pB8DWAIsqhItJFG1uvRAM6LacuxL9rwMSjr1ziJnCqWBaNHqJ7KXlLWu4HG2BfM/s800/T1%20EP.000%20%28Latino%29%20La%20Traici%C3%B3n%20del%20Amor.%20Fierce%20Grace.%20Braving%20the%20Betrayal.jpg","category":"drama","tags":["drama"],"sinopsis":"nada","seasons":[{"episodes":[{"title":"La Traicion del Amor","link":"https://driendf.github.io/T1 [106.106] (Latino) La Traición del Amor (Doblado).html"}]}]},
 {"title":"A Estrella para toda mi vida","img":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYgLUJVgELPEHrHd52zHdjwpDFMl1DxkH0YQFoscaTvDeIN669wxPuSbKw5oyKLcVPocXw9hBOO4F7SMSn9kTMLHx1in2EnVcpRUGogkeL1rQB5_Qlr5G_l_dES_zywwk95_ZSneHsQxa52bRj4lLbjGtNApY1qZ5Tf5bMhDReopj6MEZsaSNNyDLRUiw/s540/T1%20EP.000%20%28SubEsp%29%20A%20Estrella%20para%20toda%20mi%20vida.jpg","category":"drama","tags":["drama"],"sinopsis":"Una mujer de mediana edad que teme al matrimonio se convierte accidentalmente en una princesa que es una lamedora en un mundo dominado por mujeres. Hay innumerables hombres guapos en el harén, y su marido es aún más guapo. Ella le da una patada al cabrón y disfruta sola de miles de hombres guapos. Es tan genial","seasons":[{"episodes":[{"title":"A Estrella para toda mi vida","link":"https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html"}]}]},
 {"title":"El Duque Poderoso","img":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFkT3W0f3IgKFrDre7198n14XsOeAyuGVXYs_TTb0dkrMTZFKpAxYWnkGiYvFK88TsToGSAGT-6opC-8ulc7fWlIgsvvYIUu2CSCn66mmps_F-6TI2XTsXwnoopSRvsIMYr0KQ1oXHB8uqdBLYJmEfoCrwKUehPiSYUrMRBghnHxzPJeMWdU3xGqJMN3s/s800/0000.jpg","category":"drama","tags":["drama"],"sinopsis":"Debido al abandono de su padre, Felipe Reyes vino a la Ciudad Oriental con su madre y su hermana para ganarse la vida. Inesperadamente su madre fue incriminada por alguien y se vio obligada a saltar de un edificio para suicidarse. Afortunadamente, durante este proceso apareció un hombre misterioso quien salvó a Felipe y lo llevó al ejército. Luchando en la guerra por diez años, Felipe se ascendió al Dios de Guerra desde un soldado, y se ha convertido en un duque del país.","seasons":[{"episodes":[{"title":"El Duque Poderoso","link":"https://driendf.github.io/T1 [090.090] (SubEsp) El Duque Poderoso.html"}]}]},
@@ -34,4 +37,5 @@ const dataCatalogo = [
 
 
 ];
+
 
