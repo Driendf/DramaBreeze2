@@ -2,7 +2,7 @@
 var dataCatalogo = [
   {
     title: "Serie de Ejemplo 1",
-    img: "https://via.placeholder.com/300x450.png?text=Serie+1",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMKgOmGUrdVmlPmThbWgSR6ynWhhArLqGhKX-cd6-e30Plw29BsMXi_xv0HnqDccd4yDCbSt5ee34F5X3_tcGRpyzGW4unqc9YpYi1IIcY5TVtXhJENWP9Qob98E2cQY-IL9w_OgM91jnMQUQ63FQNPjyZez-Ykh-HNnyvDUfkETrLoICi26JZEgazzXk/s840/FUe9P3T8dPwUhZWf-croppedlr24q-.jpg",
     category: "series",
     sinopsis: "Esta es la sinopsis de una increíble serie que te mantendrá al borde de tu asiento. Aventura, misterio y drama se entrelazan en cada episodio.",
     tags: ["Drama", "Misterio", "Acción"],
@@ -109,7 +109,7 @@ var dataCatalogo = [
   },
   {
     title: "Serie de Ejemplo 2",
-    img: "https://via.placeholder.com/300x450.png?text=Serie+2",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMKgOmGUrdVmlPmThbWgSR6ynWhhArLqGhKX-cd6-e30Plw29BsMXi_xv0HnqDccd4yDCbSt5ee34F5X3_tcGRpyzGW4unqc9YpYi1IIcY5TVtXhJENWP9Qob98E2cQY-IL9w_OgM91jnMQUQ63FQNPjyZez-Ykh-HNnyvDUfkETrLoICi26JZEgazzXk/s840/FUe9P3T8dPwUhZWf-croppedlr24q-.jpg",
     category: "series",
     sinopsis: "Una historia emocionante llena de giros inesperados y personajes memorables que te atraparán desde el primer episodio.",
     tags: ["Romance", "Comedia", "Drama"],
@@ -153,7 +153,7 @@ var dataCatalogo = [
   },
   {
     title: "Anime de Ejemplo",
-    img: "https://via.placeholder.com/300x450.png?text=Anime+1",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMKgOmGUrdVmlPmThbWgSR6ynWhhArLqGhKX-cd6-e30Plw29BsMXi_xv0HnqDccd4yDCbSt5ee34F5X3_tcGRpyzGW4unqc9YpYi1IIcY5TVtXhJENWP9Qob98E2cQY-IL9w_OgM91jnMQUQ63FQNPjyZez-Ykh-HNnyvDUfkETrLoICi26JZEgazzXk/s840/FUe9P3T8dPwUhZWf-croppedlr24q-.jpg",
     category: "anime",
     sinopsis: "Un anime épico con batallas emocionantes y una historia profunda que explora temas de amistad, sacrificio y superación.",
     tags: ["Acción", "Aventura", "Fantasía"],
@@ -197,7 +197,7 @@ var dataCatalogo = [
   },
   {
     title: "Película de Ejemplo",
-    img: "https://via.placeholder.com/300x450.png?text=Pelicula+1",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMKgOmGUrdVmlPmThbWgSR6ynWhhArLqGhKX-cd6-e30Plw29BsMXi_xv0HnqDccd4yDCbSt5ee34F5X3_tcGRpyzGW4unqc9YpYi1IIcY5TVtXhJENWP9Qob98E2cQY-IL9w_OgM91jnMQUQ63FQNPjyZez-Ykh-HNnyvDUfkETrLoICi26JZEgazzXk/s840/FUe9P3T8dPwUhZWf-croppedlr24q-.jpg",
     category: "peliculas",
     sinopsis: "Una película emocionante con efectos visuales impresionantes y una historia que te mantendrá pegado a la pantalla hasta el final.",
     tags: ["Acción", "Ciencia Ficción", "Thriller"],
@@ -241,7 +241,7 @@ var dataCatalogo = [
   },
   {
     title: "Dorama de Ejemplo",
-    img: "https://via.placeholder.com/300x450.png?text=Dorama+1",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMKgOmGUrdVmlPmThbWgSR6ynWhhArLqGhKX-cd6-e30Plw29BsMXi_xv0HnqDccd4yDCbSt5ee34F5X3_tcGRpyzGW4unqc9YpYi1IIcY5TVtXhJENWP9Qob98E2cQY-IL9w_OgM91jnMQUQ63FQNPjyZez-Ykh-HNnyvDUfkETrLoICi26JZEgazzXk/s840/FUe9P3T8dPwUhZWf-croppedlr24q-.jpg",
     category: "doramas",
     sinopsis: "Un dorama romántico que explora las complejidades del amor moderno en la sociedad coreana con personajes entrañables.",
     tags: ["Romance", "Drama", "Comedia"],
@@ -285,7 +285,7 @@ var dataCatalogo = [
   },
   {
     title: "Drama Shorty de Ejemplo",
-    img: "https://via.placeholder.com/300x450.png?text=Drama+1",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMKgOmGUrdVmlPmThbWgSR6ynWhhArLqGhKX-cd6-e30Plw29BsMXi_xv0HnqDccd4yDCbSt5ee34F5X3_tcGRpyzGW4unqc9YpYi1IIcY5TVtXhJENWP9Qob98E2cQY-IL9w_OgM91jnMQUQ63FQNPjyZez-Ykh-HNnyvDUfkETrLoICi26JZEgazzXk/s840/FUe9P3T8dPwUhZWf-croppedlr24q-.jpg",
     category: "drama",
     sinopsis: "Un drama corto pero impactante que aborda temas sociales importantes con una narrativa concisa y poderosa.",
     tags: ["Drama", "Social", "Corto"],
@@ -328,3 +328,4 @@ var dataCatalogo = [
     ]
   }
 ];
+
