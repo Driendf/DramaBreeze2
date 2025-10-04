@@ -7,7 +7,7 @@ window.dataCatalogo.push(
   "title": "Zorro",
   "link": "https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html",
   "link2": "https://driendf.github.io/T1 [075.075] (SubEsp) La Venganza del Zorro.html"
-}
+},
 {"title":"Zorro","link":"https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html"}
 ]},
 {"episodes":[
