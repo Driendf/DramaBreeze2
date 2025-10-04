@@ -12,8 +12,9 @@ window.dataCatalogo.push(
         {
           "title": "Zorro - Episodio 1",
           "links": [
-            "https://embed69.org/f/tt31844643-1x01/",
-            "https://mivalyo.com/embed/5050yhjk96os"
+            "https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html",
+			"https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html",
+            "https://driendf.github.io/T1 [075.075] (SubEsp) La Venganza del Zorro.html"
           ]
         },
         {
@@ -38,4 +39,3 @@ window.dataCatalogo.push(
   ]
 }
 );
-
