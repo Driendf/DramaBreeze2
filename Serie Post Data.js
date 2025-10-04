@@ -1,8 +1,8 @@
-// ARCHIVO: Serie Post Data.js
+// ARCHIVO: SeriesPostData.js
 var dataCatalogo = [
   {
-    title: "Nombre de la Serie de Ejemplo",
-    img: "https://via.placeholder.com/300x450.png?text=Poster+Serie",
+    title: "Serie de Ejemplo 1",
+    img: "https://via.placeholder.com/300x450.png?text=Serie+1",
     category: "series",
     sinopsis: "Esta es la sinopsis de una increíble serie que te mantendrá al borde de tu asiento. Aventura, misterio y drama se entrelazan en cada episodio.",
     tags: ["Drama", "Misterio", "Acción"],
@@ -11,45 +11,320 @@ var dataCatalogo = [
       {
         season: 1,
         episodes: [
-          {
-            episode: 1,
-            title: "El Comienzo de Todo",
-            // NUEVA ESTRUCTURA PARA IDIOMAS
-            languages: {
-              "es": "URL_DIRECTA_DEL_VIDEO_EN_ESPAÑOL.mp4", // O URL de streaming .m3u8
-              "en": "URL_DIRECTA_DEL_VIDEO_EN_INGLES.mp4",
-              "sub": "URL_DIRECTA_DEL_VIDEO_SUBTITULADO.mp4"
+          [
+            {
+              idioma: "Latino",
+              imgCode: "LAT",
+              servidores: [
+                {
+                  nombre: "Filemoon",
+                  imgCode: "FILEMOON",
+                  link: "https://filemoon.sx/e/hmf4z96yowqp"
+                },
+                {
+                  nombre: "Doodstream",
+                  imgCode: "DOOD",
+                  link: "https://doodstream.com/e/lvnqlaplz6sd"
+                }
+              ]
+            },
+            {
+              idioma: "Subtitulado",
+              imgCode: "SUB",
+              servidores: [
+                {
+                  nombre: "Uqload",
+                  imgCode: "UQLOAD",
+                  link: "https://uqload.to/embed-5v8dvilporzd.html"
+                }
+              ]
             }
-          },
-          {
-            episode: 2,
-            title: "Un Nuevo Desafío",
-            languages: {
-              "es": "URL_DIRECTA_DEL_VIDEO_EN_ESPAÑOL_EP2.mp4",
-              "en": "URL_DIRECTA_DEL_VIDEO_EN_INGLES_EP2.mp4",
-              "sub": "URL_DIRECTA_DEL_VIDEO_SUBTITULADO_EP2.mp4"
+          ],
+          [
+            {
+              idioma: "Latino",
+              imgCode: "LAT",
+              servidores: [
+                {
+                  nombre: "Filemoon",
+                  imgCode: "FILEMOON",
+                  link: "https://filemoon.sx/e/abc123def456"
+                },
+                {
+                  nombre: "Doodstream",
+                  imgCode: "DOOD",
+                  link: "https://doodstream.com/e/xyz789uvw012"
+                }
+              ]
+            },
+            {
+              idioma: "Subtitulado",
+              imgCode: "SUB",
+              servidores: [
+                {
+                  nombre: "Uqload",
+                  imgCode: "UQLOAD",
+                  link: "https://uqload.to/embed-rst456ghi789.html"
+                }
+              ]
             }
-          }
-          // ... más episodios de la temporada 1
+          ]
         ]
       },
       {
         season: 2,
         episodes: [
-          {
-            episode: 1,
-            title: "El Regreso",
-            languages: {
-              "es": "URL_DIRECTA_DEL_VIDEO_EN_ESPAÑOL_T2_EP1.mp4",
-              "en": "URL_DIRECTA_DEL_VIDEO_EN_INGLES_T2_EP1.mp4",
-              "sub": "URL_DIRECTA_DEL_VIDEO_SUBTITULADO_T2_EP1.mp4"
+          [
+            {
+              idioma: "Latino",
+              imgCode: "LAT",
+              servidores: [
+                {
+                  nombre: "Filemoon",
+                  imgCode: "FILEMOON",
+                  link: "https://filemoon.sx/e/jkl012mno345"
+                },
+                {
+                  nombre: "Doodstream",
+                  imgCode: "DOOD",
+                  link: "https://doodstream.com/e/pqr678stu901"
+                }
+              ]
+            },
+            {
+              idioma: "Subtitulado",
+              imgCode: "SUB",
+              servidores: [
+                {
+                  nombre: "Uqload",
+                  imgCode: "UQLOAD",
+                  link: "https://uqload.to/embed-vwx234yza567.html"
+                }
+              ]
             }
-          }
-          // ... más episodios de la temporada 2
+          ]
         ]
       }
-      // ... más temporadas
     ]
   },
-  // ... más series aquí, con la misma estructura
+  {
+    title: "Serie de Ejemplo 2",
+    img: "https://via.placeholder.com/300x450.png?text=Serie+2",
+    category: "series",
+    sinopsis: "Una historia emocionante llena de giros inesperados y personajes memorables que te atraparán desde el primer episodio.",
+    tags: ["Romance", "Comedia", "Drama"],
+    year: "2022",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          [
+            {
+              idioma: "Latino",
+              imgCode: "LAT",
+              servidores: [
+                {
+                  nombre: "Filemoon",
+                  imgCode: "FILEMOON",
+                  link: "https://filemoon.sx/e/bcd234efg567"
+                },
+                {
+                  nombre: "Doodstream",
+                  imgCode: "DOOD",
+                  link: "https://doodstream.com/e/ghi890jkl123"
+                }
+              ]
+            },
+            {
+              idioma: "Subtitulado",
+              imgCode: "SUB",
+              servidores: [
+                {
+                  nombre: "Uqload",
+                  imgCode: "UQLOAD",
+                  link: "https://uqload.to/embed-yza345bcd678.html"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    title: "Anime de Ejemplo",
+    img: "https://via.placeholder.com/300x450.png?text=Anime+1",
+    category: "anime",
+    sinopsis: "Un anime épico con batallas emocionantes y una historia profunda que explora temas de amistad, sacrificio y superación.",
+    tags: ["Acción", "Aventura", "Fantasía"],
+    year: "2023",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          [
+            {
+              idioma: "Latino",
+              imgCode: "LAT",
+              servidores: [
+                {
+                  nombre: "Filemoon",
+                  imgCode: "FILEMOON",
+                  link: "https://filemoon.sx/e/cde345fgh678"
+                },
+                {
+                  nombre: "Doodstream",
+                  imgCode: "DOOD",
+                  link: "https://doodstream.com/e/hij901klm234"
+                }
+              ]
+            },
+            {
+              idioma: "Subtitulado",
+              imgCode: "SUB",
+              servidores: [
+                {
+                  nombre: "Uqload",
+                  imgCode: "UQLOAD",
+                  link: "https://uqload.to/embed-zab456cde789.html"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    title: "Película de Ejemplo",
+    img: "https://via.placeholder.com/300x450.png?text=Pelicula+1",
+    category: "peliculas",
+    sinopsis: "Una película emocionante con efectos visuales impresionantes y una historia que te mantendrá pegado a la pantalla hasta el final.",
+    tags: ["Acción", "Ciencia Ficción", "Thriller"],
+    year: "2023",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          [
+            {
+              idioma: "Latino",
+              imgCode: "LAT",
+              servidores: [
+                {
+                  nombre: "Filemoon",
+                  imgCode: "FILEMOON",
+                  link: "https://filemoon.sx/e/def456ghi789"
+                },
+                {
+                  nombre: "Doodstream",
+                  imgCode: "DOOD",
+                  link: "https://doodstream.com/e/jkl012mno345"
+                }
+              ]
+            },
+            {
+              idioma: "Subtitulado",
+              imgCode: "SUB",
+              servidores: [
+                {
+                  nombre: "Uqload",
+                  imgCode: "UQLOAD",
+                  link: "https://uqload.to/embed-bcd567efg890.html"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    title: "Dorama de Ejemplo",
+    img: "https://via.placeholder.com/300x450.png?text=Dorama+1",
+    category: "doramas",
+    sinopsis: "Un dorama romántico que explora las complejidades del amor moderno en la sociedad coreana con personajes entrañables.",
+    tags: ["Romance", "Drama", "Comedia"],
+    year: "2022",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          [
+            {
+              idioma: "Latino",
+              imgCode: "LAT",
+              servidores: [
+                {
+                  nombre: "Filemoon",
+                  imgCode: "FILEMOON",
+                  link: "https://filemoon.sx/e/efg567hij890"
+                },
+                {
+                  nombre: "Doodstream",
+                  imgCode: "DOOD",
+                  link: "https://doodstream.com/e/klm123nop456"
+                }
+              ]
+            },
+            {
+              idioma: "Subtitulado",
+              imgCode: "SUB",
+              servidores: [
+                {
+                  nombre: "Uqload",
+                  imgCode: "UQLOAD",
+                  link: "https://uqload.to/embed-cde678fgh901.html"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    title: "Drama Shorty de Ejemplo",
+    img: "https://via.placeholder.com/300x450.png?text=Drama+1",
+    category: "drama",
+    sinopsis: "Un drama corto pero impactante que aborda temas sociales importantes con una narrativa concisa y poderosa.",
+    tags: ["Drama", "Social", "Corto"],
+    year: "2023",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          [
+            {
+              idioma: "Latino",
+              imgCode: "LAT",
+              servidores: [
+                {
+                  nombre: "Filemoon",
+                  imgCode: "FILEMOON",
+                  link: "https://filemoon.sx/e/fgh678ijk901"
+                },
+                {
+                  nombre: "Doodstream",
+                  imgCode: "DOOD",
+                  link: "https://doodstream.com/e/lmn234opq567"
+                }
+              ]
+            },
+            {
+              idioma: "Subtitulado",
+              imgCode: "SUB",
+              servidores: [
+                {
+                  nombre: "Uqload",
+                  imgCode: "UQLOAD",
+                  link: "https://uqload.to/embed-def789ghi012.html"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
 ];
