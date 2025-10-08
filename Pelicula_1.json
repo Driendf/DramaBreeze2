@@ -1,36 +1,19 @@
 [
   {
-    "title": "Un trato con el capitán de hockey .json",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmyiY9UsGMuQM1YbwLPbSsLVUslC8xApfFeuptT6lpsgENQa_B4LBHGD2wlr2uRy4IILvZdeGjYIhpKt_-lUF_gMi5bGUv35I1yIviuCFBH31VzyJ-vynha2UG-RFTsrMQn6N9olrd4qEudyliJxaKdA_cLPmrIvwOOZa_TgakLy-ercODYngupMqGHpc/s799/41000116970.jpg",
+    "title": "Malditas",
+    "img": "https://image.tmdb.org/t/p/w154/oxNqvKAFQNQbRPqLsP7zfdXLXYK.jpg",
     "category": "peliculas",
-    "tags": ["Romántica", "Latino"],
-    "sinopsis": "Dora, una chica ñoña de la universidad, se une al equipo de hockey como asistente, enamorada en secreto de Leo. Tras un rechazo humillante, hace un trato con el capitán del equipo, Troya, para que la ayude a conquistar el corazón de Leo. Mientras Dora se transforma y gana confianza, la chispa entre ella y Troya comienza a encenderse. Pero los secretos, sabotajes y sentimientos cambiantes complican todo.",
+    "tags": ["drama"],
+    "sinopsis": "Las vidas de seis niñas pertenecen a mundos diferentes aunque conectados entre sí por una muñeca cuya existencia se remonta a 1976, cuando apareció entre los escombros del gran incendio del orfanato de San Carlos, al norte de España.",
     "seasons": [
       {
         "episodes": [
           {
-            "title": "Un trato con el capitán de hockey",
-            "link": "https://isekaicoleccion.blogspot.com/2025/10/t1-ep-58-58-lat-un-trato-con-el-capitan.html"
+            "title": "Malditas Peli 1",
+            "link": "https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html"
           }
         ]
       }
     ]
-  },
-  {
-    "title": "Divorciados en la Boda",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6EgJuOxYDmSBJqdRGdRrxnQepOFqvhRAPrHIC1kqkwq5vCvGU2p0EL7X2xHqJZBEAgFWha1_cBT178MQuIZ6_K0BEYhp818slxThucDYKsK3FQdUK90IEgRaUeaxEYSXO201U8apzPcWt5hgXP0b6j8s9d57p5UeDR6UJFadJGve4GQmAMEGxR6Fgq9g/s800/41000117274.jpg",
-    "category": "peliculas",
-    "tags": ["Familia", "Latino"],
-    "sinopsis": "Alicia Delgado, viuda y embarazada, vuelve a casa tras varios años en el extranjero para acudir a la fiesta de compromiso de su hermano Lorenzo. Cuando Carolina, la madre de la novia, confunde a Alicia por la amante de Lorenzo, se produce un malentendido. Sofía, la novia, entra en la mansión de Lorenzo y se pelea con Alicia. Después la arrastra hasta la fiesta de compromiso y la humilla delante de los invitados. La situación va a peor cuando llega Lorenzo y revela la verdad.",
-    "seasons": [
-      {
-        "episodes": [
-          {
-            "title": "Divorciados en la Boda",
-            "link": "https://isekaicoleccion.blogspot.com/2025/10/t1-ep-51-51-lat-divorciados-en-la-boda.html"
-          }
-        ]
-      }
-    ]
-  },
+  }
 ]
