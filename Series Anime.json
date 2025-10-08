@@ -1,0 +1,494 @@
+{
+  "animes": [
+    {
+      "id": "frieren-beyond-journeys-end",
+      "title": "Frieren: Beyond Journey's End",
+      "type": "serie",
+      "poster": "https://i.imgur.com/9o1rL6y.jpeg",
+      "synopsis": "Después de que el partido de héroes derrotara al Rey Demonio, restauraron la paz en la tierra y regresaron a vidas de soledad. La maga, Frieren, es un elfo y vive mucho tiempo. Decide emprender un viaje para ver el mundo y entender mejor a los humanos.",
+      "rating": "9.1",
+      "year": "2023",
+      "status": "En Emisión",
+      "genres": ["Aventura", "Drama", "Fantasía"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 28,
+          "title": "El Héroe del Sur",
+          "thumbnail": "https://i.imgur.com/frieren_ep28.jpg",
+          "views": "2.5M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2024-03-22",
+          "sub": true,
+          "dub": true
+        },
+        {
+          "number": 27,
+          "title": "La magia de la nostalgia",
+          "thumbnail": "https://i.imgur.com/frieren_ep27.jpg",
+          "views": "2.7M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2024-03-15",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "jujutsu-kaisen",
+      "title": "Jujutsu Kaisen",
+      "type": "serie",
+      "poster": "https://i.imgur.com/5jz5m1g.jpeg",
+      "synopsis": "Yuji Itadori es un genio en atletismo, pero no tiene interés en unirse a ningún club. Sin embargo, su vida cambia cuando se come un dedo maldito para salvar a sus amigos, convirtiéndose en el anfitrión de Ryomen Sukuna, un poderoso espíritu maldito.",
+      "rating": "8.5",
+      "year": "2020",
+      "status": "En Emisión",
+      "genres": ["Acción", "Escuela", "Sobrenatural"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 23,
+          "title": "El Juego de la Noche",
+          "thumbnail": "https://i.imgur.com/jjk_ep23.jpg",
+          "views": "3.1M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2023-12-28",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "chainsaw-man",
+      "title": "Chainsaw Man",
+      "type": "serie",
+      "poster": "https://i.imgur.com/g2i0M7b.jpeg",
+      "synopsis": "Denji es un adolescente que vive con una motosierra demonio llamada Pochita. Tras ser traicionado y asesinado, Pochita se fusiona con su cuerpo, convirtiéndolo en Chainsaw Man, un híbrido humano-demonio con la capacidad de transformar partes de su cuerpo en motosierras.",
+      "rating": "8.6",
+      "year": "2022",
+      "status": "En Emisión",
+      "genres": ["Acción", "Sobrenatural", "Comedia Negra"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 12,
+          "title": "La Sangre de los Héroes",
+          "thumbnail": "https://i.imgur.com/csm_ep12.jpg",
+          "views": "2.9M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2023-12-28",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "spy-x-family",
+      "title": "Spy x Family",
+      "type": "serie",
+      "poster": "https://i.imgur.com/6s2E1hK.jpeg",
+      "synopsis": "Un espía, Twilight, debe crear una familia falsa para ejecutar una misión. Sin embargo, su esposa es una asesina y su hija es una telépata que puede leer sus mentes, creando una familia disfuncional pero llena de amor.",
+      "rating": "8.4",
+      "year": "2022",
+      "status": "En Emisión",
+      "genres": ["Acción", "Comedia", "Seinen"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 37,
+          "title": "El Plan de la Familia",
+          "thumbnail": "https://i.imgur.com/sxf_ep37.jpg",
+          "views": "2.8M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2024-02-24",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "blue-lock",
+      "title": "Blue Lock",
+      "type": "serie",
+      "poster": "https://i.imgur.com/W2b1l5f.jpeg",
+      "synopsis": "La selección japonesa de fútbol está en crisis. Para ganar el Mundial, crean el 'Blue Lock', un programa de entrenamiento radical donde 300 delanteros compiten para convertirse en el mejor delantero egoísta del mundo.",
+      "rating": "8.2",
+      "year": "2022",
+      "status": "En Emisión",
+      "genres": ["Deportes", "Shonen", "Psicológico"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 24,
+          "title": "El Gol Final",
+          "thumbnail": "https://i.imgur.com/bl_ep24.jpg",
+          "views": "2.2M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2023-03-26",
+          "sub": true,
+          "dub": false
+        }
+      ]
+    },
+    {
+      "id": "vinland-saga",
+      "title": "Vinland Saga",
+      "type": "serie",
+      "poster": "https://i.imgur.com/q1z4p8h.jpeg",
+      "synopsis": "Thorfinn es un joven islandés que busca vengar la muerte de su padre. Se une a una banda de mercenarios vikingos para entrenar y enfrentarse al hombre responsable, pero su viaje lo llevará a cuestionar la naturaleza de la violencia y la venganza.",
+      "rating": "8.8",
+      "year": "2019",
+      "status": "Finalizado",
+      "genres": ["Acción", "Drama", "Histórico"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 48,
+          "title": "Hacia el Oeste",
+          "thumbnail": "https://i.imgur.com/vs_ep48.jpg",
+          "views": "1.9M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2024-01-01",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "steinsgate",
+      "title": "Steins;Gate",
+      "type": "serie",
+      "poster": "https://i.imgur.com/7lY5cX2.jpeg",
+      "synopsis": "Okabe Rintarou, un auto-proclamado 'científico loco', y sus amigos accidentalmente crean una máquina del tiempo que puede enviar mensajes de texto al pasado. Sus experimentos los llevan a ser perseguidos por una misteriosa organización llamada SERN.",
+      "rating": "8.8",
+      "year": "2011",
+      "status": "Finalizado",
+      "genres": ["Thriller Psicológico", "Ciencia Ficción"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 24,
+          "title": "Convergencia Steins Gate",
+          "thumbnail": "https://i.imgur.com/sg_ep24.jpg",
+          "views": "2.1M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2011-09-13",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "cowboy-bebop",
+      "title": "Cowboy Bebop",
+      "type": "serie",
+      "poster": "https://i.imgur.com/5eK8FzJ.jpeg",
+      "synopsis": "En el año 2071, un grupo de cazarrecompensas a bordo de la nave 'Bebop' viaja por el sistema solar en busca de criminales. Spike Spiegel, Jet Black, Faye Valentine, Edward y Ein forman un equipo peculiar mientras lidian con su pasado.",
+      "rating": "8.9",
+      "year": "1998",
+      "status": "Finalizado",
+      "genres": ["Acción", "Ciencia Ficción", "Space Western"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 26,
+          "title": "The Real Folk Blues (Part 2)",
+          "thumbnail": "https://i.imgur.com/cb_ep26.jpg",
+          "views": "1.8M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "1998-04-24",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "fullmetal-alchemist-brotherhood",
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "type": "serie",
+      "poster": "https://i.imgur.com/N5mY1jA.jpeg",
+      "synopsis": "Dos hermanos, Edward y Alphonse Elric, usan la alquimia en un intento por resucitar a su madre, pero el ritual sale mal. Edward pierde un brazo y una pierna, y Alphonse su cuerpo entero. Ahora buscan la Piedra Filosofal para recuperar lo que han perdido.",
+      "rating": "9.0",
+      "year": "2009",
+      "status": "Finalizado",
+      "genres": ["Acción", "Aventura", "Fantasía"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 64,
+          "title": "Journey's End",
+          "thumbnail": "https://i.imgur.com/fmab_ep64.jpg",
+          "views": "2.5M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2010-07-04",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "hunter-x-hunter-2011",
+      "title": "Hunter x Hunter (2011)",
+      "type": "serie",
+      "poster": "https://i.imgur.com/6vJ0Y5b.jpeg",
+      "synopsis": "Gon Freecss quiere convertirse en un Hunter como su padre, un legendario cazador que abandonó a su familia. En su viaje, se hace amigo de Kurapika, Leorio y Killua, y juntos enfrentan los desafíos del examen de Hunter y más allá.",
+      "rating": "9.0",
+      "year": "2011",
+      "status": "En Pausa",
+      "genres": ["Acción", "Aventura", "Fantasía"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 148,
+          "title": "Past x And x Future",
+          "thumbnail": "https://i.imgur.com/hxh_ep148.jpg",
+          "views": "2.3M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2014-09-23",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "code-geass",
+      "title": "Code Geass: Lelouch of the Rebellion",
+      "type": "serie",
+      "poster": "https://i.imgur.com/8XJz2Lk.jpeg",
+      "synopsis": "El Imperio Britannia ha conquistado Japón, renombrándolo como Área 11. Lelouch Lamperouge, un exiliado británico, obtiene el poder del Geass, una habilidad que le permite ordenar a cualquiera que haga lo que quiera, y lo usa para liderar una rebelión.",
+      "rating": "8.7",
+      "year": "2006",
+      "status": "Finalizado",
+      "genres": ["Acción", "Mecha", "Thriller Psicológico"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 50,
+          "title": "Re;",
+          "thumbnail": "https://i.imgur.com/cg_ep50.jpg",
+          "views": "2.0M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2008-09-28",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "mob-psycho-100",
+      "title": "Mob Psycho 100",
+      "type": "serie",
+      "poster": "https://i.imgur.com/D1wTmY4.jpeg",
+      "synopsis": "Shigeo Kageyama, apodado 'Mob', es un estudiante de secundaria con inmensos poderes psíquicos. Para controlar sus habilidades y vivir una vida normal, trabaja a tiempo parcial para un exorcista estafador, aprendiendo a gestionar sus emociones y poderes.",
+      "rating": "8.6",
+      "year": "2016",
+      "status": "Finalizado",
+      "genres": ["Acción", "Comedia", "Sobrenatural"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 37,
+          "title": "Confesión ~El Camino a la Adultez~",
+          "thumbnail": "https://i.imgur.com/mp100_ep37.jpg",
+          "views": "1.7M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2022-12-22",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "kaguya-sama-love-is-war",
+      "title": "Kaguya-sama: Love Is War",
+      "type": "serie",
+      "poster": "https://i.imgur.com/3jK4Q5R.jpeg",
+      "synopsis": "Miyuki Shirogane y Kaguya Shinomiya son los dos mejores estudiantes de la academia, y presidentes del consejo estudiantil. Están enamorados el uno del otro, pero su orgullo les impide confesarlo, iniciando una 'guerra' de ingenio para hacer que el otro confiese primero.",
+      "rating": "8.4",
+      "year": "2019",
+      "status": "En Emisión",
+      "genres": ["Comedia", "Romance", "Psicológico"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 45,
+          "title": "La Confesión de Kaguya Shinomiya",
+          "thumbnail": "https://i.imgur.com/kaguya_ep45.jpg",
+          "views": "2.6M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2023-06-24",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "the-promised-neverland",
+      "title": "The Promised Neverland",
+      "type": "serie",
+      "poster": "https://i.imgur.com/7p9qH1W.jpeg",
+      "synopsis": "Los huérfanos del Grace Field House viven una vida feliz, cuidados por su 'Mamá', Isabella. Sin embargo, Emma, Norman y Ray descubren la aterradora verdad: el orfanato es una granja y ellos son el alimento de demonios. Deben escapar para salvar sus vidas.",
+      "rating": "8.4",
+      "year": "2019",
+      "status": "Finalizado",
+      "genres": ["Thriller Psicológico", "Horror", "Misterio"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 37,
+          "title": "Vistazo al Futuro",
+          "thumbnail": "https://i.imgur.com/tpn_ep37.jpg",
+          "views": "1.5M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2021-03-26",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "rezero-starting-life-in-another-world",
+      "title": "Re:Zero - Starting Life in Another World",
+      "type": "serie",
+      "poster": "https://i.imgur.com/2nL0J9a.jpeg",
+      "synopsis": "Subaru Natsuki es transportado repentinamente a otro mundo. Sin poderes especiales, descubre que tiene la habilidad de 'Return by Death', volviendo en el tiempo cada vez que muere. Usará esta habilidad para proteger a sus amigos y desentrañar los misterios de este nuevo mundo.",
+      "rating": "8.2",
+      "year": "2016",
+      "status": "En Emisión",
+      "genres": ["Fantasía Oscura", "Psicológico", "Thriller"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 50,
+          "title": "La Promesa de un Viaje",
+          "thumbnail": "https://i.imgur.com/rezero_ep50.jpg",
+          "views": "2.4M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2024-01-10",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "mushoku-tensei-jobless-reincarnation",
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "type": "serie",
+      "poster": "https://i.imgur.com/4k8J3fP.jpeg",
+      "synopsis": "Un hombre de 34 años sin trabajo es atropellado por un camión y reencarna en un mundo de fantasía como Rudeus Greyrat. Decidido a no desperdiciar su nueva vida, decide aprovechar al máximo su potencial, aprendiendo magia y buscando un propósito.",
+      "rating": "8.4",
+      "year": "2021",
+      "status": "En Emisión",
+      "genres": ["Fantasía", "Isekai", "Drama"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 24,
+          "title": "La Palabra de un Hombre",
+          "thumbnail": "https://i.imgur.com/mt_ep24.jpg",
+          "views": "2.0M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2022-12-19",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "solo-leveling",
+      "title": "Solo Leveling",
+      "type": "serie",
+      "poster": "https://i.imgur.com/5N9lZ7V.jpeg",
+      "synopsis": "En un mundo donde 'Portales' a dimensiones llenas de monstruos amenazan a la humanidad, 'Cazadores' con poderes especiales los combaten. Sung Jinwoo, el cazador más débil, conocido como 'El punto más débil del sistema', obtiene un poder único que le permite 'subir de nivel' solo.",
+      "rating": "8.5",
+      "year": "2024",
+      "status": "En Emisión",
+      "genres": ["Acción", "Fantasía", "Aventura"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 12,
+          "title": "Arise",
+          "thumbnail": "https://i.imgur.com/sl_ep12.jpg",
+          "views": "3.5M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2024-03-30",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "oshi-no-ko",
+      "title": "Oshi no Ko",
+      "type": "serie",
+      "poster": "https://i.imgur.com/8f9G2tE.jpeg",
+      "synopsis": "El ginecólogo y obstetra Gorou Amemiya es un gran fan de la ídolo Ai Hoshino. Un día, Ai llega a su hospital embarazada, pero muere trágicamente. Gorou reencarna como Aquamarine Hoshino, el hijo de Ai, junto con su hermana Ruby, también reencarnada, en el mundo del entretenimiento.",
+      "rating": "8.5",
+      "year": "2023",
+      "status": "En Emisión",
+      "genres": ["Drama", "Psicológico", "Sobrenatural"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 11,
+          "title": "Alguien",
+          "thumbnail": "https://i.imgur.com/onko_ep11.jpg",
+          "views": "2.8M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2023-06-28",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "cyberpunk-edgerunners",
+      "title": "Cyberpunk: Edgerunners",
+      "type": "serie",
+      "poster": "https://i.imgur.com/3k0L1pQ.jpeg",
+      "synopsis": "En la distópica Night City, un chico de la calle intenta sobrevivir en una sociedad obsesionada con la tecnología y las modificaciones corporales. Elegido para convertirse un 'edgerunner', un mercenario ciberpunk, se enfrenta a un mundo de traición y tecnología despiadada.",
+      "rating": "8.3",
+      "year": "2022",
+      "status": "Finalizado",
+      "genres": ["Acción", "Ciencia Ficción", "Cyberpunk"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 10,
+          "title": "Let You Down",
+          "thumbnail": "https://i.imgur.com/cpe_ep10.jpg",
+          "views": "2.1M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "2022-09-13",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    },
+    {
+      "id": "berserk",
+      "title": "Berserk (1997)",
+      "type": "serie",
+      "poster": "https://i.imgur.com/9XJz2Lk.jpeg",
+      "synopsis": "Guts, un mercenario conocido como el 'Espadachín Negro', se une a la Banda del Halcón, liderada por el carismático Griffith. Juntos, luchan en la Guerra de los Cien Años, pero la ambición de Griffith y el destino de Guts los llevarán a un enfrentamiento trágico.",
+      "rating": "8.7",
+      "year": "1997",
+      "status": "Finalizado",
+      "genres": ["Acción", "Fantasía Oscura", "Drama"],
+      "favorited": false,
+      "episodes": [
+        {
+          "number": 25,
+          "title": "Eclipse",
+          "thumbnail": "https://i.imgur.com/berserk_ep25.jpg",
+          "views": "1.9M",
+          "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "date": "1998-04-01",
+          "sub": true,
+          "dub": true
+        }
+      ]
+    }
+  ]
+}
