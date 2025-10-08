@@ -1,5 +1,4 @@
-window.dataCatalogo = window.dataCatalogo || [];
-window.dataCatalogo.push(
+[
 {
   "title":"Zorro",
   "img":"https://image.tmdb.org/t/p/w154/8fofhCU3SRcRdXYL3psiW4zfyDt.jpg",
@@ -38,4 +37,5 @@ window.dataCatalogo.push(
     }
   ]
 }
-);
+
+]
