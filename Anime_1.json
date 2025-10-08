@@ -1,42 +1,36 @@
 [
   {
-    "title": "Da Yu Hai Tang",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjypau3z4tqJ4eqITSWQRYPw6GBWq829y7cF6ioS1gelxIt9i7mxtbvJw6XcxdglWAvgBnzPim8pxwaDuDqHa0LAcz1MHwogwYCXBDV9CQTT7vs2LRKhF_Wyz1dLsHNuExjJnPIr_4V7423qB-IP2Od5e8GFxePMAvQr6NWeeVO6wZiMOMpSc9zBRKfos6G/s600/98106l.jpg",
-    "category": "drama",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Donghua"],
-    "sinopsis": "En un antiguo mundo mítico habitan seres espirituales que velan por el orden natural del reino mortal...",
-    "year": "2023",
+    "title": "Un trato con el capitán de hockey .json",
+    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmyiY9UsGMuQM1YbwLPbSsLVUslC8xApfFeuptT6lpsgENQa_B4LBHGD2wlr2uRy4IILvZdeGjYIhpKt_-lUF_gMi5bGUv35I1yIviuCFBH31VzyJ-vynha2UG-RFTsrMQn6N9olrd4qEudyliJxaKdA_cLPmrIvwOOZa_TgakLy-ercODYngupMqGHpc/s799/41000116970.jpg",
+    "category": "anime",
+    "tags": ["Romántica", "Latino"],
+    "sinopsis": "Dora, una chica ñoña de la universidad, se une al equipo de hockey como asistente, enamorada en secreto de Leo. Tras un rechazo humillante, hace un trato con el capitán del equipo, Troya, para que la ayude a conquistar el corazón de Leo. Mientras Dora se transforma y gana confianza, la chispa entre ella y Troya comienza a encenderse. Pero los secretos, sabotajes y sentimientos cambiantes complican todo.",
     "seasons": [
       {
         "episodes": [
           {
-            "title": "Da Yu Hai Tang Episodio 1",
-            "link": "https://isekaicoleccion.blogspot.com/p/da-yu-hai-tang.html"
+            "title": "Un trato con el capitán de hockey",
+            "link": "https://isekaicoleccion.blogspot.com/2025/10/t1-ep-58-58-lat-un-trato-con-el-capitan.html"
           }
         ]
       }
     ]
   },
   {
-    "title": "Mofa Gongzhu de Xiao Fannao",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEEoVmDVLRZUFJfT6fI4AR5PytuRgN5c_6DDJjSMHXiDB2IZs5PhNY1gIGc8Cjf-AQXg5pcz01Y5kx78vg2ANxmuGt_EMFWdrd5hHgFtAT1Ay5HQ2WTLb3EQLBRSFScWgZwf-IWMJ8j1X9z3XaoAJrRr5fbaszG3gRoUTcpq9G9UNlm39TMEN5Xngkl9k/s600/152270l.jpg",
-    "category": "drama",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Isekai", "Reencarnación"],
-    "sinopsis": "En la novela La princesa encantadora el personaje secundario...",
-    "year": "2023",
+    "title": "Divorciados en la Boda",
+    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6EgJuOxYDmSBJqdRGdRrxnQepOFqvhRAPrHIC1kqkwq5vCvGU2p0EL7X2xHqJZBEAgFWha1_cBT178MQuIZ6_K0BEYhp818slxThucDYKsK3FQdUK90IEgRaUeaxEYSXO201U8apzPcWt5hgXP0b6j8s9d57p5UeDR6UJFadJGve4GQmAMEGxR6Fgq9g/s800/41000117274.jpg",
+    "category": "anime",
+    "tags": ["Familia", "Latino"],
+    "sinopsis": "Alicia Delgado, viuda y embarazada, vuelve a casa tras varios años en el extranjero para acudir a la fiesta de compromiso de su hermano Lorenzo. Cuando Carolina, la madre de la novia, confunde a Alicia por la amante de Lorenzo, se produce un malentendido. Sofía, la novia, entra en la mansión de Lorenzo y se pelea con Alicia. Después la arrastra hasta la fiesta de compromiso y la humilla delante de los invitados. La situación va a peor cuando llega Lorenzo y revela la verdad.",
     "seasons": [
       {
         "episodes": [
           {
-            "title": "Mofa Gongzhu de Xiao Fannao Episodio 1",
-            "link": "https://isekaicoleccion.blogspot.com/2025/10/t1-ep1-sub-mofa-gongzhu-de-xiao-fannao.html"
-          },
-          {
-            "title": "Mofa Gongzhu de Xiao Fannao Episodio 2",
-            "link": "https://isekaicoleccion.blogspot.com/2025/10/001-t1-ep2-mofa-gongzhu-de-xiao-fannao.html"
+            "title": "Divorciados en la Boda",
+            "link": "https://isekaicoleccion.blogspot.com/2025/10/t1-ep-51-51-lat-divorciados-en-la-boda.html"
           }
         ]
       }
     ]
-  }
+  },
 ]
