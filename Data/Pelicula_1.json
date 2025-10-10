@@ -1,9 +1,26 @@
 [
   {
-    "title": "Malditas",
-    "img": "https://image.tmdb.org/t/p/w154/oxNqvKAFQNQbRPqLsP7zfdXLXYK.jpg",
+    "title": "El sacramento",
+    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA2Yg3fKjqaiA8TdG37oyexyJOarjIfcB_gB5C73enPokY-FUN5qch3rD1OTqakcAvbdJsa_zuUiNASQOYcaf3yja9f8_YM0RA1p_6fehQh4eFflSuqdYm1NXw57rEPoEficWj2awcv6l8IMNYCfPPalxabzPQLzRB7Y9sXvm9AxSYdcvLSJxAXCVr1S0/s444/SS.jpg",
     "category": "peliculas",
-    "tags": ["peliculas"],
+    "tags": ["Thriller", "Terror"],
+    "sinopsis": "Las vidas de seis niñas pertenecen a mundos diferentes aunque conectados entre sí por una muñeca cuya existencia se remonta a 1976, cuando apareció entre los escombros del gran incendio del orfanato de San Carlos, al norte de España.",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "El sacramento",
+            "link": "https://isekaicoleccion.blogspot.com/2025/10/p1-lat-sub-el-sacramento.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Malditas",
+    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsCYiBH5hNc9dyzRiAGhI0a7LsHDRplK_Ti32JSrpwuIQgyD6UvXA5Pv4ncYokk02tbO4XM-dLbZqm_oXCRaQGsimz-HMEr_IXhWLRb-JZEO3BkgnHiiB3ZYFvGI7pGWexTHtslazSxDzC9aTf5JfipEDThUP3WgjnDkkrG4jtTIhrmyPYz73b74pZk5w/s320/SSS.jpg",
+    "category": "peliculas",
+    "tags": ["Terror", "Acción"],
     "sinopsis": "Las vidas de seis niñas pertenecen a mundos diferentes aunque conectados entre sí por una muñeca cuya existencia se remonta a 1976, cuando apareció entre los escombros del gran incendio del orfanato de San Carlos, al norte de España.",
     "seasons": [
       {
