@@ -5,7 +5,6 @@
     "category": "donghua",
     "tags": ["Acción", "Aventuras", "Fantasía", "Donghua"],
     "sinopsis": "En un antiguo mundo mítico habitan seres espirituales que velan por el orden natural del reino mortal...",
-    "year": "2023",
     "seasons": [
       {
         "episodes": [
@@ -23,7 +22,6 @@
     "category": "donghua",
     "tags": ["Acción", "Aventuras", "Fantasía", "Isekai", "Reencarnación"],
     "sinopsis": "En la novela La princesa encantadora el personaje secundario...",
-    "year": "2023",
     "seasons": [
       {
         "episodes": [
@@ -48,5 +46,4 @@
     ]
   }
 ]
-
 
