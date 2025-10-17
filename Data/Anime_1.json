@@ -2,7 +2,7 @@
   {
     "title": "Shinjiteita Nakamatachi ni Dungeon Okuchi de Korosarekaketa ga Gift Mugen Gacha de Level 9999 no Nakamatachi wo Te ni Irete Moto Party Member to Sekai ni Fukushuu & Zamaa! Shimasu!",
     "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb659niEf_tOZfX3XJ2NB3LeN1fFVqqkO4QOmw421DWewMD3H4ybaaVJrFeuXtYSd1R-1_HY7qLNsNT3T4-EZgriNcsCBx3rtnN4JhdG43lpcVjWgtc-HZe-W_QtzYp8FooT5bMp72HJoPg0wuaSszPC7OPk3jIsyFs0zq2pet0ryTtYzoUGpEPkhuaAg/s626/bx184322-rRkaMQ7J1zOI.jpg",
-    "category":"anime", "peliculas",
+    "category":["anime", "peliculas"],
     "tags": ["Fantasía", "Comedia", "Aventuras", "Acción", "Jueves"],
     "sinopsis": "Cuando Light es expulsado de la Concordia de las Tribus, sus antiguos camaradas se vuelven instantáneamente contra él. La luz escapa de este diabólico acto de traición por los pelos... solo para encontrarse en la parte más profunda del Abismo, ¡la mazmorra más peligrosa del reino! Para evitar ser devorado por monstruos carnívoros, usa el Gacha ilimitado, su única habilidad mágica. Pero donde antes solo producía artículos chatarra, ¡esta vez aparece Mei, una hermosa luchadora de nivel 9999 con un traje de sirvienta! Tres años después, Light ha forjado su propio reino en esta mazmorra atrasada, convocando a guerreros de nivel 9999 más hermosos que le juran lealtad absoluta. ¡Ahora un poderoso Overlord de nivel 9999, Light planea ascender a la superficie y vengarse de sus traidores uno por uno!",
     "seasons": [
@@ -280,6 +280,7 @@
     ]
   }
 ]
+
 
 
 
