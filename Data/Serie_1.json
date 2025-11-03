@@ -1,20 +1,19 @@
 [
-    {
+  {
     "title": "Zorro",
     "img": "https://image.tmdb.org/t/p/w154/8fofhCU3SRcRdXYL3psiW4zfyDt.jpg",
     "category": "series",
-    "tags": ["Acción", "Aventuras", "Latino"],
-    "sinopsis": "Al convertirse en alcalde de Los Ángeles de 1821, Don Diego de la Vega se enfrenta a la resistencia del corrupto empresario Don Emmanuel..",
+    "tags": ["Latino"],
+    "sinopsis": "Al convertirse en alcalde de Los Ángeles de 1821, Don Diego de la Vega se enfrenta a la resistencia del corrupto empresario Don Emmanuel.. زورو",
     "seasons": [
       {
         "episodes": [
           {
             "title": "Zorro",
-            "link": "https://isekaicoleccion.blogspot.com/2025/11/s00001.html"
+            "link": "https://isekaicoleccion.blogspot.com/2025/11/r00017.html"
           }
         ]
       }
     ]
   }
 ]
-
