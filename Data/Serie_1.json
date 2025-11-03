@@ -5,35 +5,6 @@
     "category": "series",
     "tags": ["serie"],
     "sinopsis": "Al convertirse en alcalde de Los Ángeles de 1821, Don Diego de la Vega se enfrenta a la resistencia del corrupto empresario Don Emmanuel.. زورو",
-    "seasons": [
-      {
-        "episodes": [
-          {
-            "title": "Zorro - Episodio 1",
-            "links": [
-              "https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html",
-              "https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html",
-              "https://driendf.github.io/T1 [075.075] (SubEsp) La Venganza del Zorro.html"
-            ]
-          },
-          {
-            "title": "Zorro - Episodio 2",
-            "links": [
-              "https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html"
-            ]
-          }
-        ]
-      },
-      {
-        "episodes": [
-          {
-            "title": "Zorro - Episodio 1 T2",
-            "links": [
-              "https://driendf.github.io/T1 [074.074] (SubEsp) A Estrella para toda mi vida.html"
-            ]
-          }
-        ]
-      }
-    ]
+    "link": "https://driendf.github.io/T1%20%5B074.074%5D%20%28SubEsp%29%20A%20Estrella%20para%20toda%20mi%20vida.html"
   }
 ]
