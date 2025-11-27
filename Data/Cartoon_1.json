@@ -1,243 +1,66 @@
 [
+{
+    "title": "Kuzco: Un Emperador en el Cole",
+    "img": "https://image.tmdb.org/t/p/w154/aGawtJeUXycK0EQq080ngw18TcA.jpg",
+    "id": "001",
+    "title": "Dragon Ball Z - Saga de los Saiyans",
+    "img": "https://image.tmdb.org/t/p/w154/dbz-saiyans.jpg",
+    "category": "anime", 
+    "tags": ["Acción", "Saiyans", "Goku", "Vegeta"],
+    "sinopsis": "Goku descubre sus orígenes Saiyan mientras la Tierra se enfrenta a la invasión de Vegeta y Nappa.",
+    "franquicia": "Dragon Ball",
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/dbz-saiyans.html"
+  },
+  {
+    "id": "001", 
+    "title": "Dragon Ball Super: Broly - Película",
+    "img": "https://image.tmdb.org/t/p/w154/dbs-broly.jpg",
+    "category": "anime",
+    "tags": ["Película", "Broly", "Super Saiyan Dios"],
+    "sinopsis": "Goku y Vegeta enfrentan al legendario Broly en una batalla épica que revela nuevos secretos.",
+    "franquicia": "Dragon Ball", 
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/dbs-broly.html"
+  },
   {
     "id": "001",
-    "title": "Sozai Saishuka no Isekai Ryokouki",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7fSmLp1kOIIBIidDn9m9y3cYqObzVM_ssMelJWfYeeB_BYLVRhpFBL-_m8ob3hYv-4lQ6nZhLEZ5iFrh_Jnt5UCp4Rraq28RN74mL3_ku4RDJPPMEDhhYy5ka7-wfabO1iEwn-HwdMydMpqWdbdvfHOVK4hcWTas5GjBkeRjlpjF0bAq2wf_oSuIaEJ0/s0/000.jpg",
+    "title": "Dragon Ball Clásico - Torneo de las Artes Marciales",
+    "img": "https://image.tmdb.org/t/p/w154/db-torneo.jpg", 
     "category": "anime",
-    "tags": ["aventura", "comedia", "fantasía", "isekai", "magia"],
-    "sinopsis": "Kamishiro Takeru era un tipo normal con un trabajo de oficina normal, hasta que de repente es invocado a Madeus, un mundo de espadas y magia. Su vida como la conocía ha terminado, pero comienza una nueva con poderosas habilidades: fuerza mejorada, magia abrumadora y una habilidad de búsqueda que le permite encontrar objetos valiosos. Armado con sus nuevas habilidades de trampa, Takeru emprende su aventura isekai.",
-    "franquicia": "Sozai Saishuka no Isekai Ryokouki",
-    "link": "https://videosteam12.blogspot.com/2025/11/a00023.html"
-  },
-    {
-    "id": "001",
-    "title": "yu",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7fSmLp1kOIIBIidDn9m9y3cYqObzVM_ssMelJWfYeeB_BYLVRhpFBL-_m8ob3hYv-4lQ6nZhLEZ5iFrh_Jnt5UCp4Rraq28RN74mL3_ku4RDJPPMEDhhYy5ka7-wfabO1iEwn-HwdMydMpqWdbdvfHOVK4hcWTas5GjBkeRjlpjF0bAq2wf_oSuIaEJ0/s0/000.jpg",
-    "category": "anime",
-    "tags": ["aventura", "comedia", "fantasía", "isekai", "magia"],
-    "sinopsis": "Kamishiro Takeru era un tipo normal con un trabajo de oficina normal, hasta que de repente es invocado a Madeus, un mundo de espadas y magia. Su vida como la conocía ha terminado, pero comienza una nueva con poderosas habilidades: fuerza mejorada, magia abrumadora y una habilidad de búsqueda que le permite encontrar objetos valiosos. Armado con sus nuevas habilidades de trampa, Takeru emprende su aventura isekai.",
-    "franquicia": "Sozai Saishuka no Isekai Ryokouki",
-    "link": "https://videosteam12.blogspot.com/2025/11/a00023.html"
+    "tags": ["Torneo", "Maestro Roshi", "Krilin"],
+    "sinopsis": "Goku participa en su primer Torneo de Artes Marciales enfrentando poderosos rivales.",
+    "franquicia": "Dragon Ball",
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/db-torneo.html"
   },
   {
     "id": "002",
-    "title": "Ansatsusha de Aru Ore no Status ga Yuusha yori mo Akiraka ni Tsuyoi no da ga",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7UgdMvVexFOelmg00N45CfD77sPM2wlPKcw8afsMsxwRiaoC1GdRu2CVA32yq5rFUma14LkTgx0onUbuTw33m5VT94zM-m0pt9KaIs_qxHS3w3wukETm9Mour_sgQ_D4F0CHqSwHaH6KLpWMRDFbdhaqR8cSXIK3jzwo0FNB8_rlQNkNZ9_Co3j5ub8k/s0/000.jpg",
-    "category": "anime",
-    "tags": ["isekai", "acción", "aventura", "fantasía", "lunes"],
-    "sinopsis": "¡Akira Oda y sus compañeros de instituto son invocados a otro mundo! Mientras que los demás estudiantes obtienen habilidades de tramposo mediante la invocación, Akira solo adquiere las habilidades de un mediocre \"asesino\". Sin embargo, su estatus pronto supera al de \"héroe\", la profesión más poderosa. Tras sospechar del Rey tras la invocación, Akira es incriminado falsamente y obligado a huir.",
-    "franquicia": "Ansatsusha de Aru Ore no Status ga Yuusha yori mo Akiraka ni Tsuyoi no da ga",
-    "link": "https://videosteam12.blogspot.com/2025/11/a00022.html"
-  },
-  {
-    "id": "003",
-    "title": "Isekai Mokushiroku Mynoghra: Hametsu no Bunmei de Hajimeru Sekai Seifuku",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEga3b-6KoqbZuSX3HAHcmHn4Uxc2bjgzfGObWEO_d2uV-tWRxKr8mnqYTjdOADpjBvi0TnkfJx58OgO59IZdIglI4LErwrINj_9SLiF8DS7N4E0WPsk_ipHkRmCuvEWEvenGQYRf0YKkp3lEj6OVKxie-2o_oBPXWoq0OXR4oCGs3dJ282vT82hH5yMhGU/s0/000.jpg",
-    "category": "anime",
-    "tags": ["reencarnación", "isekai", "acción", "aventura", "comedia", "drama", "fantasía", "romance"],
-    "sinopsis": "Takuto Ira sucumbió a una enfermedad a temprana edad y terminó reencarnándose en un mundo que recuerda al juego de estrategia por turnos de fantasía Eternal Nations. No solo reencarnó en su juego favorito, sino como el dios que comanda la malvada civilización Mynoghra. Con la hermosa unidad heroica de Mynoghra, Sludge Witch Atou, a su lado, ¡ni siquiera los rasgos raciales legendariamente difíciles impedirán el reinicio de su civilización! \"Señor Takuto... ¿no empezarás de cero conmigo?\" ¡Explora, expande, explota, extermina! ¡Un mundo de fantasía táctica espera a héroes como tú! ¡Únete a Eternal Nations hoy mismo!",
-    "franquicia": "Isekai Mokushiroku Mynoghra: Hametsu no Bunmei de Hajimeru Sekai Seifuku",
-    "link": "https://videosteam12.blogspot.com/2025/11/a00021.html"
-  },
-  {
-    "id": "004",
-    "title": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxKVueIoOTnxTg8fVuvQ7oSLzYLQxyTb3iiJTfLn4-1FjtrYBkMcET6lK64GgeIblur-RVbSx93QH2Li7Lft04phDZR2X1ViJK-luHlhMRp9rr0D_AIenxAUQlwOxvtTARx8jDz7St7dvrdhut65oJNiy6aTFxcAa4vavnRpOinTphUbjAoZluoxTKP6I/s0/000.jpg",
-    "category": "anime",
-    "tags": ["reencarnación", "isekai", "acción", "aventura", "fantasía"],
-    "sinopsis": "Tras una muerte misteriosa, el Rey Grey renace como Arthur Leywin en el mágico continente de Dicathen. Aunque entra en su segunda vida como un bebé, conserva su sabiduría anterior. Comienza a dominar la magia y a forjar su propio camino con el paso de los años, buscando corregir los errores de su vida pasada.",
-    "franquicia": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?",
-    "link": "https://videosteam12.blogspot.com/2025/11/a00020.html"
-  },
-  {
-    "id": "005",
-    "title": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDRhxPPeLo68AxXl0h6aR7BW8IKLG4k07R5CV3pm22-t_CrQ7NSVSTNmOmKZR6y2utBq81Oq7dNNPCZhvX5tmEanjSk22tFj-HOXVwV4hHTVddE__-Y4sdEAd30qU59Ch0AJ5vhEy3ABrK37CqRwVDHZZ8awi8g1F30xw2oOEpRUkC0O9AaEk35XA9_sU/s0/000.jpg",
-    "category": "anime",
-    "tags": ["comedia", "romance", "recuentos de la vida", "latino", "escolar"],
-    "sinopsis": "Alya es una estudiante de intercambio que goza de popularidad en su nuevo instituto, y suele mostrarse indiferente mientras saca buenas notas. Ignora a su nerd compañero, Kuze Masachika, excepto cuando le suelta una frase coqueta en ruso. Lo que no sabe es que Kuze entiende ruso, aunque finge no saberlo. ¡Veamos adónde los lleva esta disparatada historia de amor!",
-    "franquicia": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00018.html"
-  },
-  {
-    "id": "006",
-    "title": "Kage no Jitsuryokusha ni Naritakute!",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixPT7IKLebHaz6wBA5QkNHw49gqYYUP0d_jNe6izJeJB2B9j827hyy1JBJDrWZbvUcyNQG06ww1f9aQglRdv9wG-mwdEvVp5z2RR-UxKPxV4TzGsrN9xTmjkbSe9HSn6kc0rrf6WkXZ-Im5_5IPJsY8x29UwV5lm95ZGGezdAP3R4eLSCZkesMnvXp0R8/s320/000.jpg",
-    "category": "anime",
-    "tags": ["isekai", "reencarnación", "seinen", "gore", "latino", "escolar"],
-    "sinopsis": "Algunas personas simplemente no son aptas para interpretar el papel del héroe llamativo y descarado ni del villano ruin con bigote y un estilo descomunal. En cambio, operan en las sombras y manejan los hilos de la sociedad con ingenio y astucia. Ese es el papel que Cid quiere interpretar cuando es transportado a otro mundo. Cid inventa una o tres historias y se convierte en el improbable líder de la organización clandestina Shadow Garden, que lucha contra una secta amenazante (que él mismo inventó). Sin embargo, hay un problema que ni siquiera su imaginación salvaje vio venir: la secta que inventó existe, ¡y están más que disgustados de que su fantasía de poder se haya interpuesto en sus malvados planes!",
-    "franquicia": "Kage no Jitsuryokusha ni Naritakute!",
-    "link": "https://videosteam12.blogspot.com/2025/11/a00019.html"
-  },
-  {
-    "id": "007",
-    "title": "Overflow",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrSC-cGF-XEO6mCqvJYiihLGLIOhaU5tNS1WjJMkQZpJpTVXbuljfxl8Z61PTxDSrKa5Vz1OqeXcjqOCypnHHOuVMQmAJnYRtWI6U9noLus-GXR4SyOxPI2w6zz8JVSn01fVxq2tgtIvp9Ro0WYptexkshnUTZPFYgJf8ehsmLAqRZ5nJkLDMCER_Qw2E/s278/00.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Latino"],
-    "sinopsis": "La historia cómico-romántica se centra en un estudiante universitario, Kazushi Sudō, y sus amigas de la infancia, las hermanas Shirakawa. Por extrañas circunstancias los tres terminan bañándose juntos.",
-    "franquicia": "Overflow",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00017.html"
-  },
-  {
-    "id": "008",
-    "title": "Chichi wa Eiyuu, Haha wa Seirei, Musume no Watashi wa Tenseisha.",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsFawwI-QRvoHewpTNFKLrgzhp271N7hmDPLEBoHTcts3b-310bqooRu3mVeuYA43gqwQMA9OdSI2OWIjum3LnX0nX7xkGNfPRxDd9F8bdzQHTdIBT_DKifCiYptTxqmBUsEa_5v-5PajFq6iuRR9SAOb-_V6LtdYNt4FHz1yZQXbP8MJKqvwhTutoz3s/s0/1.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Reencarnación", "Isekai", "domingo"],
-    "sinopsis": "Ellen, una niña de 8 años y mitad espíritu, antes fue una científica en el Japón moderno. Ahora ha reencarnado en una nueva familia: Rovel, su padre y el héroe legendario del reino, y Origin, su madre y la reina de los espíritus. Además de eso, Ellen posee el poder de manipular elementos químicos. ¿Pero serán los poderes de Ellen suficientes para proteger la felicidad de su familia?",
-    "franquicia": "Chichi wa Eiyuu, Haha wa Seirei, Musume no Watashi wa Tenseisha.",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00016.html"
-  },
-  {
-    "id": "009",
-    "title": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru Level Up wa Jinsei wo Kaeta",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDve3oc34E2Zdt8HQUkKxDPCjjx8lTqn2d2SM_n4L6Edjf1jdCc9fAdMOftlRLQZ1GH9ZI-eBvSQo-_LJ2qSOvICGEJt2UM_7MiFxHmlQ7lETFrRoP8XVRDJRAYLBRnESFdCYqg23Ht2pT3zFW7-7WE0n6IV-Z5FP_nWjeH9Ulmz4hdX_XpLBuP1kKiw/s1600/bx153845-C47aoKy7wf19%20%281%29.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Latino", "Isekai"],
-    "sinopsis": "Toda su vida, Yuuya ha sido acosado en la escuela y sus padres lo han descuidado. Después de mudarse a la casa de su difunto abuelo, descubre una puerta extraña que parece estar llamándolo. ¡Yuuya abre la puerta, entra y de repente es transportado a un mundo mágico! Este nuevo mundo contiene tesoros raros y le otorga poderosas habilidades, que él lleva a la Tierra para una nueva oportunidad de vida.",
-    "franquicia": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru Level Up wa Jinsei wo Kaeta",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00015.html"
-  },
-  {
-    "id": "010",
-    "title": "Jigokuraku",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTQkjNet9fhWMtliZ-j8QAOPOvbjNWqH5BTAJXqM16HkRNvrRH9LjrN2WqRoKj8gn__9sSoJhirjSTfx2TGFRvjVyXnkOAw5EYgkFJQTdvO8ped9OuvKFqW2uhOLKEg0ozlo8VGVkBwbIPvPYdNVx8EhUYYOPgCsVR6ARsR5D-EuzMe0R15P55eQKBig/s1600/bx128893-l0R0GFHplDKW.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Latino"],
-    "sinopsis": "El período Edo está llegando a su fin. A Gabimaru, un shinobi anteriormente conocido como el más fuerte de Iwagakure que ahora es un condenado a muerte, se le dice que será absuelto y puesto en libertad si puede recuperar el Elixir de la Vida de una isla que se rumorea que es la tierra pura budista. Sukhavati. Con la esperanza de reunirse con su amada esposa, Gabimaru se dirige a la isla junto con el verdugo Yamada Asaemon Sagiri. Al llegar allí, se encuentran con otros condenados a muerte en busca del Elixir de la Vida... así como con una gran cantidad de criaturas desconocidas, estatuas espeluznantes hechas por el hombre y los ermitaños que gobiernan la isla. ¿Podrá Gabimaru encontrar el Elixir de la Vida en esta isla misteriosa y regresar vivo a casa?",
-    "franquicia": "Jigokuraku",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00014.html"
-  },
-  {
-    "id": "011",
-    "title": "MASHLE",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKI5NeoseQ5s3e4MdT-_rb1iIW4pvoHrtz4ZaidWJA_BiyqVl1E3dC5Hk_CiU_Jssym9OhJ2iNm4yn7HnE3V28KY_rO2VhjHGl0FbNW5WK0GKVG6oeRuWorUqu0boPy-wRobo8XBklcLhp0YAyw6IrGXnBgi36PE76WB_perSvIO5GVrhy1CgxJeDq/s200/bx151801-uBPbQK60fVwD.jp",
-    "category": "anime",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Latino"],
-    "sinopsis": "Este es un mundo de magia. Este es un mundo en el que todos usan la magia casualmente.En un bosque profundo y oscuro en este mundo de magia, hay un chico que está haciendo ejercicio con determinación. Su nombre es Mash Burnedead y tiene un secreto. No puede usar magiaTodo lo que quería era vivir una vida tranquila con su familia, pero la gente de repente comienza a intentar matarlo un día y de alguna manera se encuentra inscrito en la Escuela de Magia Allí pone su mira en convertirse en un Visionario Divino, la élite de la élite.Sus músculos desgarrados trabajarán contra los mejores y más brillantes del mundo mágico Se levanta el telón de esta fantasía mágica excéntrica en la que el poder de ser secuestrado aplasta cualquier hechizo",
-    "franquicia": "MASHLE",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00013.html"
-  },
-  {
-    "id": "012",
-    "title": "Tensei shitara Slime Datta Ken",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSkyui4txxc5-cTK18oxY8QMrPNc68AjTJ75rlD6WIstdVFO5rCV3bFuX_qRa-BOsELnz0wo8ZweA05rAqrJkhZpvQsQbrKy-StXr03ipnY0Keo2bc5gRjun2sav3Z-kLn9WJ_3UwJpOSGCE27557_GNlQczGEwOfGTj0HsGXGpzONqEZeOQlENFrPQhE/s320/3016.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Latino", "Isekai", "Reencarnación"],
-    "sinopsis": "Satoru Mikami es un hombre de 37 años que tiene un trabajo que no le gusta, sin salida y que no es feliz con la vida que lleva, pero cuando muere a manos de un ladrón y piensa que es su fin, se despierta descubriendo que se ha reencarnado en un mundo de magia y espada… ¡pero como un slime! Ahora tendrá que acostumbrarse a su nueva vida, aunque por suerte contará con dos habilidades únicas que le ayudarán a sobrevivir: una que le proporciona una gran comprensión de todo lo que le rodea, y otra que le permite copiar las habilidades de sus oponentes.",
-    "franquicia": "Tensei shitara Slime Datta Ken",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00012.html"
-  },
-  {
-    "id": "013",
-    "title": "Kawaii dake ja Nai Shikimori-san",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjbThKQKR7rX6mrQdcX5v-RAKzZgq66FxlSb40PDeil5otPHPD03GEXqfcqWPrIckFv67cYEnmOWu5i7Dm5XeHCi9hxW0zJfCUy4OV2V36t0ZEfOKqBOCsKPFJQOTTrGskK2VkcLYIGSPgQcv2uJT_ZD77-divEKQ21eTZb68TCcnDF0O2cavlUfALy06n/s320/121695.jpg",
-    "category": "anime",
+    "title": "Kuzco: Un Emperador en el Cole - Temporada 1",
+    "img": "https://image.tmdb.org/t/p/w154/kuzco-t1.jpg",
+"category": "cartoon",
     "tags": ["Acción", "Aventuras", "Fantasía"],
-    "sinopsis": "desconocido",
-    "franquicia": "Kawaii dake ja Nai Shikimori-san",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00006.html"
+    "sinopsis": "Es sobre Kuzco, un adolescente egoísta y malcriado, que resulta ser el heredero al trono. Sin embargo, para poder convertirse en emperador oficial, deberá superar las pruebas de la escuela inca y aprobar todas las asignaturas, donde su amiga Malina le bajará los humos. Pero ¿conseguirá Kuzco, quien está coladito por Malina, que ella le corresponda? Por si fuera poco, la malvada Yzma (que se hace pasar por la directora Amzy) y su memo compinche Kronk, intentarán que Kuzco fracase.. A Nova Escola do Imperador",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "Kuzco Episodio 1",
+            "link": "https://isekaicoleccion.blogspot.com/2025/11/c00001.html"
+          }
+        ]
+      }
+    ]
+    "tags": ["Escuela", "Aventuras", "Comedia"],
+    "sinopsis": "Kuzco comienza su entrenamiento en la escuela inca para convertirse en emperador.",
+    "franquicia": "Kuzco",
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/kuzco-t1.html"
   },
   {
-    "id": "014",
-    "title": "Showtime! Uta no Oneesan datte Shitai",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWZa0JYzy-wQExKc6JJMoCe7xzeFxLXJd_U9OaRiyWQWghXI4ZtgIl34f78QLvYsBXgEiRzyf-3nhDSpDb9t5zzJNXBmNldju92QYYUTsHPDaBSl8zTInZThNaJveEL3db2DBL5AWUyx9oHbb8aVD5gu1CU9SZ22uMjzjaXur5apwGMVcji-RV-ng0loMR/s320/117288.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Isekai", "Hentai", "Latino"],
-    "sinopsis": "desconocido",
-    "franquicia": "Showtime! Uta no Oneesan datte Shitai",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00007.html"
-  },
-  {
-    "id": "015",
-    "title": "Shinjiteita Nakamatachi ni Dungeon Okuchi de Korosarekaketa ga Gift Mugen Gacha de Level 9999 no Nakamatachi wo Te ni Irete Moto Party Member to Sekai ni Fukushuu & Zamaa! Shimasu!",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb659niEf_tOZfX3XJ2NB3LeN1fFVqqkO4QOmw421DWewMD3H4ybaaVJrFeuXtYSd1R-1_HY7qLNsNT3T4-EZgriNcsCBx3rtnN4JhdG43lpcVjWgtc-HZe-W_QtzYp8FooT5bMp72HJoPg0wuaSszPC7OPk3jIsyFs0zq2pet0ryTtYzoUGpEPkhuaAg/s626/bx184322-rRkaMQ7J1zOI.jpg",
-    "category": "anime",
-    "tags": ["Fantasía", "Comedia", "Aventuras", "Acción", "Jueves"],
-    "sinopsis": "Cuando Light es expulsado de la Concordia de las Tribus, sus antiguos camaradas se vuelven instantáneamente contra él. La luz escapa de este diabólico acto de traición por los pelos... solo para encontrarse en la parte más profunda del Abismo, ¡la mazmorra más peligrosa del reino! Para evitar ser devorado por monstruos carnívoros, usa el Gacha ilimitado, su única habilidad mágica. Pero donde antes solo producía artículos chatarra, ¡esta vez aparece Mei, una hermosa luchadora de nivel 9999 con un traje de sirvienta! Tres años después, Light ha forjado su propio reino en esta mazmorra atrasada, convocando a guerreros de nivel 9999 más hermosos que le juran lealtad absoluta. ¡Ahora un poderoso Overlord de nivel 9999, Light planea ascender a la superficie y vengarse de sus traidores uno por uno!",
-    "franquicia": "Shinjiteita Nakamatachi ni Dungeon Okuchi de Korosarekaketa ga Gift Mugen Gacha de Level 9999 no Nakamatachi wo Te ni Irete Moto Party Member to Sekai ni Fukushuu & Zamaa! Shimasu!",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00008.html"
-  },
-  {
-    "id": "016",
-    "title": "Mushoku no Eiyuu: Betsu ni Skill Nanka Iranakatta n da ga",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0Nf1ku0uSxxFDvrmiV-ZSyqz0L-msRuwWcAdcn37z2GwCVAZ06Y7KAfQW4D8m778FKwcw76-T3Dq-QrSAGxPTrXDN63_9nqdzQEL9bLVmptT7ZC-0qFleo7hdnNE5PcOZpni8SPB9elucR7st16Udaorg-od6rBwi4EaWuN1s74CX0EuB_BUxDpvtL7Y/s370/4227.jpg",
-    "category": "anime",
-    "tags": ["Fantasía", "Comedia", "Aventuras", "Acción", "Miercoles"],
-    "sinopsis": "Clases son otorgadas a la edad de 10 años, y la presencia o ausencia de habilidades afecta enormemente la vida. Arel, el hijo de la Princesa Espada Farah y el Archimago Leon, ha sido marcado como Sin Clase... Pero incluso sin una clase o habilidades, Arel cree que puede perseverar a través del esfuerzo.",
-    "franquicia": "Mushoku no Eiyuu: Betsu ni Skill Nanka Iranakatta n da ga",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00003.html"
-  },
-  {
-    "id": "017",
-    "title": "Bukiyou na Senpai.",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrxUmF3ixfUBX8ZFuV0dZRmvA2vlHmMn9Mc_25DvcxfZG25gp565hLwewan4Q55S8z93KuMGC0lEiKq8M5UiXbjoHwSQFd27miVevGuBPWxSy_VEYDdgPCwsep4uLF_ogkrIm2oYZheemGiP78OtaI9rP27jG5YKZPoGyx8OKfnnGkFv7o65V1LGLix2g/s320/MV5BNzg3ZWE5MmEtYWNiOS00YjJhLWJlNWQtZGZlNmNlNDA0ZDgyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "category": "anime",
-    "tags": ["Deportes", "Escolares", "Seinen", "jueves"],
-    "sinopsis": "Kannawa-senpai es considerada muchas cosas, pero suave definitivamente no es una de ellas. Luego conoce a Kamegawa, su nuevo Kouhai. Es lindo, un poco nerd y fácil de hablar. ¡¿Cómo podrá esta torpe Senpai manejar estos nuevos sentimientos?!",
-    "franquicia": "Bukiyou na Senpai.",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00011.html"
-  },
-  {
-    "id": "018",
-    "title": "Wandance",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYsafUedAf-tNWoHRc4c7W7RMtz06IMEjDe-DXgWMEBx9xYP8WLukLZ8Ah-Ef96UM4QcWaOUSTq3GEPi7xAMFOgHqnrJOJ88zms5GiJ7D5ypQ8ONDgu4y02LTPX-i-IkqGcbOHxDMynyN8-uzO7nEeVLqmQZHk_TxC2J8EkeHBvMMDnj2usmLetaTg7s4/s2000/4444.jpg",
-    "category": "anime",
-    "tags": ["Deportes", "Escolares", "Seinen", "Miercoles"],
-    "sinopsis": "Kaboku Kotani está comenzando la preparatoria, y planea hacer lo que siempre ha hecho: acompañar a sus amigos, mantenerse en silencio y no llamar demasiado la atención sobre sí mismo. Después de todo, ya es lo suficientemente difícil salir adelante con un tartamudeo como el suyo: ¿por qué empeorar las cosas destacándose entre la multitud? Pero luego ve a otra estudiante de primer año, Hikari Wanda, bailando como si nadie la estuviera mirando, o como si no le importara quién la vea. Esto hace que a Kaboku le surja una pregunta: ¿Podría alcanzar esa misma libertad? Para acercarse a Wanda, hace algo que nunca pensó que podría hacer: se une al club de baile. Después de todo, cada rutina comienza con un solo paso, ¿verdad? ¡Únete a Kaboku y Wanda mientras improvisan su camino hacia la vida y el amor!",
-    "franquicia": "Wandance",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00005.html"
-  },
-  {
-    "id": "019",
-    "title": "One Punch Man",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIxGoRuhAV3v1BgrG_NNkDzyWj7tudyw7cLcRT9_QUgntOwWOalSZmIhGCq6h4ahZYOtH8hXHmD_ENqXKn_39fQaxlg2p4E6GX2bN1squ2DqlakfwAm2S3M2ZrIKpOgB5zhVXBcC4q34q2AATfr5E-zIG2l99QZrugSOsasaF8lUjTsNor8jW0akLiiso/s1496/008.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Comedia", "Seinen", "Parodia", "Superpoderes", "Domingo"],
-    "sinopsis": "La serie está protagonizada por un héroe que ha entrenado tanto que se ha quedado calvo, y tiene tanta fuerza que puede acabar con cualquier enemigo de un solo puñetazo. Sin embargo, al ser tan fuerte, se aburre y se frustra porque no le cuesta nada vencer sus batallas.",
-    "franquicia": "One Punch Man",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00002.html"
-  },
-  {
-    "id": "020",
-    "title": "Overlord",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXjC2yWwegc4xtABGoPabQTZDi-qxCvDQm8EgQw1n0JIvu9nee_w7t1g8PGT8yu1L2GHqiuRLX92yU33TwLOPCiz1kf8QC7SvIlJ1EEPLp8HEPfq5SpAkAa6nXNjP3k3M6I82Rel6__4TUYEIgtBgCMJlgsfyj0JRqedssnf-o6dU768bFDf9I5FpNhTQ/w240/88019%20%281%29.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Isekai", "Reencarnación", "Latino"],
-    "sinopsis": "Ha llegado la hora final del popular juego de realidad virtual Yggdrasil. Sin embargo, Momonga, un poderoso mago y maestro del gremio oscuro Ainz Ooal Gown, decide pasar sus últimos momentos en el juego mientras los servidores comienzan a apagarse. Para su sorpresa, a pesar de que el reloj ha dado la medianoche, Momonga todavía está completamente consciente como su personaje y, además, los personajes no jugadores parecen haber desarrollado sus propias personalidades. Enfrentado a esta situación anormal, Momonga ordena a sus leales sirvientes que lo ayuden a investigar y tomar el control de este nuevo mundo, con la esperanza de averiguar qué ha causado este desarrollo y si puede haber otros en la misma situación.",
-    "franquicia": "Overlord",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00001.html"
-  },
-  {
-    "id": "021",
-    "title": "Yasei no Last Boss ga Arawareta!",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJG-z-Q9WMVIEGuPQGEO6VHeVuJZ3gW17ipxKYzz2HWNAZ-4pH9Sy8svMArsxwjfZseN18tDxrY3ZNritZWvjOiRSqAubrUZoirgJkfDnAoRzRs21PFxXpC5CzVlMjxM1OA6rts5v1C-Ds0n8chJ1pEN10IhI5STcxQe5tGa3HhXiWRTsDKAiuAG12aFE/s1600/4228.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Aventuras", "Fantasía", "Isekai", "Reencarnación", "sabado"],
-    "sinopsis": "Ruphas Mafahl el soberano de alas negras y líder de las Doce Estrellas del Cielo, ha sido vencido. Un hombre se despierta en el cuerpo del personaje del juego Exgate Ruphas doscientos años después de su derrota a manos de los siete héroes. El mundo del juego de Exgate que conocía ya no está gobernado por humanos—y ya no es solo un juego. Exgate es un mundo propio donde los personajes piensan, sienten y viven como él. Ruphas viaja a través de Exgate en busca de las Doce Estrellas del Cielo, que hace mucho tiempo fueron disueltas. Ruphas se encuentra sin país ejército ni aliados. Una pregunta permanece: ¿cuál es la verdadera razón por la que un hombre común fue reencarnado en Exgate como Ruphas?",
-    "franquicia": "Yasei no Last Boss ga Arawareta!",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00004.html"
-  },
-  {
-    "id": "022",
-    "title": "Tomodachi no Imouto ga Ore ni dake Uzai",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuabuIys2Kzll49jvvjx6BqfsmVohYyuAS1hngU1hcPpI3APivIaDATgjBPfFLNSDksZ_4-6S8RItiRuSTj9geP0rwFaJxgetBYEPZAqiGZUP0PdIgj8vO-DVAdJrZoXsc1zDPnRkbx5TyXzLcrCg8DKm5PvrtEnHZWSZTF2Rv7ibGwKzWQNbCc92vsew/s370/4249.jpg",
-    "category": "anime",
-    "tags": ["Comedia", "Escolares", "Romance", "Sabado"],
-    "sinopsis": "¡Si una chica te molesta, eso significa que le gustas! Desafortunadamente, Akiteru sabe por experiencia que no es así. Porque cada chica con la que interactúa solo le muestra desprecio, ¡y no ha conseguido salir con ninguna! Afortunadamente, le preocupa más conseguir un lugar para él y sus amigos de desarrollo de juegos en el negocio de su tío. Pero cuando su tío le impone una condición que implica hacer el papel de novio de su hija, Akiteru no tiene más remedio que aceptarlo. ¿Qué pensará Iroha, la hermana de su mejor amigo, que lo acosa sin parar, sobre la noticia?",
-    "franquicia": "Tomodachi no Imouto ga Ore ni dake Uzai",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00009.html"
-  },
-  {
-    "id": "023",
-    "title": "One Piece",
-    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJRDRWD4heIaf-cQrDrZoBcK0BD1uRVY1SrQd9qXhy9wkHIThCb1P_B8oFlU9Lhj3YqulZqdH7eUusnqRO-P_qvfg2ZU4eZbVJtBEgrIg1WCR-qP1KiR92GBhIt3vLeq2hGzCpiwrmFnjbUEtQKQZH2F3zi888UaDjhb0aLU02EHivDaAccK8v0yf_Jlg/s1600/002.jpg",
-    "category": "anime",
-    "tags": ["Comedia", "Escolares", "Romance", "Latino", "Aventuras", "Fantasia"],
-    "sinopsis": "One Piece sigue las aventuras de Monkey D. Luffy, un joven pirata con el poder de la fruta Gomu Gomu no Mi, que le permite estirarse como la goma. Su sueño es encontrar el legendario tesoro One Piece y convertirse en el Rey de los Piratas. Acompañado por su tripulación, los Sombrero de Paja, viaja por el mar Grand Line enfrentando enemigos, descubriendo misterios y forjando lazos de amistad.",
-    "franquicia": "One Piece",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/a00010.html"
-  }
+    "id": "002",
+    "title": "Kuzco: El Regreso de Yzma",
+    "img": "https://image.tmdb.org/t/p/w154/kuzco-yzma.jpg",
+    "category": "cartoon", 
+    "tags": ["Yzma", "Villanos", "Acción"],
+    "sinopsis": "La malvada Yzma regresa con un nuevo plan para arruinar el reinado de Kuzco.",
+    "franquicia": "Kuzco",
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/kuzco-yzma.html"
+}
 ]
-
