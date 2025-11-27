@@ -1,19 +1,52 @@
 [
   {
-    "title": "Kuzco: Un Emperador en el Cole",
-    "img": "https://image.tmdb.org/t/p/w154/aGawtJeUXycK0EQq080ngw18TcA.jpg",
+    "id": "001",
+    "title": "Dragon Ball Z - Saga de los Saiyans",
+    "img": "https://image.tmdb.org/t/p/w154/dbz-saiyans.jpg",
+    "category": "anime", 
+    "tags": ["Acción", "Saiyans", "Goku", "Vegeta"],
+    "sinopsis": "Goku descubre sus orígenes Saiyan mientras la Tierra se enfrenta a la invasión de Vegeta y Nappa.",
+    "franquicia": "Dragon Ball",
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/dbz-saiyans.html"
+  },
+  {
+    "id": "001", 
+    "title": "Dragon Ball Super: Broly - Película",
+    "img": "https://image.tmdb.org/t/p/w154/dbs-broly.jpg",
+    "category": "anime",
+    "tags": ["Película", "Broly", "Super Saiyan Dios"],
+    "sinopsis": "Goku y Vegeta enfrentan al legendario Broly en una batalla épica que revela nuevos secretos.",
+    "franquicia": "Dragon Ball", 
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/dbs-broly.html"
+  },
+  {
+    "id": "001",
+    "title": "Dragon Ball Clásico - Torneo de las Artes Marciales",
+    "img": "https://image.tmdb.org/t/p/w154/db-torneo.jpg", 
+    "category": "anime",
+    "tags": ["Torneo", "Maestro Roshi", "Krilin"],
+    "sinopsis": "Goku participa en su primer Torneo de Artes Marciales enfrentando poderosos rivales.",
+    "franquicia": "Dragon Ball",
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/db-torneo.html"
+  },
+  {
+    "id": "002",
+    "title": "Kuzco: Un Emperador en el Cole - Temporada 1",
+    "img": "https://image.tmdb.org/t/p/w154/kuzco-t1.jpg",
     "category": "cartoon",
-    "tags": ["Acción", "Aventuras", "Fantasía"],
-    "sinopsis": "Es sobre Kuzco, un adolescente egoísta y malcriado, que resulta ser el heredero al trono. Sin embargo, para poder convertirse en emperador oficial, deberá superar las pruebas de la escuela inca y aprobar todas las asignaturas, donde su amiga Malina le bajará los humos. Pero ¿conseguirá Kuzco, quien está coladito por Malina, que ella le corresponda? Por si fuera poco, la malvada Yzma (que se hace pasar por la directora Amzy) y su memo compinche Kronk, intentarán que Kuzco fracase.. A Nova Escola do Imperador",
-    "seasons": [
-      {
-        "episodes": [
-          {
-            "title": "Kuzco Episodio 1",
-            "link": "https://isekaicoleccion.blogspot.com/2025/11/c00001.html"
-          }
-        ]
-      }
-    ]
+    "tags": ["Escuela", "Aventuras", "Comedia"],
+    "sinopsis": "Kuzco comienza su entrenamiento en la escuela inca para convertirse en emperador.",
+    "franquicia": "Kuzco",
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/kuzco-t1.html"
+  },
+  {
+    "id": "002",
+    "title": "Kuzco: El Regreso de Yzma",
+    "img": "https://image.tmdb.org/t/p/w154/kuzco-yzma.jpg",
+    "category": "cartoon", 
+    "tags": ["Yzma", "Villanos", "Acción"],
+    "sinopsis": "La malvada Yzma regresa con un nuevo plan para arruinar el reinado de Kuzco.",
+    "franquicia": "Kuzco",
+    "link": "https://isekaicoleccion.blogspot.com/2025/11/kuzco-yzma.html"
   }
 ]
