@@ -1,178 +1,19 @@
 [
   {
-    "id": "003",
-    "title": "Naruto - Temporada 1: La Llegada",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-t1.jpg",
-    "category": "anime",
-    "tags": ["Acción", "Aventura", "Ninjas", "Shonen"],
-    "sinopsis": "Naruto Uzumaki, un joven ninja marginado, sueña con convertirse en Hokage para ganar el reconocimiento de su aldea.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-t1.html",
-    "year": "2002"
-  },
-  {
-    "id": "003",
-    "title": "Naruto: Batalla en el País del Agua",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-pais-agua.jpg",
-    "category": "anime",
-    "tags": ["Misión", "Zabuza", "Haku", "Equipo 7"],
-    "sinopsis": "El Equipo 7 enfrenta su primera misión real contra los temibles Zabuza y Haku en el País del Agua.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-pais-agua.html",
-    "year": "2002"
-  },
-  {
-    "id": "003",
-    "title": "Naruto: Exámenes Chūnin",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-examenes.jpg",
-    "category": "anime",
-    "tags": ["Exámenes", "Gaara", "Neji", "Hinata"],
-    "sinopsis": "Naruto y sus amigos participan en los peligrosos Exámenes Chūnin donde enfrentan a genios de otras aldeas.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-examenes.html",
-    "year": "2003"
-  },
-  {
-    "id": "003",
-    "title": "Naruto: Invasión de Konoha",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-invasion.jpg",
-    "category": "anime",
-    "tags": ["Invasión", "Orochimaru", "Sandaime", "Batalla"],
-    "sinopsis": "La Aldea de la Hoja es invadida por el sonido y la arena, llevando a una batalla épica por la supervivencia.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-invasion.html",
-    "year": "2003"
-  },
-  {
-    "id": "003",
-    "title": "Naruto Shippūden - Temporada 1",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-shippuden-t1.jpg",
-    "category": "anime",
-    "tags": ["Shippuden", "Akatsuki", "Sasuke", "Madurez"],
-    "sinopsis": "Naruto regresa después de 2 años de entrenamiento para enfrentar la amenaza de la organización Akatsuki.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-shippuden-t1.html",
-    "year": "2007"
-  },
-  {
-    "id": "003",
-    "title": "Naruto Shippūden: Rescate de Gaara",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-gaara.jpg",
-    "category": "anime",
-    "tags": ["Gaara", "Akatsuki", "Rescate", "Kazekage"],
-    "sinopsis": "Naruto y el Equipo Kakashi corren para rescatar a Gaara quien ha sido capturado por la Akatsuki.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-gaara.html",
-    "year": "2007"
-  },
-  {
-    "id": "003",
-    "title": "Naruto Shippūden: Saga de Pain",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-pain.jpg",
-    "category": "anime",
-    "tags": ["Pain", "Destrucción", "Hokage", "Sage Mode"],
-    "sinopsis": "Pain ataca Konoha y Naruto debe alcanzar un nuevo nivel de poder para proteger a todos.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-pain.html",
-    "year": "2009"
-  },
-  {
-    "id": "003",
-    "title": "Naruto Shippūden: Guerra Ninja",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-guerra.jpg",
-    "category": "anime",
-    "tags": ["Guerra", "Alianza", "Madara", "Kaguya"],
-    "sinopsis": "Todas las aldeas ninja se unen para enfrentar la mayor amenaza en la historia del mundo shinobi.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-guerra.html",
-    "year": "2012"
-  },
-  {
-    "id": "003",
-    "title": "Naruto: La Película - Batalla Fantasma",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-movie1.jpg",
-    "category": "anime",
-    "tags": ["Película", "Fantasma", "Mōryō", "Shion"],
-    "sinopsis": "Naruto debe proteger a una sacerdotisa que puede predecir la muerte mientras enfrentan un ejército fantasma.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-movie1.html",
-    "year": "2004"
-  },
-  {
-    "id": "003",
-    "title": "Naruto Shippūden: La Película - El Lazo",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-movie2.jpg",
-    "category": "anime",
-    "tags": ["Película", "Menma", "Shinobi", "Aventura"],
-    "sinopsis": "Naruto conoce a Menma, un misterioso ninja con una conexión especial con el Zorro de Nueve Colas.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-movie2.html",
-    "year": "2008"
-  },
-  {
-    "id": "003",
-    "title": "Naruto Shippūden: La Torre Perdida",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-torre.jpg",
-    "category": "anime",
-    "tags": ["Película", "Viaje en el Tiempo", "Minekaze", "Reina Sara"],
-    "sinopsis": "Naruto viaja al pasado y conoce al Cuarto Hokage durante una misión para proteger a una reina.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-torre.html",
-    "year": "2010"
-  },
-  {
-    "id": "003",
-    "title": "Naruto: La Leyenda de la Piedra de Gelel",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-gelel.jpg",
-    "category": "anime",
-    "tags": ["Película", "Piedra Gelel", "Temujin", "Haido"],
-    "sinopsis": "Naruto y sus amigos descubren los secretos de una antigua piedra con poder ilimitado.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-gelel.html",
-    "year": "2005"
-  },
-  {
-    "id": "003",
-    "title": "Boruto: Naruto Next Generations",
-    "img": "https://image.tmdb.org/t/p/w154/boruto-t1.jpg",
-    "category": "anime",
-    "tags": ["Boruto", "Nueva Generación", "Kawaki", "Karma"],
-    "sinopsis": "La historia continúa con Boruto, hijo de Naruto, y su equipo en una nueva era de paz y tecnología.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/boruto-t1.html",
-    "year": "2017"
-  },
-  {
-    "id": "003",
-    "title": "Boruto: El Viaje a los Cinco Kage",
-    "img": "https://image.tmdb.org/t/p/w154/boruto-kage.jpg",
-    "category": "anime",
-    "tags": ["Boruto", "Cinco Kage", "Mitsuki", "Sarada"],
-    "sinopsis": "Boruto y su equipo acompañan a Naruto a la reunión de los Cinco Kage donde enfrentan nuevas amenazas.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/boruto-kage.html",
-    "year": "2018"
-  },
-  {
-    "id": "003",
-    "title": "Naruto: Batalla de los Hermanos",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-hermanos.jpg",
-    "category": "anime",
-    "tags": ["Sasuke", "Itachi", "Uchiha", "Venganza"],
-    "sinopsis": "El enfrentamiento final entre Sasuke e Itachi Uchiha revela la verdad detrás de la masacre del clan.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-hermanos.html",
-    "year": "2008"
-  },
-  {
-    "id": "003",
-    "title": "Naruto: El Poder de los Seis Caminos",
-    "img": "https://image.tmdb.org/t/p/w154/naruto-seis-caminos.jpg",
-    "category": "anime",
-    "tags": ["Seis Caminos", "Sage of Six Paths", "Rikudō", "Poder Divino"],
-    "sinopsis": "Naruto obtiene el poder del Sabio de los Seis Caminos para enfrentar a Madara y Kaguya.",
-    "franquicia": "Naruto",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/naruto-seis-caminos.html",
-    "year": "2014"
+    "title": "Kuzco: Un Emperador en el Cole",
+    "img": "https://image.tmdb.org/t/p/w154/aGawtJeUXycK0EQq080ngw18TcA.jpg",
+    "category": "cartoon",
+    "tags": ["Acción", "Aventuras", "Fantasía"],
+    "sinopsis": "Es sobre Kuzco, un adolescente egoísta y malcriado, que resulta ser el heredero al trono. Sin embargo, para poder convertirse en emperador oficial, deberá superar las pruebas de la escuela inca y aprobar todas las asignaturas, donde su amiga Malina le bajará los humos. Pero ¿conseguirá Kuzco, quien está coladito por Malina, que ella le corresponda? Por si fuera poco, la malvada Yzma (que se hace pasar por la directora Amzy) y su memo compinche Kronk, intentarán que Kuzco fracase.. A Nova Escola do Imperador",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "Kuzco Episodio 1",
+            "link": "https://isekaicoleccion.blogspot.com/2025/11/c00001.html"
+          }
+        ]
+      }
+    ]
   }
 ]
