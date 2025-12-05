@@ -13,7 +13,7 @@
     "title": "Attack on Titan Temporada 2",
     "img": "https://example.com/images/aot2.jpg",
     "category": "anime",
-    "tags": ["castellano", "accion", "drama", "misterio"],
+    "tags": ["accion", "drama", "misterio"],
     "sinopsis": "Eren y sus compañeros del Cuerpo de Exploración descubren los secretos detrás de los Titanes y los muros.",
     "link": "https://example.com/aot-s2-e1",
     "franchiseId": "001",
@@ -160,3 +160,4 @@
     "franchiseOrder": 15
   }
 ]
+
