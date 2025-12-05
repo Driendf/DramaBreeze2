@@ -367,8 +367,8 @@
         ]
       }
     ],
-    "franchiseId": "franquicia-one",
-    "franchiseOrder": 1,
+    "franchiseId": "A00002",
+    "franchiseOrder": 3,
     "year": "2023",
     "rating": 7
   },
@@ -395,8 +395,8 @@
         ]
       }
     ],
-    "franchiseId": "franquicia-one",
-    "franchiseOrder": 1,
+    "franchiseId": "A00002",
+    "franchiseOrder": 2,
     "year": "2023",
     "rating": 7
   },
@@ -1881,7 +1881,7 @@
         ]
       }
     ],
-    "franchiseId": "franquicia-one",
+    "franchiseId": "A00002",
     "franchiseOrder": 1,
     "year": "2023",
     "rating": 7
