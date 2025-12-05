@@ -1,19 +1,170 @@
 [
   {
-    "title": "Kuzco: Un Emperador en el Cole",
-    "img": "https://image.tmdb.org/t/p/w154/aGawtJeUXycK0EQq080ngw18TcA.jpg",
+    "title": "Naruto Shippuden",
+    "img": "https://via.placeholder.com/300x450?text=Naruto",
     "category": "cartoon",
-    "tags": ["Acción", "Aventuras", "Fantasía"],
-    "sinopsis": "Es sobre Kuzco, un adolescente egoísta y malcriado, que resulta ser el heredero al trono. Sin embargo, para poder convertirse en emperador oficial, deberá superar las pruebas de la escuela inca y aprobar todas las asignaturas, donde su amiga Malina le bajará los humos. Pero ¿conseguirá Kuzco, quien está coladito por Malina, que ella le corresponda? Por si fuera poco, la malvada Yzma (que se hace pasar por la directora Amzy) y su memo compinche Kronk, intentarán que Kuzco fracase.. A Nova Escola do Imperador",
+    "tags": ["latino", "accion", "shonen", "franquicia-001"],
+    "sinopsis": "Naruto Uzumaki regresa después de dos años de entrenamiento listo para enfrentar nuevos desafíos.",
     "seasons": [
       {
         "episodes": [
           {
-            "title": "Kuzco Episodio 1",
-            "link": "https://isekaicoleccion.blogspot.com/2025/11/c00001.html"
+            "title": "Episodio 1: El regreso a casa",
+            "link": "https://example.com/naruto-ep1"
           }
         ]
       }
-    ]
+    ],
+    "franchiseId": "franquicia-001",
+    "franchiseOrder": 1,
+    "year": "2007",
+    "rating": 8.5
+  },
+  {
+    "title": "Naruto: La película",
+    "img": "https://via.placeholder.com/300x450?text=Naruto+Pelicula",
+    "category": "cartoon",
+    "tags": ["latino", "pelicula", "franquicia-001"],
+    "sinopsis": "Primera película de la franquicia Naruto.",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "Película completa",
+            "link": "https://example.com/naruto-movie"
+          }
+        ]
+      }
+    ],
+    "franchiseId": "franquicia-001",
+    "franchiseOrder": 2,
+    "year": "2004",
+    "rating": 7.8
+  },
+  {
+    "title": "Demon Slayer",
+    "img": "https://via.placeholder.com/300x450?text=Demon+Slayer",
+    "category": "cartoon",
+    "tags": ["castellano", "accion", "demonios", "franquicia-002"],
+    "sinopsis": "Tanjiro Kamado se convierte en cazador de demonios para salvar a su hermana.",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "Episodio 1: Crueldad",
+            "link": "https://example.com/demonslayer-ep1"
+          }
+        ]
+      }
+    ],
+    "franchiseId": "franquicia-002",
+    "franchiseOrder": 1,
+    "year": "2019",
+    "rating": 9.0
+  },
+  {
+    "title": "Demon Slayer: Mugen Train",
+    "img": "https://via.placeholder.com/300x450?text=Mugen+Train",
+    "category": "cartoon",
+    "tags": ["latino", "pelicula", "franquicia-002"],
+    "sinopsis": "Película de Demon Slayer que continúa la historia del arco del Tren Infinito.",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "Película completa",
+            "link": "https://example.com/mugen-train"
+          }
+        ]
+      }
+    ],
+    "franchiseId": "franquicia-002",
+    "franchiseOrder": 2,
+    "year": "2020",
+    "rating": 9.2
+  },
+  {
+    "title": "Jujutsu Kaisen",
+    "img": "https://via.placeholder.com/300x450?text=Jujutsu+Kaisen",
+    "category": "cartoon",
+    "tags": ["latino", "sobrenatural", "franquicia-003"],
+    "sinopsis": "Yuji Itadori se une a la escuela de Jujutsu para convertirse en hechicero.",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "Episodio 1: Ryomen Sukuna",
+            "link": "https://example.com/jjk-ep1"
+          }
+        ]
+      }
+    ],
+    "franchiseId": "franquicia-003",
+    "franchiseOrder": 1,
+    "year": "2020",
+    "rating": 8.8
+  },
+  {
+    "title": "Spy x Family",
+    "img": "https://via.placeholder.com/300x450?text=Spy+x+Family",
+    "category": "cartoon",
+    "tags": ["castellano", "comedia", "accion", "franquicia-004"],
+    "sinopsis": "Un espía forma una familia falsa para cumplir su misión.",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "Episodio 1: Operación Strix",
+            "link": "https://example.com/spyfamily-ep1"
+          }
+        ]
+      }
+    ],
+    "franchiseId": "franquicia-004",
+    "franchiseOrder": 1,
+    "year": "2022",
+    "rating": 9.1
+  },
+  {
+    "title": "One Piece",
+    "img": "https://via.placeholder.com/300x450?text=One+Piece",
+    "category": "cartoon",
+    "tags": ["latino", "aventura", "shonen", "franquicia-005"],
+    "sinopsis": "Monkey D. Luffy busca el One Piece para convertirse en el Rey de los Piratas.",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "Episodio 1: ¡Soy Luffy! El hombre que será el Rey de los Piratas",
+            "link": "https://example.com/onepiece-ep1"
+          }
+        ]
+      }
+    ],
+    "franchiseId": "franquicia-005",
+    "franchiseOrder": 1,
+    "year": "1999",
+    "rating": 8.7
+  },
+  {
+    "title": "Attack on Titan",
+    "img": "https://via.placeholder.com/300x450?text=Attack+on+Titan",
+    "category": "cartoon",
+    "tags": ["castellano", "accion", "drama", "franquicia-006"],
+    "sinopsis": "La humanidad lucha por sobrevivir contra los titanes.",
+    "seasons": [
+      {
+        "episodes": [
+          {
+            "title": "Episodio 1: A la humanidad, 2.000 años en el futuro",
+            "link": "https://example.com/aot-ep1"
+          }
+        ]
+      }
+    ],
+    "franchiseId": "franquicia-006",
+    "franchiseOrder": 1,
+    "year": "2013",
+    "rating": 9.0
   }
 ]
