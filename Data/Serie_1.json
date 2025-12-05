@@ -1,11 +1,162 @@
 [
   {
-    "title": "Serie 1",
-    "category": "series",
-    "franchiseId": "marvel-cinematic-universe",
-    "franchiseOrder": 1,
-    "tags": ["acción", "superhéroes", "latino"],
-    "img": "url-imagen.jpg",
-    "link": "url-video.mp4"
+    "title": "Attack on Titan Temporada 1",
+    "img": "https://example.com/images/aot1.jpg",
+    "category": "anime",
+    "tags": ["castellano", "accion", "drama", "fantasia"],
+    "sinopsis": "La humanidad lucha por sobrevivir dentro de ciudades rodeadas por enormes muros que los protegen de los Titanes.",
+    "link": "https://example.com/aot-s1-e1",
+    "franchiseId": "001",
+    "franchiseOrder": 1
+  },
+  {
+    "title": "Attack on Titan Temporada 2",
+    "img": "https://example.com/images/aot2.jpg",
+    "category": "anime",
+    "tags": ["castellano", "accion", "drama", "misterio"],
+    "sinopsis": "Eren y sus compañeros del Cuerpo de Exploración descubren los secretos detrás de los Titanes y los muros.",
+    "link": "https://example.com/aot-s2-e1",
+    "franchiseId": "001",
+    "franchiseOrder": 2
+  },
+  {
+    "title": "Attack on Titan Temporada 3",
+    "img": "https://example.com/images/aot3.jpg",
+    "category": "anime",
+    "tags": ["castellano", "accion", "drama", "politica"],
+    "sinopsis": "La lucha se traslada al interior de los muros donde se revelan secretos sobre el gobierno y la historia.",
+    "link": "https://example.com/aot-s3-e1",
+    "franchiseId": "001",
+    "franchiseOrder": 3
+  },
+  {
+    "title": "Attack on Titan Temporada 4",
+    "img": "https://example.com/images/aot4.jpg",
+    "category": "anime",
+    "tags": ["castellano", "accion", "drama", "guerra"],
+    "sinopsis": "La batalla final se acerca mientras el conflicto se expande más allá de los muros.",
+    "link": "https://example.com/aot-s4-e1",
+    "franchiseId": "001",
+    "franchiseOrder": 4
+  },
+  {
+    "title": "Jujutsu Kaisen Temporada 1",
+    "img": "https://example.com/images/jjk1.jpg",
+    "category": "anime",
+    "tags": ["latino", "accion", "sobrenatural", "shonen"],
+    "sinopsis": "Yuji Itadori se une a la escuela de Jujutsu después de tragarse un poderoso objeto maldito.",
+    "link": "https://example.com/jjk-s1-e1",
+    "franchiseId": "002",
+    "franchiseOrder": 1
+  },
+  {
+    "title": "Jujutsu Kaisen Temporada 2",
+    "img": "https://example.com/images/jjk2.jpg",
+    "category": "anime",
+    "tags": ["latino", "accion", "sobrenatural", "drama"],
+    "sinopsis": "El pasado de Satoru Gojo y Suguru Geto se revela mientras las amenazas aumentan.",
+    "link": "https://example.com/jjk-s2-e1",
+    "franchiseId": "002",
+    "franchiseOrder": 2
+  },
+  {
+    "title": "Kimetsu no Yaiba: Mugen Train",
+    "img": "https://example.com/images/ds-movie.jpg",
+    "category": "anime",
+    "tags": ["castellano", "accion", "sobrenatural", "aventura"],
+    "sinopsis": "Tanjiro y sus compañeros investigan desapariciones misteriosas en un tren infinito.",
+    "link": "https://example.com/ds-movie",
+    "franchiseId": "003",
+    "franchiseOrder": 3
+  },
+  {
+    "title": "El Viaje de Chihiro",
+    "img": "https://example.com/images/chihiro.jpg",
+    "category": "anime",
+    "tags": ["fantasia", "aventura", "misterio", "castellano"],
+    "sinopsis": "Una niña debe trabajar en un baño de dioses para liberar a sus padres de un hechizo.",
+    "link": "https://example.com/chihiro",
+    "franchiseId": null,
+    "franchiseOrder": 1
+  },
+  {
+    "title": "Cyberpunk: Edgerunners",
+    "img": "https://example.com/images/cyberpunk.jpg",
+    "category": "anime",
+    "tags": ["ciencia ficcion", "accion", "drama", "latino"],
+    "sinopsis": "Un street kid se convierte en un mercenario en Night City para sobrevivir.",
+    "link": "https://example.com/cyberpunk-e1",
+    "franchiseId": null,
+    "franchiseOrder": 1
+  },
+  {
+    "title": "Vinland Saga Temporada 1",
+    "img": "https://example.com/images/vinland1.jpg",
+    "category": "anime",
+    "tags": ["historico", "accion", "drama", "vikingos", "castellano"],
+    "sinopsis": "Un joven vikingo busca venganza por la muerte de su padre a manos de mercenarios.",
+    "link": "https://example.com/vinland-s1-e1",
+    "franchiseId": "004",
+    "franchiseOrder": 1
+  },
+  {
+    "title": "Vinland Saga Temporada 2",
+    "img": "https://example.com/images/vinland2.jpg",
+    "category": "anime",
+    "tags": ["historico", "drama", "desarrollo", "vikingos", "castellano"],
+    "sinopsis": "Thorfinn busca un nuevo propósito en la vida después de perder su razón para luchar.",
+    "link": "https://example.com/vinland-s2-e1",
+    "franchiseId": "004",
+    "franchiseOrder": 2
+  },
+  {
+    "title": "Spy x Family Parte 1",
+    "img": "https://example.com/images/spy-family1.jpg",
+    "category": "anime",
+    "tags": ["comedia", "accion", "espionaje", "familia", "latino"],
+    "sinopsis": "Un espía crea una familia falsa para una misión, sin saber que su hija es telepatá y su esposa una asesina.",
+    "link": "https://example.com/spy-s1-e1",
+    "franchiseId": "005",
+    "franchiseOrder": 1
+  },
+  {
+    "title": "Spy x Family Parte 2",
+    "img": "https://example.com/images/spy-family2.jpg",
+    "category": "anime",
+    "tags": ["comedia", "accion", "espionaje", "familia", "latino"],
+    "sinopsis": "La familia Forger enfrenta nuevos desafíos mientras su misión continúa.",
+    "link": "https://example.com/spy-s2-e1",
+    "franchiseId": "005",
+    "franchiseOrder": 2
+  },
+  {
+    "title": "Chainsaw Man",
+    "img": "https://example.com/images/chainsaw.jpg",
+    "category": "anime",
+    "tags": ["accion", "horror", "sobrenatural", "shonen", "castellano"],
+    "sinopsis": "Un joven pobre fusiona con su perro demoníaco para convertirse en Chainsaw Man y cazar demonios.",
+    "link": "https://example.com/chainsaw-e1",
+    "franchiseId": "006",
+    "franchiseOrder": 1
+  },
+  {
+    "title": "Bleach: Thousand-Year Blood War",
+    "img": "https://example.com/images/bleach-tybw.jpg",
+    "category": "anime",
+    "tags": ["accion", "sobrenatural", "shonen", "guerra", "castellano"],
+    "sinopsis": "Ichigo y los Shinigami enfrentan a los Quincy en la guerra final.",
+    "link": "https://example.com/bleach-tybw-e1",
+    "franchiseId": "007",
+    "franchiseOrder": 5
+  },
+  {
+    "title": "One Piece: Film Red",
+    "img": "https://example.com/images/one-piece-red.jpg",
+    "category": "anime",
+    "tags": ["aventura", "accion", "musical", "shonen", "latino"],
+    "sinopsis": "Los Sombrero de Paja asisten al concierto de Uta, una famosa cantante con un pasado misterioso.",
+    "link": "https://example.com/one-piece-red",
+    "franchiseId": "008",
+    "franchiseOrder": 15
   }
 ]
