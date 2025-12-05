@@ -1,10 +1,11 @@
 [
   {
-    "title": "Zorro",
-    "img": "https://image.tmdb.org/t/p/w154/8fofhCU3SRcRdXYL3psiW4zfyDt.jpg",
+    "title": "Serie 1",
     "category": "series",
-    "tags": ["serie"],
-    "sinopsis": "Al convertirse en alcalde de Los Ángeles de 1821, Don Diego de la Vega se enfrenta a la resistencia del corrupto empresario Don Emmanuel.. زورو",
-    "link": "https://isekaicoleccion.blogspot.com/2025/11/s00001.html"
+    "franchiseId": "marvel-cinematic-universe",
+    "franchiseOrder": 1,
+    "tags": ["acción", "superhéroes", "latino"],
+    "img": "url-imagen.jpg",
+    "link": "url-video.mp4"
   }
 ]
