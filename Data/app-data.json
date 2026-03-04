@@ -1,18 +1,18 @@
 {
   "apps": [
     {
-      "id": "pdf-scanner-plus",
-      "titulo": "PDF Scanner Plus",
-      "version": "1.3.18",
-      "tamano": "41.49 MB",
-      "descargas": "1,000,000+",
-      "categoria": "Productivity",
-      "icono": "https://via.placeholder.com/300x300/8b5cf6/ffffff?text=Scanner",
-      "descripcion": "PDF Scanner Plus - Doc Scanner is your personal scanner for any document, text or image. Convierte documentos en papel en PDF de alta calidad con detección automática de bordes y herramientas de mejora.",
+      "id": "AAP0001",
+      "titulo": "DramaBox",
+      "version": "5.3.2",
+      "tamano": "72 MB",
+      "descargas": "100,000,000+",
+      "categoria": "Entretenimiento",
+      "icono": "https://getmodpc.net/wp-content/uploads/2026/02/dramabox-stream-drama-shorts-150x150.png",
+      "descripcion": "¡Bienvenido a DramaBox - Escucha Drama Shorts, un universo de rollos cortos, tu destino definitivo para un mundo fascinante de entretenimiento en miniatura, ya disponible en Google Play Store!",
       "imagenes": [
-        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Scan+1",
-        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Scan+2",
-        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=PDF+Export"
+        "https://play-lh.googleusercontent.com/fmrnydSWVzLTmZ_sSLxnzkTdSCqnoTGdE9lI4d7GPT5t4ljIXkrSSBoXZohjevQmimA=h305",
+        "https://play-lh.googleusercontent.com/UkWm2GMWjAZbZh2CyfMmiW2M1_FeBIJame9zWuyJYoG5rp8KvPHn2ym-FKvabqMF-A=h305",
+        "https://play-lh.googleusercontent.com/04DMTQPBciyjtR-qnIXPi63QuylsIUb68oXfuyLGXJEH8JYfUHHZSuCRnDt0u5O3GlRU=h305"
       ],
       "enlace_descarga": "https://ejemplo.com/descarga/pdf-scanner-plus.apk",
       "enlace_descarga_alternativo": "https://ejemplo.com/alternativo",
