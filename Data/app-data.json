@@ -1,69 +1,122 @@
 {
-  "categoria": "Entretenimiento",
-  "app_principal": {
-    "titulo": "DramaBox - Series en Línea",
-    "version": "v3.5.2 (MOD)",
-    "tamano": "45.8 MB",
-    "requiere_android": "9.0 y superior",
-    "arquitectura": "arm64-v8a",
-    "mod_info": [
-      "✓ Suscripción Premium Desbloqueada",
-      "✓ Sin Anuncios (Feed, Reproductor, Búsqueda)",
-      "✓ Descarga de Videos y Música sin Límites",
-      "✓ Calidad de Audio y Video Mejorada (320kbps/4K)",
-      "✓ Temas Personalizados (Modo Oscuro/Claro/Amoled)",
-      "✓ Soporte Multi-Cuenta"
-    ],
-    "descripcion": "Sumérgete en el mejor contenido de entretenimiento con StreamMax. Disfruta de millones de canciones, los podcasts más populares y videos musicales exclusivos, todo sin anuncios y con la mejor calidad. Nuestra versión MOD desbloquea todas las funciones premium para que tu experiencia sea inigualable. Crea tus listas de reproducción, descarga tu contenido favorito para escucharlo sin conexión y descubre nuevos artistas gracias a nuestro algoritmo inteligente. ¡La fiesta en tus oídos comienza ahora!",
-    "imagenes": [
-      "https://play-lh.googleusercontent.com/x4A1rBzr64QXA2Fp0DJfiEGhvOp1BJ5nP1Q5irarnn1BvEk1qIfFJsGSkxz5Mrt97xAN=w526-h296-rw",
-      "https://play-lh.googleusercontent.com/yrYUkCpluJ6q9sRY1AxRt0CSIq1lXeXZMDAq8Q2gUWpJIGicEFiv_pgRbK1Kz9j-7uY=w526-h296-rw",
-      "https://play-lh.googleusercontent.com/_aUATQRTcRMeADmXi2nHH9m1XY_vQ7nc7_ntQJtoOpcY-FWT_UT8BlUQj578hTwNNg=w526-h296-rw",
-      "https://play-lh.googleusercontent.com/j_La1mAPzIdEQWnPMQ2WxfwXtTtnUa-vTr6x-iCDhaviBN_7cP425lWogXeO1SiTUaI3=w526-h296-rw",
-      "https://play-lh.googleusercontent.com/xo6uUip_7JscIW6JAeLbdf11FpYa-7gUAy0f3CS2dx5rgo3B6tjUcM5YSQl-mrWqiO8=w526-h296-rw"
-    ],
-    "enlace_descarga": "https://ejemplo.com/descargar/streammax-v3.5.2-mod.apk",
-    "enlace_descarga_alternativo": "https://ejemplo2.com/streammax-mod.apk"
-  },
-  "franquicia_otras_versiones": [
+  "apps": [
     {
-      "id": "APP0001",
-      "titulo": "DramaBox - Series en Línea",
-      "version": "v2.1.0",
-      "tamano": "18.2 MB",
-      "imagen": "https://i.postimg.cc/Lite/streammax-lite.jpg",
-      "enlace_descarga": "https://ejemplo.com/streammax-lite.apk"
+      "id": "pdf-scanner-plus",
+      "titulo": "PDF Scanner Plus",
+      "version": "1.3.18",
+      "tamano": "18.5 MB",
+      "actualizacion": "Marzo 2026",
+      "categoria": "Productividad",
+      "icono": "https://via.placeholder.com/300x300/8b5cf6/ffffff?text=Scanner",
+      "descripcion_corta": "Escanea documentos, textos e imágenes y conviértelos a PDF con calidad profesional.",
+      "descripcion": "PDF Scanner Plus convierte documentos en papel, textos impresos y fotos en archivos digitales limpios en segundos. Escanea con la cámara de tu teléfono, crea una copia digital clara en tu dispositivo y conviértela a PDF (o guárdala como imagen) para almacenarla, compartirla o editarla en cualquier momento. Con detección inteligente de bordes, mejora de imagen y compilación de múltiples páginas en un solo archivo.",
+      "mod_info": [
+        "Pro desbloqueado",
+        "Sin marcas de agua",
+        "OCR ilimitado",
+        "Exportación sin restricciones"
+      ],
+      "imagenes": [
+        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Scan+1",
+        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Scan+2",
+        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=PDF+Export"
+      ],
+      "enlace_descarga": "https://ejemplo.com/descarga/pdf-scanner-plus-mod.apk",
+      "enlace_descarga_alternativo": "https://ejemplo.com/alternativo/pdf-scanner-plus"
     },
     {
-      "id": "APP0001",
-      "titulo": "DramaBox - Series en Línea",
-      "version": "v4.0.0-beta.1",
-      "tamano": "52.1 MB",
-      "imagen": "https://i.postimg.cc/Beta/streammax-beta.jpg",
-      "enlace_descarga": "https://ejemplo.com/streammax-beta.apk"
-    }
-  ],
-  "relacionado": [
-    {
-      "id": "app-musica-2",
-      "titulo": "MusicHub Pro",
+      "id": "streammax-pro",
+      "titulo": "StreamMax Pro",
+      "version": "2.4.0",
+      "tamano": "22.1 MB",
+      "actualizacion": "Febrero 2026",
       "categoria": "Entretenimiento",
-      "imagen": "https://i.postimg.cc/Music/musichub.jpg",
-      "enlace_descarga": "https://ejemplo.com/musichub.apk"
+      "icono": "https://via.placeholder.com/300x300/ec4899/ffffff?text=Stream",
+      "descripcion_corta": "Disfruta de películas y series sin límites con calidad HD.",
+      "descripcion": "StreamMax Pro es la mejor plataforma para ver contenido multimedia en streaming. Accede a miles de películas, series y documentales en alta definición, con subtítulos en múltiples idiomas y la opción de descargar para ver sin conexión.",
+      "mod_info": [
+        "Sin anuncios",
+        "Calidad HD desbloqueada",
+        "Descargas ilimitadas",
+        "Contenido exclusivo"
+      ],
+      "imagenes": [
+        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Movies",
+        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Series",
+        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Downloads"
+      ],
+      "enlace_descarga": "https://ejemplo.com/descarga/streammax-pro-mod.apk",
+      "enlace_descarga_alternativo": ""
     },
     {
-      "id": "app-videos-3",
-      "titulo": "VideoMax Player",
-      "categoria": "Entretenimiento",
-      "imagen": "https://i.postimg.cc/Video/videomax.jpg",
-      "enlace_descarga": "https://ejemplo.com/videomax.apk"
+      "id": "photolab-premium",
+      "titulo": "PhotoLab Premium",
+      "version": "3.1.2",
+      "tamano": "25.3 MB",
+      "actualizacion": "Enero 2026",
+      "categoria": "Fotografía",
+      "icono": "https://via.placeholder.com/300x300/a78bfa/ffffff?text=Photo",
+      "descripcion_corta": "Editor de fotos profesional con filtros y herramientas avanzadas.",
+      "descripcion": "PhotoLab Premium te ofrece todo lo que necesitas para editar tus fotos como un profesional. Filtros únicos, ajustes de color, eliminación de objetos no deseados, efectos de desenfoque y mucho más. Interfaz intuitiva y resultados sorprendentes.",
+      "mod_info": [
+        "Todos los filtros desbloqueados",
+        "Herramientas Pro gratis",
+        "Sin marcas de agua",
+        "Exportación en 4K"
+      ],
+      "imagenes": [
+        "https://via.placeholder.com/600x400/a78bfa/ffffff?text=Editor",
+        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Filters",
+        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Export"
+      ],
+      "enlace_descarga": "https://ejemplo.com/descarga/photolab-premium-mod.apk",
+      "enlace_descarga_alternativo": "https://ejemplo.com/alternativo/photolab"
     },
     {
-      "id": "app-podcast-4",
-      "titulo": "Podcast World",
-      "categoria": "Entretenimiento",
-      "imagen": "https://i.postimg.cc/Podcast/podcastworld.jpg",
-      "enlace_descarga": "https://ejemplo.com/podcastworld.apk"
+      "id": "music-downloader-plus",
+      "titulo": "Music Downloader Plus",
+      "version": "4.0.5",
+      "tamano": "16.8 MB",
+      "actualizacion": "Marzo 2026",
+      "categoria": "Música",
+      "icono": "https://via.placeholder.com/300x300/8b5cf6/ffffff?text=Music",
+      "descripcion_corta": "Descarga música de tus plataformas favoritas en MP3 de alta calidad.",
+      "descripcion": "Con Music Downloader Plus puedes descargar canciones, playlists y álbumes completos desde YouTube, SoundCloud y otras plataformas. Convierte a MP3 sin pérdida de calidad y escucha offline cuando quieras.",
+      "mod_info": [
+        "Descargas ilimitadas",
+        "Calidad 320kbps",
+        "Sin anuncios",
+        "Conversión rápida"
+      ],
+      "imagenes": [
+        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Download",
+        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Player"
+      ],
+      "enlace_descarga": "https://ejemplo.com/descarga/music-downloader-mod.apk",
+      "enlace_descarga_alternativo": ""
+    },
+    {
+      "id": "gaming-turbo",
+      "titulo": "Gaming Turbo",
+      "version": "1.9.8",
+      "tamano": "12.4 MB",
+      "actualizacion": "Diciembre 2025",
+      "categoria": "Juegos",
+      "icono": "https://via.placeholder.com/300x300/ec4899/ffffff?text=Gaming",
+      "descripcion_corta": "Acelera tu dispositivo para juegos sin lag ni interrupciones.",
+      "descripcion": "Gaming Turbo optimiza la memoria RAM, la CPU y la GPU para que tus juegos favoritos funcionen más fluidos. Libera recursos, activa el modo juego y disfruta de una experiencia sin interrupciones ni calentamiento.",
+      "mod_info": [
+        "Modo turbo extremo",
+        "Sin anuncios emergentes",
+        "Prioridad de red",
+        "Bloqueo de notificaciones"
+      ],
+      "imagenes": [
+        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Boost",
+        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Game"
+      ],
+      "enlace_descarga": "https://ejemplo.com/descarga/gaming-turbo-mod.apk",
+      "enlace_descarga_alternativo": "https://ejemplo.com/alternativo/gaming-turbo"
     }
   ]
 }
