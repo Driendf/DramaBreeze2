@@ -1,7 +1,7 @@
 {
   "categoria": "Entretenimiento",
   "app_principal": {
-    "titulo": "StreamMax",
+    "titulo": "DramaBox - Series en Línea",
     "version": "v3.5.2 (MOD)",
     "tamano": "45.8 MB",
     "requiere_android": "9.0 y superior",
@@ -16,27 +16,27 @@
     ],
     "descripcion": "Sumérgete en el mejor contenido de entretenimiento con StreamMax. Disfruta de millones de canciones, los podcasts más populares y videos musicales exclusivos, todo sin anuncios y con la mejor calidad. Nuestra versión MOD desbloquea todas las funciones premium para que tu experiencia sea inigualable. Crea tus listas de reproducción, descarga tu contenido favorito para escucharlo sin conexión y descubre nuevos artistas gracias a nuestro algoritmo inteligente. ¡La fiesta en tus oídos comienza ahora!",
     "imagenes": [
-      "https://i.postimg.cc/XYZ1/screenshot-1.jpg",
-      "https://i.postimg.cc/XYZ2/screenshot-2.jpg",
-      "https://i.postimg.cc/XYZ3/screenshot-3.jpg",
-      "https://i.postimg.cc/XYZ4/screenshot-4.jpg",
-      "https://i.postimg.cc/XYZ5/screenshot-5.jpg"
+      "https://play-lh.googleusercontent.com/x4A1rBzr64QXA2Fp0DJfiEGhvOp1BJ5nP1Q5irarnn1BvEk1qIfFJsGSkxz5Mrt97xAN=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/yrYUkCpluJ6q9sRY1AxRt0CSIq1lXeXZMDAq8Q2gUWpJIGicEFiv_pgRbK1Kz9j-7uY=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/_aUATQRTcRMeADmXi2nHH9m1XY_vQ7nc7_ntQJtoOpcY-FWT_UT8BlUQj578hTwNNg=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/j_La1mAPzIdEQWnPMQ2WxfwXtTtnUa-vTr6x-iCDhaviBN_7cP425lWogXeO1SiTUaI3=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/xo6uUip_7JscIW6JAeLbdf11FpYa-7gUAy0f3CS2dx5rgo3B6tjUcM5YSQl-mrWqiO8=w526-h296-rw"
     ],
     "enlace_descarga": "https://ejemplo.com/descargar/streammax-v3.5.2-mod.apk",
     "enlace_descarga_alternativo": "https://ejemplo2.com/streammax-mod.apk"
   },
   "franquicia_otras_versiones": [
     {
-      "id": "streammax-lite",
-      "titulo": "StreamMax Lite",
+      "id": "APP0001",
+      "titulo": "DramaBox - Series en Línea",
       "version": "v2.1.0",
       "tamano": "18.2 MB",
       "imagen": "https://i.postimg.cc/Lite/streammax-lite.jpg",
       "enlace_descarga": "https://ejemplo.com/streammax-lite.apk"
     },
     {
-      "id": "streammax-beta",
-      "titulo": "StreamMax Beta",
+      "id": "APP0001",
+      "titulo": "DramaBox - Series en Línea",
       "version": "v4.0.0-beta.1",
       "tamano": "52.1 MB",
       "imagen": "https://i.postimg.cc/Beta/streammax-beta.jpg",
