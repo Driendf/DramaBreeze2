@@ -4,119 +4,108 @@
       "id": "pdf-scanner-plus",
       "titulo": "PDF Scanner Plus",
       "version": "1.3.18",
-      "tamano": "18.5 MB",
-      "actualizacion": "Marzo 2026",
-      "categoria": "Productividad",
+      "tamano": "41.49 MB",
+      "descargas": "1,000,000+",
+      "categoria": "Productivity",
       "icono": "https://via.placeholder.com/300x300/8b5cf6/ffffff?text=Scanner",
-      "descripcion_corta": "Escanea documentos, textos e imágenes y conviértelos a PDF con calidad profesional.",
-      "descripcion": "PDF Scanner Plus convierte documentos en papel, textos impresos y fotos en archivos digitales limpios en segundos. Escanea con la cámara de tu teléfono, crea una copia digital clara en tu dispositivo y conviértela a PDF (o guárdala como imagen) para almacenarla, compartirla o editarla en cualquier momento. Con detección inteligente de bordes, mejora de imagen y compilación de múltiples páginas en un solo archivo.",
-      "mod_info": [
-        "Pro desbloqueado",
-        "Sin marcas de agua",
-        "OCR ilimitado",
-        "Exportación sin restricciones"
-      ],
+      "descripcion": "PDF Scanner Plus - Doc Scanner is your personal scanner for any document, text or image. Convierte documentos en papel en PDF de alta calidad con detección automática de bordes y herramientas de mejora.",
       "imagenes": [
         "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Scan+1",
         "https://via.placeholder.com/600x400/ec4899/ffffff?text=Scan+2",
         "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=PDF+Export"
       ],
-      "enlace_descarga": "https://ejemplo.com/descarga/pdf-scanner-plus-mod.apk",
-      "enlace_descarga_alternativo": "https://ejemplo.com/alternativo/pdf-scanner-plus"
+      "enlace_descarga": "https://ejemplo.com/descarga/pdf-scanner-plus.apk",
+      "enlace_descarga_alternativo": "https://ejemplo.com/alternativo",
+      "mod_info": ["Pro desbloqueado", "Sin marcas de agua"]
     },
     {
-      "id": "streammax-pro",
-      "titulo": "StreamMax Pro",
-      "version": "2.4.0",
-      "tamano": "22.1 MB",
-      "actualizacion": "Febrero 2026",
-      "categoria": "Entretenimiento",
-      "icono": "https://via.placeholder.com/300x300/ec4899/ffffff?text=Stream",
-      "descripcion_corta": "Disfruta de películas y series sin límites con calidad HD.",
-      "descripcion": "StreamMax Pro es la mejor plataforma para ver contenido multimedia en streaming. Accede a miles de películas, series y documentales en alta definición, con subtítulos en múltiples idiomas y la opción de descargar para ver sin conexión.",
-      "mod_info": [
-        "Sin anuncios",
-        "Calidad HD desbloqueada",
-        "Descargas ilimitadas",
-        "Contenido exclusivo"
-      ],
-      "imagenes": [
-        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Movies",
-        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Series",
-        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Downloads"
-      ],
-      "enlace_descarga": "https://ejemplo.com/descarga/streammax-pro-mod.apk",
-      "enlace_descarga_alternativo": ""
-    },
-    {
-      "id": "photolab-premium",
-      "titulo": "PhotoLab Premium",
-      "version": "3.1.2",
-      "tamano": "25.3 MB",
-      "actualizacion": "Enero 2026",
-      "categoria": "Fotografía",
-      "icono": "https://via.placeholder.com/300x300/a78bfa/ffffff?text=Photo",
-      "descripcion_corta": "Editor de fotos profesional con filtros y herramientas avanzadas.",
-      "descripcion": "PhotoLab Premium te ofrece todo lo que necesitas para editar tus fotos como un profesional. Filtros únicos, ajustes de color, eliminación de objetos no deseados, efectos de desenfoque y mucho más. Interfaz intuitiva y resultados sorprendentes.",
-      "mod_info": [
-        "Todos los filtros desbloqueados",
-        "Herramientas Pro gratis",
-        "Sin marcas de agua",
-        "Exportación en 4K"
-      ],
-      "imagenes": [
-        "https://via.placeholder.com/600x400/a78bfa/ffffff?text=Editor",
-        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Filters",
-        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Export"
-      ],
-      "enlace_descarga": "https://ejemplo.com/descarga/photolab-premium-mod.apk",
-      "enlace_descarga_alternativo": "https://ejemplo.com/alternativo/photolab"
-    },
-    {
-      "id": "music-downloader-plus",
-      "titulo": "Music Downloader Plus",
-      "version": "4.0.5",
-      "tamano": "16.8 MB",
-      "actualizacion": "Marzo 2026",
-      "categoria": "Música",
-      "icono": "https://via.placeholder.com/300x300/8b5cf6/ffffff?text=Music",
-      "descripcion_corta": "Descarga música de tus plataformas favoritas en MP3 de alta calidad.",
-      "descripcion": "Con Music Downloader Plus puedes descargar canciones, playlists y álbumes completos desde YouTube, SoundCloud y otras plataformas. Convierte a MP3 sin pérdida de calidad y escucha offline cuando quieras.",
-      "mod_info": [
-        "Descargas ilimitadas",
-        "Calidad 320kbps",
-        "Sin anuncios",
-        "Conversión rápida"
-      ],
-      "imagenes": [
-        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Download",
-        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Player"
-      ],
-      "enlace_descarga": "https://ejemplo.com/descarga/music-downloader-mod.apk",
-      "enlace_descarga_alternativo": ""
-    },
-    {
-      "id": "gaming-turbo",
-      "titulo": "Gaming Turbo",
-      "version": "1.9.8",
-      "tamano": "12.4 MB",
-      "actualizacion": "Diciembre 2025",
+      "id": "the-walking-zombie",
+      "titulo": "The Walking Zombie",
+      "version": "2.8.6",
+      "tamano": "2.86 MB",
       "categoria": "Juegos",
-      "icono": "https://via.placeholder.com/300x300/ec4899/ffffff?text=Gaming",
-      "descripcion_corta": "Acelera tu dispositivo para juegos sin lag ni interrupciones.",
-      "descripcion": "Gaming Turbo optimiza la memoria RAM, la CPU y la GPU para que tus juegos favoritos funcionen más fluidos. Libera recursos, activa el modo juego y disfruta de una experiencia sin interrupciones ni calentamiento.",
-      "mod_info": [
-        "Modo turbo extremo",
-        "Sin anuncios emergentes",
-        "Prioridad de red",
-        "Bloqueo de notificaciones"
-      ],
-      "imagenes": [
-        "https://via.placeholder.com/600x400/ec4899/ffffff?text=Boost",
-        "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Game"
-      ],
-      "enlace_descarga": "https://ejemplo.com/descarga/gaming-turbo-mod.apk",
-      "enlace_descarga_alternativo": "https://ejemplo.com/alternativo/gaming-turbo"
+      "icono": "https://via.placeholder.com/300x300/ec4899/ffffff?text=Zombie",
+      "descripcion": "Juego de zombies con acción y supervivencia.",
+      "imagenes": [],
+      "enlace_descarga": "#",
+      "enlace_descarga_alternativo": ""
+    },
+    {
+      "id": "animash",
+      "titulo": "Animash",
+      "version": "1.0.2",
+      "tamano": "257 KB",
+      "categoria": "Entretenimiento",
+      "icono": "https://via.placeholder.com/300x300/a78bfa/ffffff?text=Animash",
+      "descripcion": "Crea y comparte animaciones divertidas.",
+      "imagenes": [],
+      "enlace_descarga": "#"
+    },
+    {
+      "id": "subway-surfers",
+      "titulo": "Subway Surfers",
+      "version": "3.2.1",
+      "tamano": "3.99 MB",
+      "categoria": "Juegos",
+      "icono": "https://via.placeholder.com/300x300/8b5cf6/ffffff?text=Subway",
+      "descripcion": "El clásico juego de correr sin fin.",
+      "imagenes": [],
+      "enlace_descarga": "#"
+    },
+    {
+      "id": "blokk",
+      "titulo": "BLOKK",
+      "version": "1.0.5",
+      "tamano": "1.44 MB",
+      "categoria": "Juegos",
+      "icono": "https://via.placeholder.com/300x300/ec4899/ffffff?text=BLOKK",
+      "descripcion": "Juego de rompecabezas minimalista.",
+      "imagenes": [],
+      "enlace_descarga": "#"
+    },
+    {
+      "id": "youtube",
+      "titulo": "YouTube",
+      "version": "19.08.42",
+      "tamano": "21.08 MB",
+      "categoria": "Entretenimiento",
+      "icono": "https://via.placeholder.com/300x300/ff0000/ffffff?text=YT",
+      "descripcion": "La plataforma de videos más grande.",
+      "imagenes": [],
+      "enlace_descarga": "#"
+    },
+    {
+      "id": "instagram",
+      "titulo": "Instagram",
+      "version": "300.0.5",
+      "tamano": "417.0 MB",
+      "categoria": "Social",
+      "icono": "https://via.placeholder.com/300x300/e4405f/ffffff?text=IG",
+      "descripcion": "Comparte fotos y videos.",
+      "imagenes": [],
+      "enlace_descarga": "#"
+    },
+    {
+      "id": "tiktok",
+      "titulo": "TikTok",
+      "version": "29.5.6",
+      "tamano": "45.7 MB",
+      "categoria": "Entretenimiento",
+      "icono": "https://via.placeholder.com/300x300/000000/ffffff?text=TikTok",
+      "descripcion": "Videos cortos y virales.",
+      "imagenes": [],
+      "enlace_descarga": "#"
+    },
+    {
+      "id": "roblox",
+      "titulo": "Roblox",
+      "version": "2.550.0",
+      "tamano": "2.79 MB",
+      "categoria": "Juegos",
+      "icono": "https://via.placeholder.com/300x300/00a2ff/ffffff?text=Roblox",
+      "descripcion": "Plataforma de juegos multijugador.",
+      "imagenes": [],
+      "enlace_descarga": "#"
     }
   ]
 }
