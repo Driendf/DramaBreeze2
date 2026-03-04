@@ -1,0 +1,69 @@
+{
+  "categoria": "Entretenimiento",
+  "app_principal": {
+    "titulo": "StreamMax",
+    "version": "v3.5.2 (MOD)",
+    "tamano": "45.8 MB",
+    "requiere_android": "9.0 y superior",
+    "arquitectura": "arm64-v8a",
+    "mod_info": [
+      "✓ Suscripción Premium Desbloqueada",
+      "✓ Sin Anuncios (Feed, Reproductor, Búsqueda)",
+      "✓ Descarga de Videos y Música sin Límites",
+      "✓ Calidad de Audio y Video Mejorada (320kbps/4K)",
+      "✓ Temas Personalizados (Modo Oscuro/Claro/Amoled)",
+      "✓ Soporte Multi-Cuenta"
+    ],
+    "descripcion": "Sumérgete en el mejor contenido de entretenimiento con StreamMax. Disfruta de millones de canciones, los podcasts más populares y videos musicales exclusivos, todo sin anuncios y con la mejor calidad. Nuestra versión MOD desbloquea todas las funciones premium para que tu experiencia sea inigualable. Crea tus listas de reproducción, descarga tu contenido favorito para escucharlo sin conexión y descubre nuevos artistas gracias a nuestro algoritmo inteligente. ¡La fiesta en tus oídos comienza ahora!",
+    "imagenes": [
+      "https://i.postimg.cc/XYZ1/screenshot-1.jpg",
+      "https://i.postimg.cc/XYZ2/screenshot-2.jpg",
+      "https://i.postimg.cc/XYZ3/screenshot-3.jpg",
+      "https://i.postimg.cc/XYZ4/screenshot-4.jpg",
+      "https://i.postimg.cc/XYZ5/screenshot-5.jpg"
+    ],
+    "enlace_descarga": "https://ejemplo.com/descargar/streammax-v3.5.2-mod.apk",
+    "enlace_descarga_alternativo": "https://ejemplo2.com/streammax-mod.apk"
+  },
+  "franquicia_otras_versiones": [
+    {
+      "id": "streammax-lite",
+      "titulo": "StreamMax Lite",
+      "version": "v2.1.0",
+      "tamano": "18.2 MB",
+      "imagen": "https://i.postimg.cc/Lite/streammax-lite.jpg",
+      "enlace_descarga": "https://ejemplo.com/streammax-lite.apk"
+    },
+    {
+      "id": "streammax-beta",
+      "titulo": "StreamMax Beta",
+      "version": "v4.0.0-beta.1",
+      "tamano": "52.1 MB",
+      "imagen": "https://i.postimg.cc/Beta/streammax-beta.jpg",
+      "enlace_descarga": "https://ejemplo.com/streammax-beta.apk"
+    }
+  ],
+  "relacionado": [
+    {
+      "id": "app-musica-2",
+      "titulo": "MusicHub Pro",
+      "categoria": "Entretenimiento",
+      "imagen": "https://i.postimg.cc/Music/musichub.jpg",
+      "enlace_descarga": "https://ejemplo.com/musichub.apk"
+    },
+    {
+      "id": "app-videos-3",
+      "titulo": "VideoMax Player",
+      "categoria": "Entretenimiento",
+      "imagen": "https://i.postimg.cc/Video/videomax.jpg",
+      "enlace_descarga": "https://ejemplo.com/videomax.apk"
+    },
+    {
+      "id": "app-podcast-4",
+      "titulo": "Podcast World",
+      "categoria": "Entretenimiento",
+      "imagen": "https://i.postimg.cc/Podcast/podcastworld.jpg",
+      "enlace_descarga": "https://ejemplo.com/podcastworld.apk"
+    }
+  ]
+}
