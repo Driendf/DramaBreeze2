@@ -1,0 +1,13 @@
+{
+  "version": "2027.01",
+  "updated": "2027-01-15T00:00:00Z",
+  "categories": {
+    "microdrama": { "shards": 1, "total": 5 },
+    "pelicula":   { "shards": 1, "total": 3 },
+    "series":     { "shards": 1, "total": 2 },
+    "anime":      { "shards": 1, "total": 6 },
+    "dorama":     { "shards": 1, "total": 2 },
+    "donghua":    { "shards": 1, "total": 1 },
+    "cartoon":    { "shards": 1, "total": 2 }
+  }
+}
